@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.env
+venv/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data (large files - raw)
+data/DocLayNet/*.zip
+data/DocLayNet/*.png
+data/DocLayNet/*.json
+data/iam_downloads/*.tgz
+data/iam_downloads/*.tar.gz
+data/iam_downloads/*.zip
+data/CROHME/*.zip
+data/CROHME/*.html
+
+# Processed Data (Ignore images/binary, keep manifests/jsons if desired)
+# We ignore the subdirectories that contain large numbers of files
+data/processed/detection/images/
+data/processed/detection/labels/
+data/processed/german_text/lineImages/
+data/processed/german_text/images/
+data/processed/math/
+data/processed/lecture_slides/
+data/processed/meta_learning/
+
+# Model Weights & Runs
+checkpoint/
+checkpoints/
+runs/
+**/lightning_logs/
+*.pt
+*.ckpt
+*.pth
+outputs/predictions/
+outputs/figures/
+outputs/reports/
+
+# TAMER specific
+TAMER/data/
+TAMER/lightning_logs/
+TAMER/checkpoints/
+
+# Egg info / build artifacts
+*.egg-info/
+dist/
+build/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+

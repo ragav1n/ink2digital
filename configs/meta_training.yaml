@@ -1,0 +1,55 @@
+# Meta-Learning Configuration (MAML for Professor-Specific Adaptation)
+# Phase 3 (Weeks 7-9)
+
+meta_learning:
+  algorithm: MAML
+  backbone: trocr-large-handwritten   # Base model to wrap with MAML
+
+  # Task construction
+  num_tasks: 2000
+  num_writers: 150
+  task_type: few-shot-ocr
+
+  # Inner loop (fast adaptation per professor)
+  inner_loop:
+    steps: 5
+    lr: 0.01
+    loss: cer
+    samples_per_writer: 10     # Support set size
+    query_samples: 10          # Query set size
+
+  # Outer loop (meta-optimizer)
+  outer_loop:
+    lr: 0.001
+    optimizer: Adam
+    scheduler: cosine
+    epochs: 50
+    batch_tasks: 8             # Tasks per meta-update
+
+  # Evaluation
+  evaluation:
+    query_samples: 10
+    metric: CER
+    adaptation_steps: [1, 5, 10]   # Evaluate at N adaptation steps
+
+  # Training targets
+  targets:
+    meta_cer: 0.05             # 5% CER before adaptation
+    adapted_cer: 0.02          # 2-3% after 5-shot adaptation
+
+# Data configuration for meta-learning
+data:
+  source: data/processed/german_text
+  writers_per_task: 1
+  min_samples_per_writer: 20
+  split:
+    meta_train: 0.70
+    meta_val: 0.15
+    meta_test: 0.15
+
+# Checkpoint configuration
+checkpoints:
+  save_dir: checkpoints/meta_learning
+  save_every: 5              # Save every N epochs
+  keep_best: true
+  metric: val_cer

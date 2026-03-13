@@ -1,0 +1,53 @@
+# Final Pipeline Configuration
+# Phase 4-5 (Weeks 10-12)
+
+pipeline:
+  name: german-lecture-ocr-v1
+
+  # Detection stage
+  detection:
+    model: dlaformer               # DLAFormer (upgraded from YOLOv8 in Phase 2)
+    weights: checkpoints/dlaformer/best.pt
+    conf_threshold: 0.45
+    iou_threshold: 0.40
+    input_size: [640, 640]
+    classes: [text, math]
+    fallback: yolov8x              # Fallback if DLAFormer not available
+
+  # Text OCR stage
+  text_ocr:
+    model: trocr-german            # German fine-tuned TrOCR
+    weights: checkpoints/trocr_german/best
+    use_meta_learning: true
+    meta_weights: checkpoints/meta_learning/best.pt
+    adaptation_steps: 5
+    max_length: 256
+    postprocess: true
+
+  # Math OCR stage
+  math_ocr:
+    model: tamer
+    weights: TAMER/lightning_logs/version_3
+    config: TAMER/config/crohme.yaml
+    fallback_model: pix2tex
+
+  # Post-processing
+  postprocessing:
+    german_spellcheck: true
+    umlaut_correction: true
+    math_validation: true          # Validate LaTeX syntax
+
+  # Output
+  output:
+    format: json                   # or 'pdf', 'tex'
+    include_confidence: true
+    include_bboxes: true
+    replace_in_slide: false        # Set true for slide replacement mode
+
+# Expected performance (Phase 5 targets)
+targets:
+  detection_mAP: 0.94             # 94-96%
+  text_CER: 0.035                 # 3.5%
+  text_CER_adapted: 0.025         # 2.5% with meta-learning
+  math_BLEU: 0.90                 # 88-92
+  end_to_end: 0.95                # 94-96%
