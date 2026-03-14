@@ -1,0 +1,21 @@
+{
+  "mAP50": 0.9153888286611723,
+  "mAP50_95": 0.7269447281144131,
+  "precision": 0.8931235021163535,
+  "recall": 0.8842110374052632,
+  "per_class": {
+    "text": {
+      "AP50": 0.9340477479889342,
+      "AP50_95": 0.8199258317381632
+    },
+    "math": {
+      "AP50": 0.8967299093334105,
+      "AP50_95": 0.6339636244906632
+    }
+  },
+  "model": "runs/detect/runs/detect/baseline_v1_r2/weights/best.pt",
+  "data": "data/processed/detection/dataset.yaml",
+  "split": "test",
+  "conf_threshold": 0.25,
+  "iou_threshold": 0.45
+}

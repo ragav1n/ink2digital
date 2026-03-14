@@ -165,6 +165,7 @@ class GermanTrOCRTrainer:
         num_epochs: int = 30,
         batch_size: int = 8,
         gradient_accumulation_steps: int = 4,
+        num_workers: int = 0,
         warmup_ratio: float = 0.1,
         weight_decay: float = 0.01,
         max_length: int = 128,
@@ -178,6 +179,7 @@ class GermanTrOCRTrainer:
         self.num_epochs = num_epochs
         self.batch_size = batch_size
         self.gradient_accumulation_steps = gradient_accumulation_steps
+        self.num_workers = num_workers
         self.warmup_ratio = warmup_ratio
         self.weight_decay = weight_decay
         self.max_length = max_length
@@ -193,10 +195,11 @@ class GermanTrOCRTrainer:
         self.model.config.pad_token_id = self.processor.tokenizer.pad_token_id
         self.model.config.vocab_size = self.model.config.decoder.vocab_size
         self.model.config.eos_token_id = self.processor.tokenizer.sep_token_id
-        self.model.config.max_length = max_length
-        self.model.config.no_repeat_ngram_size = 3
-        self.model.config.length_penalty = 2.0
-        self.model.config.num_beams = 4
+        # Generation params must go on generation_config in transformers 5.x
+        self.model.generation_config.max_new_tokens = max_length
+        self.model.generation_config.no_repeat_ngram_size = 3
+        self.model.generation_config.length_penalty = 2.0
+        self.model.generation_config.num_beams = 4
 
         self.model.to(self.device)
         logger.info(f"Model on {self.device}")
@@ -231,11 +234,13 @@ class GermanTrOCRTrainer:
 
         train_loader = DataLoader(
             train_ds, batch_size=self.batch_size, shuffle=True,
-            num_workers=4, collate_fn=collate_fn, pin_memory=True,
+            num_workers=self.num_workers, collate_fn=collate_fn,
+            pin_memory=(self.num_workers > 0),
         )
         val_loader = DataLoader(
             val_ds, batch_size=self.batch_size * 2, shuffle=False,
-            num_workers=4, collate_fn=collate_fn, pin_memory=True,
+            num_workers=self.num_workers, collate_fn=collate_fn,
+            pin_memory=(self.num_workers > 0),
         )
 
         # Optimizer and scheduler
@@ -346,11 +351,7 @@ class GermanTrOCRTrainer:
             pixel_values = batch['pixel_values'].to(self.device)
             refs = batch['texts']
 
-            generated_ids = self.model.generate(
-                pixel_values,
-                max_new_tokens=self.max_length,
-                num_beams=4,
-            )
+            generated_ids = self.model.generate(pixel_values)
             hyps = self.processor.batch_decode(generated_ids, skip_special_tokens=True)
             all_hyps.extend(hyps)
             all_refs.extend(refs)
@@ -410,6 +411,8 @@ def parse_args():
     parser.add_argument('--resume', type=str, default=None)
     parser.add_argument('--grad-accum', type=int, default=4,
                         help='Gradient accumulation steps')
+    parser.add_argument('--workers', type=int, default=0,
+                        help='DataLoader num_workers (0 = main process, safe for WSL2)')
     return parser.parse_args()
 
 
@@ -424,6 +427,7 @@ if __name__ == '__main__':
         num_epochs=args.epochs,
         batch_size=args.batch,
         gradient_accumulation_steps=args.grad_accum,
+        num_workers=args.workers,
     )
 
     metrics = trainer.train(

@@ -1,0 +1,112 @@
+{
+  "model": "checkpoints/trocr_german/best",
+  "n_samples": 644,
+  "n_errors": 0,
+  "postprocess": true,
+  "CER": 0.03477040352103147,
+  "WER": 0.05220834419203985,
+  "CER_percent": 3.477040352103147,
+  "WER_percent": 5.220834419203985,
+  "examples": [
+    {
+      "hypothesis": "1961 variety , by which the West German",
+      "reference": "1961 variety , by which the West German",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "part-author with Miss Delaney of the script ,",
+      "reference": "part-author with Miss Delaney of the script ,",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "them that they were being \" encircled . \" They really",
+      "reference": "them that they were being \" encircled . \" They really",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "\" good girl \" parts ( Tuesday Weld gets the \" bad girl \"",
+      "reference": "\" good girl \" parts ( Tuesday Weld gets the \" bad girl \"",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "MPs yesterday : \" I have no knowledge of secret negotiations . \"",
+      "reference": "Ps yesterday : \" I have no knowledge of secret negotiations . \"",
+      "cer": 0.015873015873015872
+    },
+    {
+      "hypothesis": "Government does not like retrospective legislation .",
+      "reference": "Government does not like retrospective legislation .",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "succeeded if we had a little more faith in the",
+      "reference": "succeeded if we had a little more faith in the",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "\" press a thumb-tack into the nose of the hammers that strike",
+      "reference": "\" press a thumb-tack into the nose of the hammers that strike",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "little time and concentration the woman at home can",
+      "reference": "little time and concentration the woman at home can",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "bell 's article , for , as president of a union",
+      "reference": "bell's article , for , as president of a union",
+      "cer": 0.021739130434782608
+    },
+    {
+      "hypothesis": "unambiguously \" contemporary \" work to be",
+      "reference": "unambiguously \" contemporary \" work to be",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "a highly critical article .",
+      "reference": "a highly critical editorial article .",
+      "cer": 0.2702702702702703
+    },
+    {
+      "hypothesis": "Shmah \" to be willing to hear , \" we",
+      "reference": "Shmah \" to be willing to hear , \" we",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "started day one again and so on .",
+      "reference": "started day one again and so on .",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "the Hollywood ratrace .",
+      "reference": "the Hollywood ratrace .",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "prays , and in a second miracle the",
+      "reference": "prays , and in a second miracle the",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "This figure has been surpaßed only on the eve of the",
+      "reference": "This figure has been surpassed only on the eve of the",
+      "cer": 0.03773584905660377
+    },
+    {
+      "hypothesis": "of the pro-communists , Most of the",
+      "reference": "of the pro-communists . Most of the",
+      "cer": 0.02857142857142857
+    },
+    {
+      "hypothesis": "in Northern Rhodesia .",
+      "reference": "in Northern Rhodesia .",
+      "cer": 0.0
+    },
+    {
+      "hypothesis": "veteran United Party politician , Mr. Harry",
+      "reference": "veteran United Party politician , Mr. Harry",
+      "cer": 0.0
+    }
+  ]
+}
