@@ -1,0 +1,8 @@
+{
+  "n_shot": 5,
+  "n_writers": 10,
+  "CER_before": 0.005312260106448766,
+  "CER_after": 0.006030950522747158,
+  "CER_improvement": -0.0007186904162983926,
+  "CER_improvement_pct": -13.52890110606492
+}

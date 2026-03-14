@@ -175,11 +175,10 @@ class MAMLOCRWrapper:
             images=images, return_tensors='pt'
         ).pixel_values.to(self.device)
 
-        with self.processor.as_target_processor():
-            labels = self.processor(
-                texts, return_tensors='pt', max_length=128,
-                padding='max_length', truncation=True
-            ).input_ids.to(self.device)
+        labels = self.processor.tokenizer(
+            texts, return_tensors='pt', max_length=128,
+            padding='max_length', truncation=True
+        ).input_ids.to(self.device)
 
         labels[labels == self.processor.tokenizer.pad_token_id] = -100
         outputs = model(pixel_values=pixel_values, labels=labels)
@@ -208,11 +207,10 @@ class MAMLOCRWrapper:
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        optimizer = torch.optim.Adam(self.meta_model.parameters(), lr=self.outer_lr)
         best_meta_cer = float('inf')
         training_log = []
 
-        logger.info(f"Starting MAML meta-training: {num_epochs} epochs, "
+        logger.info(f"Starting Reptile meta-training: {num_epochs} epochs, "
                     f"{len(train_tasks)} training tasks")
 
         for epoch in range(num_epochs):
@@ -222,43 +220,36 @@ class MAMLOCRWrapper:
             # Sample tasks for this epoch
             sampled_tasks = random.sample(train_tasks, min(tasks_per_epoch, len(train_tasks)))
 
-            # Process in batches
-            for batch_start in range(0, len(sampled_tasks), batch_tasks):
-                batch = sampled_tasks[batch_start:batch_start + batch_tasks]
-                meta_loss = 0.0
+            for task in sampled_tasks:
+                # Clone model for inner loop (one at a time to save VRAM)
+                learner = self.meta_model.clone()
 
-                for task in batch:
-                    # Clone model for inner loop
-                    learner = self.meta_model.clone()
+                support = task['support']
+                support_images = self._load_images([s['image'] for s in support])
+                support_texts = [s['text'] for s in support]
 
-                    # Inner loop: adapt to support set
-                    support = task['support']
-                    query = task['query']
+                # Inner loop: adapt to support set
+                task_loss = 0.0
+                for _ in range(self.inner_steps):
+                    support_loss = self._compute_loss(learner, support_images, support_texts)
+                    learner.adapt(support_loss)
+                    task_loss += float(support_loss)
 
-                    support_images = self._load_images([s['image'] for s in support])
-                    support_texts = [s['text'] for s in support]
+                # Reptile meta-update: move meta_model toward adapted parameters
+                with torch.no_grad():
+                    for p_meta, p_adapted in zip(
+                        self.meta_model.parameters(), learner.parameters()
+                    ):
+                        p_meta.data += self.outer_lr * (p_adapted.data - p_meta.data)
 
-                    for _ in range(self.inner_steps):
-                        support_loss = self._compute_loss(learner, support_images, support_texts)
-                        learner.adapt(support_loss)
+                epoch_loss += task_loss / max(self.inner_steps, 1)
+                n_tasks += 1
 
-                    # Outer loop: evaluate on query set
-                    query_images = self._load_images([q['image'] for q in query])
-                    query_texts = [q['text'] for q in query]
-                    query_loss = self._compute_loss(learner, query_images, query_texts)
-                    meta_loss += query_loss
+                # Free GPU memory immediately
+                del learner
+                torch.cuda.empty_cache()
 
-                # Meta-gradient step
-                meta_loss /= len(batch)
-                optimizer.zero_grad()
-                meta_loss.backward()
-                torch.nn.utils.clip_grad_norm_(self.meta_model.parameters(), 1.0)
-                optimizer.step()
-
-                epoch_loss += float(meta_loss)
-                n_tasks += len(batch)
-
-            avg_loss = epoch_loss / max(n_tasks / batch_tasks, 1)
+            avg_loss = epoch_loss / max(n_tasks, 1)
 
             # Evaluate every 5 epochs
             if epoch % 5 == 0:
@@ -266,7 +257,7 @@ class MAMLOCRWrapper:
                 is_best = val_cer < best_meta_cer
                 if is_best:
                     best_meta_cer = val_cer
-                    self._save_meta_checkpoint(epoch, optimizer, val_cer, output_dir)
+                    self._save_meta_checkpoint(epoch, val_cer, output_dir)
 
                 logger.info(
                     f"Epoch {epoch+1}/{num_epochs} | "
@@ -406,12 +397,11 @@ class MAMLOCRWrapper:
 
         return float(np.mean(all_cers)) if all_cers else 1.0
 
-    def _save_meta_checkpoint(self, epoch: int, optimizer, val_cer: float, output_dir: Path):
+    def _save_meta_checkpoint(self, epoch: int, val_cer: float, output_dir: Path):
         """Save meta-learning checkpoint."""
         ckpt = {
             'epoch': epoch,
             'meta_model_state': self.meta_model.state_dict(),
-            'optimizer_state': optimizer.state_dict(),
             'val_cer': val_cer,
         }
         torch.save(ckpt, output_dir / 'meta_checkpoint_best.pt')
