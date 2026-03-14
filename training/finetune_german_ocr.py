@@ -115,15 +115,14 @@ class GermanHandwritingDataset(Dataset):
             return_tensors='pt',
         ).pixel_values.squeeze(0)
 
-        # Process text labels
-        with self.processor.as_target_processor():
-            labels = self.processor(
-                text,
-                return_tensors='pt',
-                max_length=self.max_length,
-                padding='max_length',
-                truncation=True,
-            ).input_ids.squeeze(0)
+        # Process text labels (as_target_processor removed in transformers 5.x)
+        labels = self.processor.tokenizer(
+            text,
+            return_tensors='pt',
+            max_length=self.max_length,
+            padding='max_length',
+            truncation=True,
+        ).input_ids.squeeze(0)
 
         # Replace padding with -100 (ignored in loss)
         labels[labels == self.processor.tokenizer.pad_token_id] = -100
