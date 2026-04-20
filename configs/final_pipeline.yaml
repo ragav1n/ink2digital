@@ -7,7 +7,7 @@ pipeline:
   # Detection stage
   detection:
     model: dlaformer               # DLAFormer (upgraded from YOLOv8 in Phase 2)
-    weights: checkpoints/dlaformer/best.pt
+    weights: checkpoint/dlaformer/best.pt
     conf_threshold: 0.45
     iou_threshold: 0.40
     input_size: [640, 640]
@@ -17,9 +17,9 @@ pipeline:
   # Text OCR stage
   text_ocr:
     model: trocr-german            # German fine-tuned TrOCR
-    weights: checkpoints/trocr_german/best
+    weights: checkpoint/trocr_german/best
     use_meta_learning: true
-    meta_weights: checkpoints/meta_learning/best.pt
+    meta_weights: checkpoint/maml_ocr/best.pt
     adaptation_steps: 5
     max_length: 256
     postprocess: true

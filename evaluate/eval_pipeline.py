@@ -21,15 +21,15 @@ Usage:
     # Evaluate Phase 2 pipeline (DLAFormer + fine-tuned TrOCR + TAMER)
     python evaluate/eval_pipeline.py \
         --detector dlaformer \
-        --ocr checkpoints/trocr_german/best \
+        --ocr checkpoint/trocr_german/best \
         --math tamer \
         --output outputs/eval_pipeline_phase2.json
 
     # With professor adaptation (Phase 3)
     python evaluate/eval_pipeline.py \
         --detector dlaformer \
-        --ocr checkpoints/trocr_german/best \
-        --meta-checkpoint checkpoints/meta_learning/meta_checkpoint_best.pt \
+        --ocr checkpoint/trocr_german/best \
+        --meta-checkpoint checkpoint/maml_ocr/meta_checkpoint_best.pt \
         --adaptation-samples path/to/professor_samples.json \
         --output outputs/eval_pipeline_adapted.json
 """
@@ -78,9 +78,7 @@ def build_pipeline(
     Returns:
         Pipeline instance (BaselinePipeline or adapted variant)
     """
-    from baseline.baseline_pipeline import (
-        YOLOv8Detector, TrOCRRecognizer, Pix2TexRecognizer, BaselinePipeline
-    )
+    from baseline.baseline_pipeline import YOLOv8Detector, TrOCRRecognizer, Pix2TexRecognizer
 
     # Detector
     if detector_type == 'dlaformer':
@@ -90,9 +88,9 @@ def build_pipeline(
             logger.info("Using DLAFormer detector")
         except Exception as e:
             logger.warning(f"DLAFormer failed ({e}), falling back to YOLOv8")
-            detector = YOLOv8Detector(model_path=detector_path or 'yolov8x.pt')
+            detector = YOLOv8Detector(weights=detector_path or 'yolov8x.pt', device=device)
     else:
-        detector = YOLOv8Detector(model_path=detector_path or 'yolov8x.pt')
+        detector = YOLOv8Detector(weights=detector_path or 'yolov8x.pt', device=device)
         logger.info(f"Using YOLOv8 detector: {detector_path}")
 
     # Text OCR
@@ -100,7 +98,7 @@ def build_pipeline(
         from models.meta_learning_ocr import MAMLOCRWrapper
         import torch
         wrapper = MAMLOCRWrapper(base_model_path=ocr_model, device=device)
-        ckpt = torch.load(meta_checkpoint, map_location=device)
+        ckpt = torch.load(meta_checkpoint, map_location=device, weights_only=False)
         wrapper.meta_model.load_state_dict(ckpt['meta_model_state'])
         logger.info(f"Using MAML meta-learned OCR, checkpoint: {meta_checkpoint}")
         text_recognizer = wrapper
@@ -113,19 +111,23 @@ def build_pipeline(
         try:
             from models.math_ocr_tamer import TAMERMathOCR
             math_recognizer = TAMERMathOCR(device=device)
+            if math_recognizer.model_type is None:
+                raise RuntimeError("TAMER model_type is None — load failed")
             logger.info(f"Using TAMER math OCR (type: {math_recognizer.model_type})")
         except Exception as e:
-            logger.warning(f"TAMER failed ({e}), falling back to Pix2Tex")
+            logger.warning(f"TAMER failed ({e}), using Pix2Tex fallback")
             math_recognizer = Pix2TexRecognizer()
     else:
         math_recognizer = Pix2TexRecognizer()
         logger.info("Using Pix2Tex math OCR")
 
-    pipeline = BaselinePipeline(
-        detector=detector,
-        text_recognizer=text_recognizer,
-        math_recognizer=math_recognizer,
-    )
+    # Return a simple namespace so eval functions can access .detector, .text_recognizer, .math_recognizer
+    class _Pipeline:
+        pass
+    pipeline = _Pipeline()
+    pipeline.detector = detector
+    pipeline.text_recognizer = text_recognizer
+    pipeline.math_recognizer = math_recognizer
     return pipeline
 
 

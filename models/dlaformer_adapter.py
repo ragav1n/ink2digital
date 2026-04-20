@@ -14,7 +14,7 @@ References:
 
 Usage:
     from models.dlaformer_adapter import DLAFormerDetector
-    detector = DLAFormerDetector(weights='checkpoints/dlaformer/best.pt')
+    detector = DLAFormerDetector(weights='checkpoint/dlaformer/best.pt')
     detections = detector.detect(image)
 """
 
@@ -283,7 +283,7 @@ class DLAFormerTrainer:
         model: DLAFormerDetector,
         train_dataset,
         val_dataset,
-        output_dir: str = 'checkpoints/dlaformer',
+        output_dir: str = 'checkpoint/dlaformer',
         learning_rate: float = 1e-4,
         num_epochs: int = 50,
         batch_size: int = 4,

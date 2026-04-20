@@ -64,3 +64,5 @@ Thumbs.db
 *.log
 wandb/
 
+# Professor slides (private/large)
+data/Dr_Judith_Jakob_Slides/

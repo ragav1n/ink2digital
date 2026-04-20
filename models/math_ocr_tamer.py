@@ -109,11 +109,14 @@ class TAMERMathOCR:
         logger.info(f"Loading TAMER checkpoint: {ckpt_path}")
 
         import torch
+        from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
+        torch.serialization.add_safe_globals([ModelCheckpoint])
         from tamer.model.tamer import TAMER as TAMERModel
 
         model = TAMERModel.load_from_checkpoint(
             ckpt_path,
             map_location=self.device,
+            strict=False,
         )
         model.eval()
 

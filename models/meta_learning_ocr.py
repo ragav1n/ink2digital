@@ -20,7 +20,7 @@ References:
 Usage:
     from models.meta_learning_ocr import MAMLOCRWrapper, create_writer_tasks
 
-    wrapper = MAMLOCRWrapper('checkpoints/trocr_german/best')
+    wrapper = MAMLOCRWrapper('checkpoint/trocr_german/best')
     wrapper.meta_train(train_tasks, val_tasks)
 
     # Professor adaptation (5-shot):
@@ -121,7 +121,7 @@ class MAMLOCRWrapper:
 
     def __init__(
         self,
-        base_model_path: str = 'checkpoints/trocr_german/best',
+        base_model_path: str = 'checkpoint/trocr_german/best',
         inner_lr: float = 0.01,
         outer_lr: float = 0.001,
         inner_steps: int = 5,
@@ -191,7 +191,7 @@ class MAMLOCRWrapper:
         num_epochs: int = 50,
         tasks_per_epoch: int = 100,
         batch_tasks: int = 8,
-        output_dir: Path = Path('checkpoints/meta_learning'),
+        output_dir: Path = Path('checkpoint/maml_ocr'),
     ) -> dict:
         """
         Run MAML meta-training.
@@ -363,10 +363,13 @@ class MAMLOCRWrapper:
 
     def _meta_evaluate(self, tasks: List[Dict]) -> float:
         """Evaluate meta-learning by measuring CER after adaptation on each task."""
+        import torch
+        from PIL import Image as PILImage
         from utils.metrics import compute_cer
         all_cers = []
 
         for task in tasks:
+            torch.cuda.empty_cache()
             learner = self.meta_model.clone()
             support = task['support']
             query = task['query']
@@ -382,8 +385,6 @@ class MAMLOCRWrapper:
             query_images = self._load_images([q['image'] for q in query])
             query_texts_ref = [q['text'] for q in query]
 
-            from PIL import Image as PILImage
-            import torch
             pixel_values = self.processor(
                 images=query_images, return_tensors='pt'
             ).pixel_values.to(self.device)
@@ -394,6 +395,9 @@ class MAMLOCRWrapper:
 
             for h, r in zip(hyps, query_texts_ref):
                 all_cers.append(compute_cer(h, r))
+
+            del learner, pixel_values, generated_ids
+            torch.cuda.empty_cache()
 
         return float(np.mean(all_cers)) if all_cers else 1.0
 

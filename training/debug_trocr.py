@@ -75,7 +75,7 @@ try:
             sys.exit(1)
 
     logger.info("3 steps completed successfully — training should work.")
-    logger.info("Now try: nohup python training/finetune_german_ocr.py --train-data data/processed/german_text/german_text_train.json --val-data data/processed/german_text/german_text_val.json --output-dir checkpoints/trocr_german --epochs 30 --batch 8 --workers 0 --device cuda > logs/trocr_finetune.log 2>&1 &")
+    logger.info("Now try: nohup python training/finetune_german_ocr.py --train-data data/processed/german_text/german_text_train.json --val-data data/processed/german_text/german_text_val.json --output-dir checkpoint/trocr_german --epochs 30 --batch 8 --workers 0 --device cuda > logs/trocr_finetune.log 2>&1 &")
 
 except Exception:
     logger.error("Outer crash:")

@@ -49,7 +49,7 @@ data:
 
 # Checkpoint configuration
 checkpoints:
-  save_dir: checkpoints/meta_learning
+  save_dir: checkpoint/maml_ocr
   save_every: 5              # Save every N epochs
   keep_best: true
   metric: val_cer

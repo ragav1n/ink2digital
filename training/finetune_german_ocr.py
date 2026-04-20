@@ -18,13 +18,13 @@ Usage:
     python training/finetune_german_ocr.py \
         --train-data data/processed/german_text/german_text_train.json \
         --val-data data/processed/german_text/german_text_val.json \
-        --output-dir checkpoints/trocr_german \
+        --output-dir checkpoint/trocr_german \
         --epochs 30 \
         --batch 8
 
     # Resume:
     python training/finetune_german_ocr.py \
-        --resume checkpoints/trocr_german/checkpoint-best \
+        --resume checkpoint/trocr_german/checkpoint-best \
         --epochs 10
 """
 
@@ -32,9 +32,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import time
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np
 import torch
@@ -159,7 +162,7 @@ class GermanTrOCRTrainer:
     def __init__(
         self,
         model_id: str = 'microsoft/trocr-large-handwritten',
-        output_dir: Path = Path('checkpoints/trocr_german'),
+        output_dir: Path = Path('checkpoint/trocr_german'),
         device: str = 'cuda',
         learning_rate: float = 5e-5,
         num_epochs: int = 30,
@@ -171,6 +174,7 @@ class GermanTrOCRTrainer:
         max_length: int = 128,
         eval_every: int = 1,
         save_best_only: bool = True,
+        patience: int = 5,
     ):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -185,6 +189,7 @@ class GermanTrOCRTrainer:
         self.max_length = max_length
         self.eval_every = eval_every
         self.save_best_only = save_best_only
+        self.patience = patience
 
         logger.info(f"Loading TrOCR: {model_id}")
         self.processor = TrOCRProcessor.from_pretrained(model_id)
@@ -205,7 +210,7 @@ class GermanTrOCRTrainer:
         logger.info(f"Model on {self.device}")
 
         # AMP scaler
-        self.scaler = torch.cuda.amp.GradScaler() if self.device == 'cuda' else None
+        self.scaler = torch.amp.GradScaler('cuda') if self.device == 'cuda' else None
 
     def train(
         self,
@@ -262,7 +267,10 @@ class GermanTrOCRTrainer:
             best_cer = ckpt.get('best_cer', float('inf'))
             logger.info(f"Resumed from {resume_from} (epoch {start_epoch})")
 
-        logger.info(f"Training {self.num_epochs} epochs on {len(train_ds)} samples")
+        patience = getattr(self, 'patience', 5)
+        no_improve = 0
+
+        logger.info(f"Training {self.num_epochs} epochs on {len(train_ds)} samples (patience={patience})")
         logger.info(f"Validation: {len(val_ds)} samples")
 
         training_log = []
@@ -277,12 +285,15 @@ class GermanTrOCRTrainer:
                 is_best = val_cer < best_cer
                 if is_best:
                     best_cer = val_cer
+                    no_improve = 0
+                else:
+                    no_improve += 1
 
                 logger.info(
                     f"Epoch {epoch+1}/{self.num_epochs} | "
                     f"Train Loss: {train_loss:.4f} | "
                     f"Val CER: {val_cer:.4f} ({val_cer*100:.2f}%) | "
-                    f"{'⭐ Best' if is_best else ''}"
+                    f"{'⭐ Best' if is_best else f'no improve {no_improve}/{patience}'}"
                 )
 
                 training_log.append({
@@ -294,6 +305,10 @@ class GermanTrOCRTrainer:
 
                 # Save checkpoint
                 self._save_checkpoint(epoch, optimizer, val_cer, best_cer, is_best)
+
+                if no_improve >= patience:
+                    logger.info(f"Early stopping at epoch {epoch+1} (patience={patience} exhausted)")
+                    break
 
         logger.info(f"Training complete. Best CER: {best_cer:.4f} ({best_cer*100:.2f}%)")
 
@@ -315,7 +330,7 @@ class GermanTrOCRTrainer:
             labels = batch['labels'].to(self.device)
 
             if self.scaler:
-                with torch.cuda.amp.autocast():
+                with torch.amp.autocast('cuda'):
                     outputs = self.model(pixel_values=pixel_values, labels=labels)
                     loss = outputs.loss / self.gradient_accumulation_steps
                 self.scaler.scale(loss).backward()
@@ -403,7 +418,7 @@ def parse_args():
                         default=Path('data/processed/german_text/german_text_train.json'))
     parser.add_argument('--val-data', type=Path,
                         default=Path('data/processed/german_text/german_text_val.json'))
-    parser.add_argument('--output-dir', type=Path, default=Path('checkpoints/trocr_german'))
+    parser.add_argument('--output-dir', type=Path, default=Path('checkpoint/trocr_german'))
     parser.add_argument('--epochs', type=int, default=30)
     parser.add_argument('--batch', type=int, default=8)
     parser.add_argument('--lr', type=float, default=5e-5)
@@ -413,6 +428,8 @@ def parse_args():
                         help='Gradient accumulation steps')
     parser.add_argument('--workers', type=int, default=0,
                         help='DataLoader num_workers (0 = main process, safe for WSL2)')
+    parser.add_argument('--patience', type=int, default=5,
+                        help='Early stopping patience (epochs without val CER improvement)')
     return parser.parse_args()
 
 
@@ -428,6 +445,7 @@ if __name__ == '__main__':
         batch_size=args.batch,
         gradient_accumulation_steps=args.grad_accum,
         num_workers=args.workers,
+        patience=args.patience,
     )
 
     metrics = trainer.train(

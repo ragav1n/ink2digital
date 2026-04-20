@@ -9,7 +9,7 @@ This script:
 4. Evaluates 5-shot professor adaptation
 
 Architecture:
-    Base:  Fine-tuned TrOCR (checkpoints/trocr_german/best) — Phase 2
+    Base:  Fine-tuned TrOCR (checkpoint/trocr_german/best) — Phase 2
     Meta:  MAML outer-loop with writer-level tasks
     Goal:  2-3% CER after 5-shot adaptation (vs. 5-8% fine-tuned, 15-20% baseline)
 
@@ -17,8 +17,8 @@ Usage:
     python training/train_meta_learning.py \
         --train-data data/processed/german_text/german_text_train.json \
         --val-data data/processed/german_text/german_text_val.json \
-        --base-model checkpoints/trocr_german/best \
-        --output-dir checkpoints/meta_learning \
+        --base-model checkpoint/trocr_german/best \
+        --output-dir checkpoint/maml_ocr \
         --epochs 50
 
     # With learn2learn (recommended):
@@ -44,8 +44,8 @@ from models.meta_learning_ocr import MAMLOCRWrapper, create_writer_tasks
 def train_meta_learning(
     train_manifest: Path,
     val_manifest: Path,
-    base_model_path: str = 'checkpoints/trocr_german/best',
-    output_dir: Path = Path('checkpoints/meta_learning'),
+    base_model_path: str = 'checkpoint/trocr_german/best',
+    output_dir: Path = Path('checkpoint/maml_ocr'),
     num_epochs: int = 50,
     tasks_per_epoch: int = 100,
     batch_tasks: int = 8,
@@ -280,10 +280,10 @@ def parse_args():
     parser.add_argument('--test-data', type=Path,
                         default=Path('data/processed/german_text/german_text_test.json'))
     parser.add_argument('--base-model', type=str,
-                        default='checkpoints/trocr_german/best',
+                        default='checkpoint/trocr_german/best',
                         help='Fine-tuned TrOCR checkpoint from Phase 2')
     parser.add_argument('--output-dir', type=Path,
-                        default=Path('checkpoints/meta_learning'))
+                        default=Path('checkpoint/maml_ocr'))
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--tasks-per-epoch', type=int, default=100)
     parser.add_argument('--batch-tasks', type=int, default=8)

@@ -178,6 +178,7 @@ class YOLOv8Detector:
         import torch
 
         self.device = device if torch.cuda.is_available() else 'cpu'
+        self.model_path = weights
         logger.info(f"Loading YOLOv8 from {weights} on {self.device}...")
         self.model = YOLO(weights)
         self.conf_threshold = conf_threshold
