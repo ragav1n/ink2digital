@@ -1,8 +1,8 @@
 {
   "n_shot": 5,
   "n_writers": 10,
-  "CER_before": 0.005312260106448766,
-  "CER_after": 0.006030950522747158,
-  "CER_improvement": -0.0007186904162983926,
-  "CER_improvement_pct": -13.52890110606492
+  "CER_before": 0.004962642266708018,
+  "CER_after": 0.0053950955548020775,
+  "CER_improvement": -0.0004324532880940592,
+  "CER_improvement_pct": -8.714174120411226
 }

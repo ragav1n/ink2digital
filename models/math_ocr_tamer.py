@@ -101,7 +101,6 @@ class TAMERMathOCR:
 
         sys.path.insert(0, str(tamer_root.resolve()))
 
-        # Find checkpoint file
         ckpts = sorted(checkpoint_dir.glob('checkpoints/*.ckpt'))
         if not ckpts:
             raise FileNotFoundError(f"No .ckpt files in {checkpoint_dir}/checkpoints/")
@@ -112,16 +111,51 @@ class TAMERMathOCR:
         from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
         torch.serialization.add_safe_globals([ModelCheckpoint])
         from tamer.model.tamer import TAMER as TAMERModel
+        from tamer.datamodule.vocab import CROHMEVocab
 
-        model = TAMERModel.load_from_checkpoint(
-            ckpt_path,
-            map_location=self.device,
-            strict=False,
-        )
+        # Checkpoint was saved from a wrapper (self.tamer_model = TAMER(...))
+        # so all keys have a 'tamer_model.' prefix — strip it before loading.
+        ckpt = torch.load(ckpt_path, map_location='cpu', weights_only=False)
+        hparams = ckpt.get('hyper_parameters', {})
+        state_dict = {
+            k[len('tamer_model.'):]: v
+            for k, v in ckpt['state_dict'].items()
+            if k.startswith('tamer_model.')
+        }
+
+        init_keys = {'d_model', 'growth_rate', 'num_layers', 'nhead',
+                     'num_decoder_layers', 'dim_feedforward', 'dropout',
+                     'dc', 'cross_coverage', 'self_coverage', 'vocab_size'}
+        model = TAMERModel(**{k: v for k, v in hparams.items() if k in init_keys})
+        missing, unexpected = model.load_state_dict(state_dict, strict=False)
+        if missing:
+            logger.warning(f"TAMER: {len(missing)} missing keys")
+        if unexpected:
+            logger.warning(f"TAMER: {len(unexpected)} unexpected keys")
+        logger.info("TAMER weights loaded successfully")
+
+        model.to(self.device)
         model.eval()
 
-        if torch.cuda.is_available() and self.device == 'cuda':
-            model = model.cuda()
+        # Store inference params from hparams for use in beam_search
+        self._tamer_beam_size = hparams.get('beam_size', self.beam_size)
+        self._tamer_max_len = hparams.get('max_len', 200)
+        self._tamer_alpha = hparams.get('alpha', 1.0)
+        self._tamer_early_stopping = hparams.get('early_stopping', False)
+        self._tamer_temperature = hparams.get('temperature', 1.0)
+
+        # Initialize vocabulary — version_1 dict has 245 words + 3 special = 248 = vocab_size
+        dict_path = tamer_root / 'lightning_logs' / 'version_1' / 'dictionary.txt'
+        if not dict_path.exists():
+            raise FileNotFoundError(f"TAMER dictionary not found: {dict_path}")
+        self._vocab = CROHMEVocab()
+        self._vocab.init(str(dict_path))
+        # Also initialize the module-level singleton used internally by generation_utils.
+        # Must access via sys.modules because tamer.datamodule.__init__ shadows the name.
+        import importlib
+        _vocab_mod = importlib.import_module('tamer.datamodule.vocab')
+        _vocab_mod.vocab.init(str(dict_path))
+        logger.info(f"TAMER vocab loaded: {len(self._vocab)} tokens")
 
         return model
 
@@ -160,52 +194,60 @@ class TAMERMathOCR:
         """Run TAMER inference on an image."""
         import torch
         from torchvision import transforms
-
-        # TAMER expects grayscale input with specific normalization
         from PIL import Image as PILImage
-        pil_img = PILImage.fromarray(image).convert('L')  # Grayscale
+
+        # TAMER expects grayscale [b, 1, h, w] with specific normalization
+        pil_img = PILImage.fromarray(image).convert('L')
 
         transform = transforms.Compose([
-            transforms.Resize((128, 512)),  # TAMER default size
+            transforms.Resize((128, 512)),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.7931], std=[0.1738]),
         ])
 
-        tensor = transform(pil_img).unsqueeze(0)
-        if torch.cuda.is_available() and self.device == 'cuda':
-            tensor = tensor.cuda()
+        tensor = transform(pil_img).unsqueeze(0)  # [1, 1, 128, 512]
+        device = next(self.model.parameters()).device
+        tensor = tensor.to(device)
+
+        # img_mask: False = valid pixel, all False means no masking
+        img_mask = torch.zeros(
+            tensor.shape[0], tensor.shape[2], tensor.shape[3],
+            dtype=torch.bool, device=device,
+        )
 
         with torch.no_grad():
             try:
-                # TAMER inference
-                output = self.model.model.generate(
-                    tensor,
-                    use_beam_search=self.use_beam_search,
-                    beam_size=self.beam_size,
+                hypotheses = self.model.beam_search(
+                    img=tensor,
+                    img_mask=img_mask,
+                    beam_size=self._tamer_beam_size,
+                    max_len=self._tamer_max_len,
+                    alpha=self._tamer_alpha,
+                    early_stopping=self._tamer_early_stopping,
+                    temperature=self._tamer_temperature,
                 )
-                # Decode output tokens to LaTeX
-                latex = self._decode_tokens(output)
-                return latex
+                if not hypotheses:
+                    return ''
+                best = hypotheses[0]
+                return self._decode_hypothesis(best.seq)
             except Exception as e:
                 logger.debug(f"TAMER inference error: {e}")
                 return ''
 
-    def _decode_tokens(self, tokens) -> str:
-        """Decode TAMER output tokens to LaTeX string."""
-        try:
-            # Get vocabulary from model
-            vocab = self.model.vocab
-            eos_token = vocab.get('<EOS>', -1)
-            decoded = []
-            for tok in tokens[0]:
-                t = int(tok)
-                if t == eos_token:
-                    break
-                if t in vocab.idx2token:
-                    decoded.append(vocab.idx2token[t])
-            return ' '.join(decoded)
-        except Exception:
-            return str(tokens)
+    def _decode_hypothesis(self, seq: list) -> str:
+        """Decode a list of token indices to a LaTeX string."""
+        EOS = self._vocab.EOS_IDX
+        SOS = self._vocab.SOS_IDX
+        PAD = self._vocab.PAD_IDX
+        words = []
+        for idx in seq:
+            if idx in (EOS, SOS, PAD):
+                break
+            try:
+                words.append(self._vocab.idx2word[idx])
+            except KeyError:
+                pass
+        return ' '.join(words)
 
     def recognize_batch(self, images: List[np.ndarray]) -> List[str]:
         """Recognize math in a batch of images."""

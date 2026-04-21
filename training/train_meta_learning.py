@@ -55,6 +55,7 @@ def train_meta_learning(
     outer_lr: float = 0.001,
     inner_steps: int = 5,
     device: str = 'cuda',
+    resume_checkpoint: Path = None,
 ) -> dict:
     """
     Run MAML meta-training for professor-specific OCR adaptation.
@@ -136,6 +137,7 @@ def train_meta_learning(
         tasks_per_epoch=tasks_per_epoch,
         batch_tasks=batch_tasks,
         output_dir=output_dir,
+        resume_checkpoint=resume_checkpoint,
     )
     elapsed = time.time() - t0
 
@@ -295,6 +297,8 @@ def parse_args():
     parser.add_argument('--device', type=str, default='cuda')
     parser.add_argument('--eval-only', action='store_true',
                         help='Skip training, only evaluate adaptation')
+    parser.add_argument('--resume', type=Path, default=None,
+                        help='Path to checkpoint to resume from (e.g. checkpoint/maml_ocr/meta_checkpoint_best.pt)')
     parser.add_argument('--n-shot', type=int, default=5,
                         help='Shots for adaptation evaluation')
     return parser.parse_args()
@@ -318,6 +322,7 @@ if __name__ == '__main__':
             outer_lr=args.outer_lr,
             inner_steps=args.inner_steps,
             device=args.device,
+            resume_checkpoint=args.resume,
         )
 
     # Evaluate few-shot adaptation

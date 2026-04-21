@@ -192,6 +192,7 @@ class MAMLOCRWrapper:
         tasks_per_epoch: int = 100,
         batch_tasks: int = 8,
         output_dir: Path = Path('checkpoint/maml_ocr'),
+        resume_checkpoint: Optional[Path] = None,
     ) -> dict:
         """
         Run MAML meta-training.
@@ -203,17 +204,29 @@ class MAMLOCRWrapper:
             tasks_per_epoch: Tasks sampled per epoch.
             batch_tasks: Tasks per meta-gradient update.
             output_dir: Where to save checkpoints.
+            resume_checkpoint: Path to checkpoint to resume from.
         """
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
         best_meta_cer = float('inf')
+        start_epoch = 0
         training_log = []
+
+        if resume_checkpoint and Path(resume_checkpoint).exists():
+            ckpt = torch.load(str(resume_checkpoint), map_location='cpu', weights_only=False)
+            self.meta_model.load_state_dict(ckpt['meta_model_state'])
+            start_epoch = ckpt['epoch'] + 1
+            best_meta_cer = ckpt.get('val_cer', float('inf'))
+            saved_epoch = ckpt['epoch']
+            del ckpt
+            torch.cuda.empty_cache()
+            logger.info(f"Resumed from epoch {saved_epoch+1}, best val CER={best_meta_cer:.4f}")
 
         logger.info(f"Starting Reptile meta-training: {num_epochs} epochs, "
                     f"{len(train_tasks)} training tasks")
 
-        for epoch in range(num_epochs):
+        for epoch in range(start_epoch, num_epochs):
             epoch_loss = 0.0
             n_tasks = 0
 
