@@ -66,3 +66,15 @@ wandb/
 
 # Professor slides (private/large)
 data/Dr_Judith_Jakob_Slides/
+
+# --- Public-release hardening (ink2digital) ---
+# Private professor slide data — never publish
+data/
+# outputs: publish eval-result JSONs only; drop rendered private slides
+outputs/*
+!outputs/*.json
+outputs/*/
+# Internal docs & assistant context — not for the public repo
+reports/
+CLAUDE.md
+.claude/
