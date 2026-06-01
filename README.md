@@ -169,5 +169,8 @@ in-domain data. Priorities:
 
 ## Acknowledgements
 
+Our sincere thanks to **Prof. Dr. Judith Jakob** (Informatik, Fachhochschule Dortmund) for her
+guidance and support throughout this project.
+
 Built on the **IAM Handwriting Database**, **DocLayNet**, the **CROHME** math benchmark, **TAMER**,
 Microsoft **TrOCR**, and Ultralytics **YOLOv8**. Models were trained on NVIDIA V100 / RTX 4060 Ti GPUs.
