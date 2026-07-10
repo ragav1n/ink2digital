@@ -1,0 +1,3037 @@
+{
+  "base_trocr_iam": {
+    "mean_cer": 0.33264572625944966,
+    "predictions": [
+      {
+        "image": "jakob_text_v2/images/text_001.jpg",
+        "ref": "MI-Übung heute 16 Uhr fällt aus",
+        "hyp": "11 , - album , here 16 , Mr. Follt was",
+        "cer": 0.6774193548387096
+      },
+      {
+        "image": "jakob_text_v2/images/text_002.jpg",
+        "ref": "INF-Übungen am Fr. fallen aus",
+        "hyp": "INF-ibungen am Fr. fallen was .",
+        "cer": 0.1724137931034483
+      },
+      {
+        "image": "jakob_text_v2/images/text_003.jpg",
+        "ref": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "hyp": "Minaries : Graquette , against the war on Definitionslichen , Unsteitgleitschen and for",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_004.jpg",
+        "ref": "aber was passiert bei",
+        "hyp": "aber was passed bei .",
+        "cer": 0.23809523809523808
+      },
+      {
+        "image": "jakob_text_v2/images/text_005.jpg",
+        "ref": "Graph von g:",
+        "hyp": "Graph van gi .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_006.jpg",
+        "ref": "Heaviside-Funktion",
+        "hyp": "Heaviside-Funhibition .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_007.jpg",
+        "ref": "Auf den Def.-bereichen stetig.",
+        "hyp": "Auf den Def. berechen stating .",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_008.jpg",
+        "ref": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "hyp": "Derselbe went down ( mehrfach vorkammen ( Welfachheit ) .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_009.jpg",
+        "ref": "Die Vielfachheit der NST",
+        "hyp": "Die Vielfachheit der NST .",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_010.jpg",
+        "ref": "lässt sich nicht „herauskürzen“ wie im Bsp. auf Folie",
+        "hyp": "loisst side with \" herarshirren \" wife in 8sp. and Foke",
+        "cer": 0.41509433962264153
+      },
+      {
+        "image": "jakob_text_v2/images/text_011.jpg",
+        "ref": "stetig fortsetzbar mit",
+        "hyp": "stetig fortsetzbar unit .",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_012.jpg",
+        "ref": "Polstelle",
+        "hyp": "Polstelle .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_013.jpg",
+        "ref": "(Polstellen checken u. GW bestimmen)",
+        "hyp": "( Padsteller chondre . ) .",
+        "cer": 0.6111111111111112
+      },
+      {
+        "image": "jakob_text_v2/images/text_014.jpg",
+        "ref": "Rest der Polynomdivision",
+        "hyp": "Rest for Polynomiliation .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_015.jpg",
+        "ref": "Asymptote",
+        "hyp": "Asymptate .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_016.jpg",
+        "ref": "Ziel: mₜ, die Steigung",
+        "hyp": "girl : Mr. Die Skigung .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_017.jpg",
+        "ref": "der Tangente, bestimmen",
+        "hyp": "der Tangente , bestimmen .",
+        "cer": 0.13043478260869565
+      },
+      {
+        "image": "jakob_text_v2/images/text_018.jpg",
+        "ref": "Mit Q Richtung P wandern",
+        "hyp": "Hit a Richtung P wanten .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_019.jpg",
+        "ref": "nicht stetig, daher nicht diff'bar.",
+        "hyp": "night stating , dcher nichr differ \" bar-",
+        "cer": 0.34285714285714286
+      },
+      {
+        "image": "jakob_text_v2/images/text_020.jpg",
+        "ref": "Formel gilt auch für n ∈ IR",
+        "hyp": "Formnel gilt and fmr. R.",
+        "cer": 0.4074074074074074
+      },
+      {
+        "image": "jakob_text_v2/images/text_021.jpg",
+        "ref": "Tangente",
+        "hyp": "Tangente .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_022.jpg",
+        "ref": "Damit gilt:",
+        "hyp": "Damit gilt : .",
+        "cer": 0.2727272727272727
+      },
+      {
+        "image": "jakob_text_v2/images/text_023.jpg",
+        "ref": "Die geometrische Reihe",
+        "hyp": "Die geometrische Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_024.jpg",
+        "ref": "ist eine Potenzreihe.",
+        "hyp": "ist nine Potanzhe .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_025.jpg",
+        "ref": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "hyp": "Jede Polynomfaultion ist eine ( abbrecheade ) Potenzreihe .",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_026.jpg",
+        "ref": "Taylorreihen sind",
+        "hyp": "Taylorreiden sind .",
+        "cer": 0.17647058823529413
+      },
+      {
+        "image": "jakob_text_v2/images/text_027.jpg",
+        "ref": "Potenzreihen mit",
+        "hyp": "Potenziethan unit .",
+        "cer": 0.4375
+      },
+      {
+        "image": "jakob_text_v2/images/text_028.jpg",
+        "ref": "Konvergiert für",
+        "hyp": "Konvergiat Air .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_029.jpg",
+        "ref": "müsste getrennt betrachtet werden.",
+        "hyp": "unissue getreant betrachtist worden .",
+        "cer": 0.2647058823529412
+      },
+      {
+        "image": "jakob_text_v2/images/text_030.jpg",
+        "ref": "Potenzreihe",
+        "hyp": "Potenzrahe .",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_031.jpg",
+        "ref": "konvergiert auf",
+        "hyp": "Leouvargiert conf.",
+        "cer": 0.5333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_032.jpg",
+        "ref": "ganz",
+        "hyp": "gauz .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_033.jpg",
+        "ref": "ist beliebig oft",
+        "hyp": "ist believing off .",
+        "cer": 0.3125
+      },
+      {
+        "image": "jakob_text_v2/images/text_034.jpg",
+        "ref": "diff'bar mit",
+        "hyp": "diff-bar unit .",
+        "cer": 0.4166666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_035.jpg",
+        "ref": "Kreis mit",
+        "hyp": "Kreis unit .",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_036.jpg",
+        "ref": "Radius",
+        "hyp": "Radius .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_037.jpg",
+        "ref": "Kreis allg.:",
+        "hyp": "Kreis allg.i .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_038.jpg",
+        "ref": "Def.bereich:",
+        "hyp": "Def.bereidi .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_039.jpg",
+        "ref": "Koordinatenachsen:",
+        "hyp": "Koordinatea chsen :",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_040.jpg",
+        "ref": "Schnittpunkte",
+        "hyp": "schnitt punkte .",
+        "cer": 0.3076923076923077
+      },
+      {
+        "image": "jakob_text_v2/images/text_041.jpg",
+        "ref": "Ebene:",
+        "hyp": "Ebene :",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_042.jpg",
+        "ref": "Implizite Form:",
+        "hyp": "implizite Forum :",
+        "cer": 0.2
+      },
+      {
+        "image": "jakob_text_v2/images/text_043.jpg",
+        "ref": "Explizite Form:",
+        "hyp": "Explizite Form :",
+        "cer": 0.06666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_044.jpg",
+        "ref": "Parallel",
+        "hyp": "Parallel .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_045.jpg",
+        "ref": "Normalparabeln",
+        "hyp": "Norma' parabeln .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_046.jpg",
+        "ref": "nach oben verschobene",
+        "hyp": "nach oben verschobene .",
+        "cer": 0.09523809523809523
+      },
+      {
+        "image": "jakob_text_v2/images/text_047.jpg",
+        "ref": "verschobene",
+        "hyp": "verschobene .",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_048.jpg",
+        "ref": "Reihenschaltung von Widerständen:",
+        "hyp": "Richenschaltung von Widerstein .",
+        "cer": 0.24242424242424243
+      },
+      {
+        "image": "jakob_text_v2/images/text_049.jpg",
+        "ref": "Gradient: Vektor",
+        "hyp": "Gradiment :",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_050.jpg",
+        "ref": "Hesse-Matrix:",
+        "hyp": "Hesse-Matrix :",
+        "cer": 0.07692307692307693
+      },
+      {
+        "image": "jakob_text_v2/images/text_051.jpg",
+        "ref": "Tangentialebene von",
+        "hyp": "Tangentialebene von",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_052.jpg",
+        "ref": "der Determinanten",
+        "hyp": "der Determinanten .",
+        "cer": 0.11764705882352941
+      },
+      {
+        "image": "jakob_text_v2/images/text_053.jpg",
+        "ref": "Definitheit kann",
+        "hyp": "Definitheit kann .",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_054.jpg",
+        "ref": "über Vorzeichen",
+        "hyp": "riba Vorzeichem .",
+        "cer": 0.4666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_055.jpg",
+        "ref": "bestimmt werden;",
+        "hyp": "bestimmt wardeni .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_056.jpg",
+        "ref": "Minimumstelle",
+        "hyp": "Minimumstelle .",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_057.jpg",
+        "ref": "Was aber, wenn",
+        "hyp": "Was aber , went .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_058.jpg",
+        "ref": "Nebenbed. nicht so",
+        "hyp": "Nebenbed . mid 1 so",
+        "cer": 0.2777777777777778
+      },
+      {
+        "image": "jakob_text_v2/images/text_059.jpg",
+        "ref": "einfach umgestellt",
+        "hyp": "einfach unngestell .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_060.jpg",
+        "ref": "und in die",
+        "hyp": "and in die .",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_061.jpg",
+        "ref": "Funktion",
+        "hyp": "Funhibition .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_062.jpg",
+        "ref": "eingesetzt werden kann?",
+        "hyp": "eingesett werden kann ? .",
+        "cer": 0.17391304347826086
+      },
+      {
+        "image": "jakob_text_v2/images/text_063.jpg",
+        "ref": "entspricht",
+        "hyp": "entsparet .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_064.jpg",
+        "ref": "kleiner",
+        "hyp": "kleiner .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_065.jpg",
+        "ref": "Zylinder",
+        "hyp": "zylinder .",
+        "cer": 0.375
+      },
+      {
+        "image": "jakob_text_v2/images/text_066.jpg",
+        "ref": "entspricht",
+        "hyp": "entsprint .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_067.jpg",
+        "ref": "Äußeres Integral",
+        "hyp": "Aufbores Integral .",
+        "cer": 0.375
+      },
+      {
+        "image": "jakob_text_v2/images/text_068.jpg",
+        "ref": "Induktion zeigen, dass",
+        "hyp": "Induction zorgen , das-",
+        "cer": 0.22727272727272727
+      },
+      {
+        "image": "jakob_text_v2/images/text_069.jpg",
+        "ref": "konvergiert",
+        "hyp": "Kanvergint .",
+        "cer": 0.5454545454545454
+      },
+      {
+        "image": "jakob_text_v2/images/text_070.jpg",
+        "ref": "ebenfalls divergent",
+        "hyp": "ebenfalls divergent .",
+        "cer": 0.10526315789473684
+      },
+      {
+        "image": "jakob_text_v2/images/text_071.jpg",
+        "ref": "(harmonische Reihe)",
+        "hyp": "( Harmonische Reihe ) .",
+        "cer": 0.2631578947368421
+      },
+      {
+        "image": "jakob_text_v2/images/text_072.jpg",
+        "ref": "evtl. konvergent",
+        "hyp": "extl. harivergent .",
+        "cer": 0.4375
+      },
+      {
+        "image": "jakob_text_v2/images/text_073.jpg",
+        "ref": "divergiert",
+        "hyp": "divergiat .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_074.jpg",
+        "ref": "Welche Reihe",
+        "hyp": "We 'che Reihe .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_075.jpg",
+        "ref": "konvergiert gegen",
+        "hyp": "how-gint , gegen .",
+        "cer": 0.6470588235294118
+      },
+      {
+        "image": "jakob_text_v2/images/text_076.jpg",
+        "ref": "vor allem keine",
+        "hyp": "vorallem Keine .",
+        "cer": 0.26666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_077.jpg",
+        "ref": "Nullfolge",
+        "hyp": "Nall false .",
+        "cer": 0.6666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_078.jpg",
+        "ref": "aber kein hinreichendes",
+        "hyp": "aber kein hinreichentes .",
+        "cer": 0.13043478260869565
+      },
+      {
+        "image": "jakob_text_v2/images/text_079.jpg",
+        "ref": "der Teilsummen",
+        "hyp": "der Teitsummen .",
+        "cer": 0.21428571428571427
+      },
+      {
+        "image": "jakob_text_v2/images/text_080.jpg",
+        "ref": "signum = Vorzeichen",
+        "hyp": "Service .",
+        "cer": 0.8421052631578947
+      },
+      {
+        "image": "jakob_text_v2/images/text_081.jpg",
+        "ref": "Zähergrad",
+        "hyp": "toihergrad .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_082.jpg",
+        "ref": "Nennergrad",
+        "hyp": "Neur ergrad .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_083.jpg",
+        "ref": "falls",
+        "hyp": "falls .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_084.jpg",
+        "ref": "konvergiert nicht.",
+        "hyp": "Konvergiet night .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_085.jpg",
+        "ref": "Warum",
+        "hyp": "warum .",
+        "cer": 0.6
+      },
+      {
+        "image": "jakob_text_v2/images/text_086.jpg",
+        "ref": "eindeutig",
+        "hyp": "eindatig .",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_087.jpg",
+        "ref": "bestimmten",
+        "hyp": "bestimm-en .",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_088.jpg",
+        "ref": "gegebenes",
+        "hyp": "gegebenes .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_089.jpg",
+        "ref": "durchlaufen.",
+        "hyp": "church I confen .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_090.jpg",
+        "ref": "immer wieder",
+        "hyp": "immer wider .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_091.jpg",
+        "ref": "nach oben",
+        "hyp": "much open .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_092.jpg",
+        "ref": "beschränkt:",
+        "hyp": "bestraint :",
+        "cer": 0.5454545454545454
+      },
+      {
+        "image": "jakob_text_v2/images/text_093.jpg",
+        "ref": "nach unten beschränkt:",
+        "hyp": "much enter beschricht :",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_094.jpg",
+        "ref": "str. monoton",
+        "hyp": "str. manators .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_095.jpg",
+        "ref": "wachsend",
+        "hyp": "wadsend .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_096.jpg",
+        "ref": "Startwert",
+        "hyp": "Stantment .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_097.jpg",
+        "ref": "Zweierpotenzen",
+        "hyp": "zweier potenzen .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_098.jpg",
+        "ref": "Einsetzen von",
+        "hyp": "Einsetter von .",
+        "cer": 0.3076923076923077
+      },
+      {
+        "image": "jakob_text_v2/images/text_099.jpg",
+        "ref": "Auflösen nach",
+        "hyp": "Auflosen nach .",
+        "cer": 0.23076923076923078
+      },
+      {
+        "image": "jakob_text_v2/images/text_100.jpg",
+        "ref": "Inverse Laplace-Transformation",
+        "hyp": "Inverse Laplace-Transformation .",
+        "cer": 0.06666666666666667
+      }
+    ]
+  },
+  "reptile_meta": {
+    "mean_cer": 0.3319296366057332,
+    "predictions": [
+      {
+        "image": "jakob_text_v2/images/text_001.jpg",
+        "ref": "MI-Übung heute 16 Uhr fällt aus",
+        "hyp": "11 , - album , here 16 , Mr. Follt was",
+        "cer": 0.6774193548387096
+      },
+      {
+        "image": "jakob_text_v2/images/text_002.jpg",
+        "ref": "INF-Übungen am Fr. fallen aus",
+        "hyp": "INF-ibungen run Fr. fallen was .",
+        "cer": 0.27586206896551724
+      },
+      {
+        "image": "jakob_text_v2/images/text_003.jpg",
+        "ref": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "hyp": "Minaries : Graquette , against the war on Definitionslichen , Unsteitgleitschen and for",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_004.jpg",
+        "ref": "aber was passiert bei",
+        "hyp": "aber was passed be",
+        "cer": 0.19047619047619047
+      },
+      {
+        "image": "jakob_text_v2/images/text_005.jpg",
+        "ref": "Graph von g:",
+        "hyp": "Graph van gi .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_006.jpg",
+        "ref": "Heaviside-Funktion",
+        "hyp": "Heaviside-Funhibition .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_007.jpg",
+        "ref": "Auf den Def.-bereichen stetig.",
+        "hyp": "Auf den Def. berechen stating .",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_008.jpg",
+        "ref": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "hyp": "Derselbe went down ( mehrfach vorkommen ( Welfachheit ) .",
+        "cer": 0.23076923076923078
+      },
+      {
+        "image": "jakob_text_v2/images/text_009.jpg",
+        "ref": "Die Vielfachheit der NST",
+        "hyp": "Die Vielfachheit der NST .",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_010.jpg",
+        "ref": "lässt sich nicht „herauskürzen“ wie im Bsp. auf Folie",
+        "hyp": "loisst side with \" herarshirren \" wife in 8sp. and Foke",
+        "cer": 0.41509433962264153
+      },
+      {
+        "image": "jakob_text_v2/images/text_011.jpg",
+        "ref": "stetig fortsetzbar mit",
+        "hyp": "stetig fortsetzbar unit .",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_012.jpg",
+        "ref": "Polstelle",
+        "hyp": "Polstelle .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_013.jpg",
+        "ref": "(Polstellen checken u. GW bestimmen)",
+        "hyp": "( Padsteller chondre . ) .",
+        "cer": 0.6111111111111112
+      },
+      {
+        "image": "jakob_text_v2/images/text_014.jpg",
+        "ref": "Rest der Polynomdivision",
+        "hyp": "Rest for Polynomiliation .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_015.jpg",
+        "ref": "Asymptote",
+        "hyp": "Asymptate .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_016.jpg",
+        "ref": "Ziel: mₜ, die Steigung",
+        "hyp": "zid : Mr. Die Skigung .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_017.jpg",
+        "ref": "der Tangente, bestimmen",
+        "hyp": "der Tangente , bestimmen .",
+        "cer": 0.13043478260869565
+      },
+      {
+        "image": "jakob_text_v2/images/text_018.jpg",
+        "ref": "Mit Q Richtung P wandern",
+        "hyp": "Hit a Richtung P wanten .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_019.jpg",
+        "ref": "nicht stetig, daher nicht diff'bar.",
+        "hyp": "night stating , dcher nichr differ \" bar-",
+        "cer": 0.34285714285714286
+      },
+      {
+        "image": "jakob_text_v2/images/text_020.jpg",
+        "ref": "Formel gilt auch für n ∈ IR",
+        "hyp": "Formnel gilt and fair NEIR .",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_021.jpg",
+        "ref": "Tangente",
+        "hyp": "Tangente .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_022.jpg",
+        "ref": "Damit gilt:",
+        "hyp": "Damit gilt : .",
+        "cer": 0.2727272727272727
+      },
+      {
+        "image": "jakob_text_v2/images/text_023.jpg",
+        "ref": "Die geometrische Reihe",
+        "hyp": "Die geometrische Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_024.jpg",
+        "ref": "ist eine Potenzreihe.",
+        "hyp": "ist nine Potanzhe .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_025.jpg",
+        "ref": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "hyp": "Jede Polynomfaultion ist eine ( abbrecheade ) Potenzreihe .",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_026.jpg",
+        "ref": "Taylorreihen sind",
+        "hyp": "Taylorreiden sind .",
+        "cer": 0.17647058823529413
+      },
+      {
+        "image": "jakob_text_v2/images/text_027.jpg",
+        "ref": "Potenzreihen mit",
+        "hyp": "Potenziethan unit .",
+        "cer": 0.4375
+      },
+      {
+        "image": "jakob_text_v2/images/text_028.jpg",
+        "ref": "Konvergiert für",
+        "hyp": "Konvergiat Air .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_029.jpg",
+        "ref": "müsste getrennt betrachtet werden.",
+        "hyp": "unissue getreant betrachtist worden .",
+        "cer": 0.2647058823529412
+      },
+      {
+        "image": "jakob_text_v2/images/text_030.jpg",
+        "ref": "Potenzreihe",
+        "hyp": "Potenzrahe .",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_031.jpg",
+        "ref": "konvergiert auf",
+        "hyp": "Leouvargiert conf.",
+        "cer": 0.5333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_032.jpg",
+        "ref": "ganz",
+        "hyp": "gauz .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_033.jpg",
+        "ref": "ist beliebig oft",
+        "hyp": "ist believing off .",
+        "cer": 0.3125
+      },
+      {
+        "image": "jakob_text_v2/images/text_034.jpg",
+        "ref": "diff'bar mit",
+        "hyp": "diff-bar unit .",
+        "cer": 0.4166666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_035.jpg",
+        "ref": "Kreis mit",
+        "hyp": "Kreis unit .",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_036.jpg",
+        "ref": "Radius",
+        "hyp": "Radius .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_037.jpg",
+        "ref": "Kreis allg.:",
+        "hyp": "Kreis allg.i .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_038.jpg",
+        "ref": "Def.bereich:",
+        "hyp": "Def.bereidi .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_039.jpg",
+        "ref": "Koordinatenachsen:",
+        "hyp": "Koordinatea chsen :",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_040.jpg",
+        "ref": "Schnittpunkte",
+        "hyp": "schnitt punkte .",
+        "cer": 0.3076923076923077
+      },
+      {
+        "image": "jakob_text_v2/images/text_041.jpg",
+        "ref": "Ebene:",
+        "hyp": "Ebene :",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_042.jpg",
+        "ref": "Implizite Form:",
+        "hyp": "implizite Forum :",
+        "cer": 0.2
+      },
+      {
+        "image": "jakob_text_v2/images/text_043.jpg",
+        "ref": "Explizite Form:",
+        "hyp": "Explizite Form :",
+        "cer": 0.06666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_044.jpg",
+        "ref": "Parallel",
+        "hyp": "Parallel .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_045.jpg",
+        "ref": "Normalparabeln",
+        "hyp": "Norma' parabeln .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_046.jpg",
+        "ref": "nach oben verschobene",
+        "hyp": "nach oben verschobene .",
+        "cer": 0.09523809523809523
+      },
+      {
+        "image": "jakob_text_v2/images/text_047.jpg",
+        "ref": "verschobene",
+        "hyp": "verschobene .",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_048.jpg",
+        "ref": "Reihenschaltung von Widerständen:",
+        "hyp": "Richenschaltung von Widerstein .",
+        "cer": 0.24242424242424243
+      },
+      {
+        "image": "jakob_text_v2/images/text_049.jpg",
+        "ref": "Gradient: Vektor",
+        "hyp": "Gradient :",
+        "cer": 0.4375
+      },
+      {
+        "image": "jakob_text_v2/images/text_050.jpg",
+        "ref": "Hesse-Matrix:",
+        "hyp": "Hesse-Matrix :",
+        "cer": 0.07692307692307693
+      },
+      {
+        "image": "jakob_text_v2/images/text_051.jpg",
+        "ref": "Tangentialebene von",
+        "hyp": "Tangentialebene von",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_052.jpg",
+        "ref": "der Determinanten",
+        "hyp": "der Determinanten .",
+        "cer": 0.11764705882352941
+      },
+      {
+        "image": "jakob_text_v2/images/text_053.jpg",
+        "ref": "Definitheit kann",
+        "hyp": "Definitheit kann .",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_054.jpg",
+        "ref": "über Vorzeichen",
+        "hyp": "riba Vorzeichem .",
+        "cer": 0.4666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_055.jpg",
+        "ref": "bestimmt werden;",
+        "hyp": "bestimmt wardeni .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_056.jpg",
+        "ref": "Minimumstelle",
+        "hyp": "Minimumstelle .",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_057.jpg",
+        "ref": "Was aber, wenn",
+        "hyp": "Was aber , went .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_058.jpg",
+        "ref": "Nebenbed. nicht so",
+        "hyp": "Nebenbed . mid 1 so",
+        "cer": 0.2777777777777778
+      },
+      {
+        "image": "jakob_text_v2/images/text_059.jpg",
+        "ref": "einfach umgestellt",
+        "hyp": "einfach unngestell .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_060.jpg",
+        "ref": "und in die",
+        "hyp": "and in die .",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_061.jpg",
+        "ref": "Funktion",
+        "hyp": "Funhibition .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_062.jpg",
+        "ref": "eingesetzt werden kann?",
+        "hyp": "eingesett werden kann ? .",
+        "cer": 0.17391304347826086
+      },
+      {
+        "image": "jakob_text_v2/images/text_063.jpg",
+        "ref": "entspricht",
+        "hyp": "entsparet .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_064.jpg",
+        "ref": "kleiner",
+        "hyp": "Kleiner .",
+        "cer": 0.42857142857142855
+      },
+      {
+        "image": "jakob_text_v2/images/text_065.jpg",
+        "ref": "Zylinder",
+        "hyp": "zylinder .",
+        "cer": 0.375
+      },
+      {
+        "image": "jakob_text_v2/images/text_066.jpg",
+        "ref": "entspricht",
+        "hyp": "entsprint .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_067.jpg",
+        "ref": "Äußeres Integral",
+        "hyp": "Aufbores Integral .",
+        "cer": 0.375
+      },
+      {
+        "image": "jakob_text_v2/images/text_068.jpg",
+        "ref": "Induktion zeigen, dass",
+        "hyp": "Induction zergen , das-",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_069.jpg",
+        "ref": "konvergiert",
+        "hyp": "Kanvergint .",
+        "cer": 0.5454545454545454
+      },
+      {
+        "image": "jakob_text_v2/images/text_070.jpg",
+        "ref": "ebenfalls divergent",
+        "hyp": "ebenfalls divergent .",
+        "cer": 0.10526315789473684
+      },
+      {
+        "image": "jakob_text_v2/images/text_071.jpg",
+        "ref": "(harmonische Reihe)",
+        "hyp": "( Harmonische Reihe ) .",
+        "cer": 0.2631578947368421
+      },
+      {
+        "image": "jakob_text_v2/images/text_072.jpg",
+        "ref": "evtl. konvergent",
+        "hyp": "extl. harvergent .",
+        "cer": 0.375
+      },
+      {
+        "image": "jakob_text_v2/images/text_073.jpg",
+        "ref": "divergiert",
+        "hyp": "divergiat .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_074.jpg",
+        "ref": "Welche Reihe",
+        "hyp": "We 'che Reihe .",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_075.jpg",
+        "ref": "konvergiert gegen",
+        "hyp": "how-gint gegen .",
+        "cer": 0.5294117647058824
+      },
+      {
+        "image": "jakob_text_v2/images/text_076.jpg",
+        "ref": "vor allem keine",
+        "hyp": "vorallem Keine .",
+        "cer": 0.26666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_077.jpg",
+        "ref": "Nullfolge",
+        "hyp": "Nall false .",
+        "cer": 0.6666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_078.jpg",
+        "ref": "aber kein hinreichendes",
+        "hyp": "aber kein hinreichentes .",
+        "cer": 0.13043478260869565
+      },
+      {
+        "image": "jakob_text_v2/images/text_079.jpg",
+        "ref": "der Teilsummen",
+        "hyp": "der Teitsummen .",
+        "cer": 0.21428571428571427
+      },
+      {
+        "image": "jakob_text_v2/images/text_080.jpg",
+        "ref": "signum = Vorzeichen",
+        "hyp": "Service .",
+        "cer": 0.8421052631578947
+      },
+      {
+        "image": "jakob_text_v2/images/text_081.jpg",
+        "ref": "Zähergrad",
+        "hyp": "toihergrad .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_082.jpg",
+        "ref": "Nennergrad",
+        "hyp": "Neur ergrad .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_083.jpg",
+        "ref": "falls",
+        "hyp": "falls .",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_084.jpg",
+        "ref": "konvergiert nicht.",
+        "hyp": "Konvergiet night .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_085.jpg",
+        "ref": "Warum",
+        "hyp": "warum .",
+        "cer": 0.6
+      },
+      {
+        "image": "jakob_text_v2/images/text_086.jpg",
+        "ref": "eindeutig",
+        "hyp": "eindatig .",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_087.jpg",
+        "ref": "bestimmten",
+        "hyp": "bestimm-en .",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_088.jpg",
+        "ref": "gegebenes",
+        "hyp": "gegebenes .",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_089.jpg",
+        "ref": "durchlaufen.",
+        "hyp": "church I confen .",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_090.jpg",
+        "ref": "immer wieder",
+        "hyp": "immer wider .",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_091.jpg",
+        "ref": "nach oben",
+        "hyp": "much open .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_092.jpg",
+        "ref": "beschränkt:",
+        "hyp": "bestraint :",
+        "cer": 0.5454545454545454
+      },
+      {
+        "image": "jakob_text_v2/images/text_093.jpg",
+        "ref": "nach unten beschränkt:",
+        "hyp": "much enter beschricht :",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_094.jpg",
+        "ref": "str. monoton",
+        "hyp": "str. manators .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_095.jpg",
+        "ref": "wachsend",
+        "hyp": "wadsend .",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_096.jpg",
+        "ref": "Startwert",
+        "hyp": "Stantment .",
+        "cer": 0.5555555555555556
+      },
+      {
+        "image": "jakob_text_v2/images/text_097.jpg",
+        "ref": "Zweierpotenzen",
+        "hyp": "zweier potenzen .",
+        "cer": 0.2857142857142857
+      },
+      {
+        "image": "jakob_text_v2/images/text_098.jpg",
+        "ref": "Einsetzen von",
+        "hyp": "Einsetter von .",
+        "cer": 0.3076923076923077
+      },
+      {
+        "image": "jakob_text_v2/images/text_099.jpg",
+        "ref": "Auflösen nach",
+        "hyp": "Auflosen nach .",
+        "cer": 0.23076923076923078
+      },
+      {
+        "image": "jakob_text_v2/images/text_100.jpg",
+        "ref": "Inverse Laplace-Transformation",
+        "hyp": "Inverse Laplace-Transformation .",
+        "cer": 0.06666666666666667
+      }
+    ]
+  },
+  "jakob_finetune": {
+    "mean_cer": 0.14652723987970684,
+    "predictions": [
+      {
+        "image": "jakob_text_v2/images/text_001.jpg",
+        "ref": "MI-Übung heute 16 Uhr fällt aus",
+        "hyp": "m.-ibung heute 16 khr fäilt aus",
+        "cer": 0.16129032258064516
+      },
+      {
+        "image": "jakob_text_v2/images/text_002.jpg",
+        "ref": "INF-Übungen am Fr. fallen aus",
+        "hyp": "INF-ibungenann Fr. fallen aus",
+        "cer": 0.13793103448275862
+      },
+      {
+        "image": "jakob_text_v2/images/text_003.jpg",
+        "ref": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "hyp": "Minweis: Graquette , cigarette nure un Definitanslichen, Unsteitglestellen und der",
+        "cer": 0.42857142857142855
+      },
+      {
+        "image": "jakob_text_v2/images/text_004.jpg",
+        "ref": "aber was passiert bei",
+        "hyp": "aber was passed bei",
+        "cer": 0.14285714285714285
+      },
+      {
+        "image": "jakob_text_v2/images/text_005.jpg",
+        "ref": "Graph von g:",
+        "hyp": "Graph von g:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_006.jpg",
+        "ref": "Heaviside-Funktion",
+        "hyp": "Heaviside-Function",
+        "cer": 0.05555555555555555
+      },
+      {
+        "image": "jakob_text_v2/images/text_007.jpg",
+        "ref": "Auf den Def.-bereichen stetig.",
+        "hyp": "Auf den Def.berechen stetig.",
+        "cer": 0.06666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_008.jpg",
+        "ref": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "hyp": "Derselbe Wert darf mehrfach vorkommen ( Welfachheit )",
+        "cer": 0.057692307692307696
+      },
+      {
+        "image": "jakob_text_v2/images/text_009.jpg",
+        "ref": "Die Vielfachheit der NST",
+        "hyp": "Die Vielfachheit der NST",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_010.jpg",
+        "ref": "lässt sich nicht „herauskürzen“ wie im Bsp. auf Folie",
+        "hyp": "loisst sich wicht \" herwahirzen \" wie im Bsp auf Foke",
+        "cer": 0.2830188679245283
+      },
+      {
+        "image": "jakob_text_v2/images/text_011.jpg",
+        "ref": "stetig fortsetzbar mit",
+        "hyp": "stetig fortsetzbar mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_012.jpg",
+        "ref": "Polstelle",
+        "hyp": "Polstelle",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_013.jpg",
+        "ref": "(Polstellen checken u. GW bestimmen)",
+        "hyp": "( Padstellenchundner.",
+        "cer": 0.6666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_014.jpg",
+        "ref": "Rest der Polynomdivision",
+        "hyp": "Rest der Polynomolition",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_015.jpg",
+        "ref": "Asymptote",
+        "hyp": "Asymptote",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_016.jpg",
+        "ref": "Ziel: mₜ, die Steigung",
+        "hyp": "ziel : mt. dre Steigung",
+        "cer": 0.22727272727272727
+      },
+      {
+        "image": "jakob_text_v2/images/text_017.jpg",
+        "ref": "der Tangente, bestimmen",
+        "hyp": "der Tangente , bestimmen",
+        "cer": 0.043478260869565216
+      },
+      {
+        "image": "jakob_text_v2/images/text_018.jpg",
+        "ref": "Mit Q Richtung P wandern",
+        "hyp": "Mit al Richtung P wandaen",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_019.jpg",
+        "ref": "nicht stetig, daher nicht diff'bar.",
+        "hyp": "night stetig , dcher nichr difff.bar.",
+        "cer": 0.17142857142857143
+      },
+      {
+        "image": "jakob_text_v2/images/text_020.jpg",
+        "ref": "Formel gilt auch für n ∈ IR",
+        "hyp": "Formnel gilt auch fir n.E.R.",
+        "cer": 0.25925925925925924
+      },
+      {
+        "image": "jakob_text_v2/images/text_021.jpg",
+        "ref": "Tangente",
+        "hyp": "Tangente",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_022.jpg",
+        "ref": "Damit gilt:",
+        "hyp": "Damit gilt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_023.jpg",
+        "ref": "Die geometrische Reihe",
+        "hyp": "Die geometrische Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_024.jpg",
+        "ref": "ist eine Potenzreihe.",
+        "hyp": "ist eine Potzrehe.",
+        "cer": 0.14285714285714285
+      },
+      {
+        "image": "jakob_text_v2/images/text_025.jpg",
+        "ref": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "hyp": "Jeide Polynomfauution ist eine ( abbrecheade ) Potenzreine.",
+        "cer": 0.14285714285714285
+      },
+      {
+        "image": "jakob_text_v2/images/text_026.jpg",
+        "ref": "Taylorreihen sind",
+        "hyp": "Taylorreiden sind",
+        "cer": 0.058823529411764705
+      },
+      {
+        "image": "jakob_text_v2/images/text_027.jpg",
+        "ref": "Potenzreihen mit",
+        "hyp": "Potenzreihen mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_028.jpg",
+        "ref": "Konvergiert für",
+        "hyp": "Kenversiat fir",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_029.jpg",
+        "ref": "müsste getrennt betrachtet werden.",
+        "hyp": "missle getreint ketrechtt worden.",
+        "cer": 0.20588235294117646
+      },
+      {
+        "image": "jakob_text_v2/images/text_030.jpg",
+        "ref": "Potenzreihe",
+        "hyp": "Potenzrahe",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_031.jpg",
+        "ref": "konvergiert auf",
+        "hyp": "Leouvorgiet euf",
+        "cer": 0.4
+      },
+      {
+        "image": "jakob_text_v2/images/text_032.jpg",
+        "ref": "ganz",
+        "hyp": "gauz",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_033.jpg",
+        "ref": "ist beliebig oft",
+        "hyp": "ist beliebig off",
+        "cer": 0.0625
+      },
+      {
+        "image": "jakob_text_v2/images/text_034.jpg",
+        "ref": "diff'bar mit",
+        "hyp": "diffibar mit",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_035.jpg",
+        "ref": "Kreis mit",
+        "hyp": "Kreis unit",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_036.jpg",
+        "ref": "Radius",
+        "hyp": "Radius",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_037.jpg",
+        "ref": "Kreis allg.:",
+        "hyp": "Kreis allg.i",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_038.jpg",
+        "ref": "Def.bereich:",
+        "hyp": "Def.bereich:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_039.jpg",
+        "ref": "Koordinatenachsen:",
+        "hyp": "Koordinates a chsen:",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_040.jpg",
+        "ref": "Schnittpunkte",
+        "hyp": "Schmittpunkte",
+        "cer": 0.07692307692307693
+      },
+      {
+        "image": "jakob_text_v2/images/text_041.jpg",
+        "ref": "Ebene:",
+        "hyp": "Ebene:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_042.jpg",
+        "ref": "Implizite Form:",
+        "hyp": "implizite Form:",
+        "cer": 0.06666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_043.jpg",
+        "ref": "Explizite Form:",
+        "hyp": "Explizite Form:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_044.jpg",
+        "ref": "Parallel",
+        "hyp": "Parallel",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_045.jpg",
+        "ref": "Normalparabeln",
+        "hyp": "Norma'parabeln",
+        "cer": 0.07142857142857142
+      },
+      {
+        "image": "jakob_text_v2/images/text_046.jpg",
+        "ref": "nach oben verschobene",
+        "hyp": "Nach oben verschobene",
+        "cer": 0.047619047619047616
+      },
+      {
+        "image": "jakob_text_v2/images/text_047.jpg",
+        "ref": "verschobene",
+        "hyp": "verschobene",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_048.jpg",
+        "ref": "Reihenschaltung von Widerständen:",
+        "hyp": "Reichenschaltung von Widerstfinden:",
+        "cer": 0.09090909090909091
+      },
+      {
+        "image": "jakob_text_v2/images/text_049.jpg",
+        "ref": "Gradient: Vektor",
+        "hyp": "Gradivent:",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_050.jpg",
+        "ref": "Hesse-Matrix:",
+        "hyp": "Hesse-Matrixix:",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_051.jpg",
+        "ref": "Tangentialebene von",
+        "hyp": "Tangentialebene von",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_052.jpg",
+        "ref": "der Determinanten",
+        "hyp": "der Determinanten",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_053.jpg",
+        "ref": "Definitheit kann",
+        "hyp": "Definitheit kann",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_054.jpg",
+        "ref": "über Vorzeichen",
+        "hyp": "iba Vorzeichen",
+        "cer": 0.2
+      },
+      {
+        "image": "jakob_text_v2/images/text_055.jpg",
+        "ref": "bestimmt werden;",
+        "hyp": "bestimmt werden:",
+        "cer": 0.0625
+      },
+      {
+        "image": "jakob_text_v2/images/text_056.jpg",
+        "ref": "Minimumstelle",
+        "hyp": "Minimumstelle",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_057.jpg",
+        "ref": "Was aber, wenn",
+        "hyp": "Was aber, wenn",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_058.jpg",
+        "ref": "Nebenbed. nicht so",
+        "hyp": "Nebenbed. nicht so",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_059.jpg",
+        "ref": "einfach umgestellt",
+        "hyp": "einfach unngestellt",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_060.jpg",
+        "ref": "und in die",
+        "hyp": "and in die",
+        "cer": 0.1
+      },
+      {
+        "image": "jakob_text_v2/images/text_061.jpg",
+        "ref": "Funktion",
+        "hyp": "Function",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_062.jpg",
+        "ref": "eingesetzt werden kann?",
+        "hyp": "eingesetzt werden kannz",
+        "cer": 0.043478260869565216
+      },
+      {
+        "image": "jakob_text_v2/images/text_063.jpg",
+        "ref": "entspricht",
+        "hyp": "eutspuelt",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_064.jpg",
+        "ref": "kleiner",
+        "hyp": "Kleiner",
+        "cer": 0.14285714285714285
+      },
+      {
+        "image": "jakob_text_v2/images/text_065.jpg",
+        "ref": "Zylinder",
+        "hyp": "zylinder",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_066.jpg",
+        "ref": "entspricht",
+        "hyp": "eutschicht",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_067.jpg",
+        "ref": "Äußeres Integral",
+        "hyp": "Aufbores Integral",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_068.jpg",
+        "ref": "Induktion zeigen, dass",
+        "hyp": "Induction zorgen, das",
+        "cer": 0.18181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_069.jpg",
+        "ref": "konvergiert",
+        "hyp": "Kanvergint",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_070.jpg",
+        "ref": "ebenfalls divergent",
+        "hyp": "ebenfalls divergent",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_071.jpg",
+        "ref": "(harmonische Reihe)",
+        "hyp": "(harmonische Reihe )",
+        "cer": 0.05263157894736842
+      },
+      {
+        "image": "jakob_text_v2/images/text_072.jpg",
+        "ref": "evtl. konvergent",
+        "hyp": "extl. harvergent",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_073.jpg",
+        "ref": "divergiert",
+        "hyp": "disergiat",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_074.jpg",
+        "ref": "Welche Reihe",
+        "hyp": "Weiche Reihe",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_075.jpg",
+        "ref": "konvergiert gegen",
+        "hyp": "howve gint gegen",
+        "cer": 0.29411764705882354
+      },
+      {
+        "image": "jakob_text_v2/images/text_076.jpg",
+        "ref": "vor allem keine",
+        "hyp": "vorallem keine",
+        "cer": 0.06666666666666667
+      },
+      {
+        "image": "jakob_text_v2/images/text_077.jpg",
+        "ref": "Nullfolge",
+        "hyp": "Null folge",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_078.jpg",
+        "ref": "aber kein hinreichendes",
+        "hyp": "aber kein hinreichentes",
+        "cer": 0.043478260869565216
+      },
+      {
+        "image": "jakob_text_v2/images/text_079.jpg",
+        "ref": "der Teilsummen",
+        "hyp": "der Teilsummen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_080.jpg",
+        "ref": "signum = Vorzeichen",
+        "hyp": "Sigrzke",
+        "cer": 0.7368421052631579
+      },
+      {
+        "image": "jakob_text_v2/images/text_081.jpg",
+        "ref": "Zähergrad",
+        "hyp": "Einergrad",
+        "cer": 0.3333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_082.jpg",
+        "ref": "Nennergrad",
+        "hyp": "Neur ergrad",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_083.jpg",
+        "ref": "falls",
+        "hyp": "falls",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_084.jpg",
+        "ref": "konvergiert nicht.",
+        "hyp": "Konvergiet nicht.",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_085.jpg",
+        "ref": "Warum",
+        "hyp": " Warum",
+        "cer": 0.2
+      },
+      {
+        "image": "jakob_text_v2/images/text_086.jpg",
+        "ref": "eindeutig",
+        "hyp": "eindatig",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_087.jpg",
+        "ref": "bestimmten",
+        "hyp": "bestimmt en",
+        "cer": 0.1
+      },
+      {
+        "image": "jakob_text_v2/images/text_088.jpg",
+        "ref": "gegebenes",
+        "hyp": "gegebenes",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_089.jpg",
+        "ref": "durchlaufen.",
+        "hyp": "church I confen.",
+        "cer": 0.6666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_090.jpg",
+        "ref": "immer wieder",
+        "hyp": "immer wieden",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_091.jpg",
+        "ref": "nach oben",
+        "hyp": "much oben",
+        "cer": 0.2222222222222222
+      },
+      {
+        "image": "jakob_text_v2/images/text_092.jpg",
+        "ref": "beschränkt:",
+        "hyp": " beschreinht:",
+        "cer": 0.36363636363636365
+      },
+      {
+        "image": "jakob_text_v2/images/text_093.jpg",
+        "ref": "nach unten beschränkt:",
+        "hyp": "much unter beschreicht:",
+        "cer": 0.3181818181818182
+      },
+      {
+        "image": "jakob_text_v2/images/text_094.jpg",
+        "ref": "str. monoton",
+        "hyp": "str. manston",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_095.jpg",
+        "ref": "wachsend",
+        "hyp": "wadsend",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_096.jpg",
+        "ref": "Startwert",
+        "hyp": "Startwent",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_097.jpg",
+        "ref": "Zweierpotenzen",
+        "hyp": "Zweierpotenzen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_098.jpg",
+        "ref": "Einsetzen von",
+        "hyp": "Einseter von",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_099.jpg",
+        "ref": "Auflösen nach",
+        "hyp": "Anglosen nach",
+        "cer": 0.23076923076923078
+      },
+      {
+        "image": "jakob_text_v2/images/text_100.jpg",
+        "ref": "Inverse Laplace-Transformation",
+        "hyp": "Inverse Laplace-Transformation",
+        "cer": 0.0
+      }
+    ]
+  },
+  "vlm_qwen3": {
+    "mean_cer": 0.057167195391060716,
+    "predictions": [
+      {
+        "image": "jakob_text_v2/images/text_001.jpg",
+        "ref": "MI-Übung heute 16 Uhr fällt aus",
+        "hyp": "M1-Übung heute 16 Uhr fällt aus",
+        "cer": 0.03225806451612903
+      },
+      {
+        "image": "jakob_text_v2/images/text_002.jpg",
+        "ref": "INF-Übungen am Fr. fallen aus",
+        "hyp": "INF-Übungen am Fr. fallen aus",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_003.jpg",
+        "ref": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "hyp": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_004.jpg",
+        "ref": "aber was passiert bei",
+        "hyp": "aber was passiert bei",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_005.jpg",
+        "ref": "Graph von g:",
+        "hyp": "Graph von g:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_006.jpg",
+        "ref": "Heaviside-Funktion",
+        "hyp": "Heaviside - Funktion",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_007.jpg",
+        "ref": "Auf den Def.-bereichen stetig.",
+        "hyp": "Auf den Def. berechnen stetig.",
+        "cer": 0.1
+      },
+      {
+        "image": "jakob_text_v2/images/text_008.jpg",
+        "ref": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "hyp": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_009.jpg",
+        "ref": "Die Vielfachheit der NST",
+        "hyp": "Die Vielfachheit der NST",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_010.jpg",
+        "ref": "lässt sich nicht „herauskürzen“ wie im Bsp. auf Folie",
+        "hyp": "lässt sich nicht \"herauskürzen\" wie im Bsp. auf Folie",
+        "cer": 0.03773584905660377
+      },
+      {
+        "image": "jakob_text_v2/images/text_011.jpg",
+        "ref": "stetig fortsetzbar mit",
+        "hyp": "stetig fortsetzbar mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_012.jpg",
+        "ref": "Polstelle",
+        "hyp": "Polstelle",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_013.jpg",
+        "ref": "(Polstellen checken u. GW bestimmen)",
+        "hyp": "(Polstellen chedden u. GW bestimmen)",
+        "cer": 0.05555555555555555
+      },
+      {
+        "image": "jakob_text_v2/images/text_014.jpg",
+        "ref": "Rest der Polynomdivision",
+        "hyp": "Rest der Polynomdivision",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_015.jpg",
+        "ref": "Asymptote",
+        "hyp": "Asymptote",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_016.jpg",
+        "ref": "Ziel: mₜ, die Steigung",
+        "hyp": "Ziel: mt, die Skigung",
+        "cer": 0.13636363636363635
+      },
+      {
+        "image": "jakob_text_v2/images/text_017.jpg",
+        "ref": "der Tangente, bestimmen",
+        "hyp": "der Tangente, bestimmen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_018.jpg",
+        "ref": "Mit Q Richtung P wandern",
+        "hyp": "Mit Richtung P wandern",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_019.jpg",
+        "ref": "nicht stetig, daher nicht diff'bar.",
+        "hyp": "nicht stetig, daher nicht diff'bar.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_020.jpg",
+        "ref": "Formel gilt auch für n ∈ IR",
+        "hyp": "Formel gilt auch für n ∈ ℝ",
+        "cer": 0.07407407407407407
+      },
+      {
+        "image": "jakob_text_v2/images/text_021.jpg",
+        "ref": "Tangente",
+        "hyp": "Tangente",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_022.jpg",
+        "ref": "Damit gilt:",
+        "hyp": "Damit gilt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_023.jpg",
+        "ref": "Die geometrische Reihe",
+        "hyp": "Die geometrische Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_024.jpg",
+        "ref": "ist eine Potenzreihe.",
+        "hyp": "ist eine Potenzreihe.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_025.jpg",
+        "ref": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "hyp": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_026.jpg",
+        "ref": "Taylorreihen sind",
+        "hyp": "Taylorreihen sind",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_027.jpg",
+        "ref": "Potenzreihen mit",
+        "hyp": "Potenzreihen mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_028.jpg",
+        "ref": "Konvergiert für",
+        "hyp": "Konvergiert für",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_029.jpg",
+        "ref": "müsste getrennt betrachtet werden.",
+        "hyp": "müsse gemeint betrachtet werden.",
+        "cer": 0.11764705882352941
+      },
+      {
+        "image": "jakob_text_v2/images/text_030.jpg",
+        "ref": "Potenzreihe",
+        "hyp": "Potenzreihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_031.jpg",
+        "ref": "konvergiert auf",
+        "hyp": "leovorgiet cens",
+        "cer": 0.6
+      },
+      {
+        "image": "jakob_text_v2/images/text_032.jpg",
+        "ref": "ganz",
+        "hyp": "dau2",
+        "cer": 0.75
+      },
+      {
+        "image": "jakob_text_v2/images/text_033.jpg",
+        "ref": "ist beliebig oft",
+        "hyp": "ist beliebig oft",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_034.jpg",
+        "ref": "diff'bar mit",
+        "hyp": "diff'bar mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_035.jpg",
+        "ref": "Kreis mit",
+        "hyp": "kreis mit",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_036.jpg",
+        "ref": "Radius",
+        "hyp": "Nadius",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_037.jpg",
+        "ref": "Kreis allg.:",
+        "hyp": "Kreis allg.:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_038.jpg",
+        "ref": "Def.bereich:",
+        "hyp": "Def. bereich:",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_039.jpg",
+        "ref": "Koordinatenachsen:",
+        "hyp": "Koordinatenachsen:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_040.jpg",
+        "ref": "Schnittpunkte",
+        "hyp": "Schneidpunkte",
+        "cer": 0.23076923076923078
+      },
+      {
+        "image": "jakob_text_v2/images/text_041.jpg",
+        "ref": "Ebene:",
+        "hyp": "Ebene:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_042.jpg",
+        "ref": "Implizite Form:",
+        "hyp": "Implizite Form:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_043.jpg",
+        "ref": "Explizite Form:",
+        "hyp": "Explizite Form:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_044.jpg",
+        "ref": "Parallel",
+        "hyp": "Parallel",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_045.jpg",
+        "ref": "Normalparabeln",
+        "hyp": "Normalparabeln",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_046.jpg",
+        "ref": "nach oben verschobene",
+        "hyp": "nach oben verschobene",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_047.jpg",
+        "ref": "verschobene",
+        "hyp": "verschobene",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_048.jpg",
+        "ref": "Reihenschaltung von Widerständen:",
+        "hyp": "Reihenschaltung von Widerständen:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_049.jpg",
+        "ref": "Gradient: Vektor",
+        "hyp": "Gradient: vector",
+        "cer": 0.125
+      },
+      {
+        "image": "jakob_text_v2/images/text_050.jpg",
+        "ref": "Hesse-Matrix:",
+        "hyp": "Hesse-Matrix:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_051.jpg",
+        "ref": "Tangentialebene von",
+        "hyp": "Tangente Ebene von",
+        "cer": 0.21052631578947367
+      },
+      {
+        "image": "jakob_text_v2/images/text_052.jpg",
+        "ref": "der Determinanten",
+        "hyp": "der Determinante",
+        "cer": 0.058823529411764705
+      },
+      {
+        "image": "jakob_text_v2/images/text_053.jpg",
+        "ref": "Definitheit kann",
+        "hyp": "Definitheit kann",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_054.jpg",
+        "ref": "über Vorzeichen",
+        "hyp": "über Vorzeichen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_055.jpg",
+        "ref": "bestimmt werden;",
+        "hyp": "bestimmt werden;",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_056.jpg",
+        "ref": "Minimumstelle",
+        "hyp": "Minimumselle",
+        "cer": 0.07692307692307693
+      },
+      {
+        "image": "jakob_text_v2/images/text_057.jpg",
+        "ref": "Was aber, wenn",
+        "hyp": "Was aber, wenn",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_058.jpg",
+        "ref": "Nebenbed. nicht so",
+        "hyp": "Nebenbed. nicht so",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_059.jpg",
+        "ref": "einfach umgestellt",
+        "hyp": "einfach umgestellt",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_060.jpg",
+        "ref": "und in die",
+        "hyp": "und in die",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_061.jpg",
+        "ref": "Funktion",
+        "hyp": "Funktion",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_062.jpg",
+        "ref": "eingesetzt werden kann?",
+        "hyp": "eingesetzt werden kann?.",
+        "cer": 0.043478260869565216
+      },
+      {
+        "image": "jakob_text_v2/images/text_063.jpg",
+        "ref": "entspricht",
+        "hyp": "entspricht",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_064.jpg",
+        "ref": "kleiner",
+        "hyp": "kleiner",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_065.jpg",
+        "ref": "Zylinder",
+        "hyp": "Zylinder",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_066.jpg",
+        "ref": "entspricht",
+        "hyp": "entspricht",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_067.jpg",
+        "ref": "Äußeres Integral",
+        "hyp": "Äußeres Integral",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_068.jpg",
+        "ref": "Induktion zeigen, dass",
+        "hyp": "Induktion zeigen, dass",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_069.jpg",
+        "ref": "konvergiert",
+        "hyp": "konvergiert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_070.jpg",
+        "ref": "ebenfalls divergent",
+        "hyp": "eben falls divergent",
+        "cer": 0.05263157894736842
+      },
+      {
+        "image": "jakob_text_v2/images/text_071.jpg",
+        "ref": "(harmonische Reihe)",
+        "hyp": "(harmonische Reihe)",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_072.jpg",
+        "ref": "evtl. konvergent",
+        "hyp": "entl. konvergent",
+        "cer": 0.0625
+      },
+      {
+        "image": "jakob_text_v2/images/text_073.jpg",
+        "ref": "divergiert",
+        "hyp": "divergiert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_074.jpg",
+        "ref": "Welche Reihe",
+        "hyp": "Welche Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_075.jpg",
+        "ref": "konvergiert gegen",
+        "hyp": "konnte gird gegen",
+        "cer": 0.29411764705882354
+      },
+      {
+        "image": "jakob_text_v2/images/text_076.jpg",
+        "ref": "vor allem keine",
+        "hyp": "vor allem keine",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_077.jpg",
+        "ref": "Nullfolge",
+        "hyp": "Null folge",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_078.jpg",
+        "ref": "aber kein hinreichendes",
+        "hyp": "aber kein hinreichendes",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_079.jpg",
+        "ref": "der Teilsummen",
+        "hyp": "der Teilsommen",
+        "cer": 0.07142857142857142
+      },
+      {
+        "image": "jakob_text_v2/images/text_080.jpg",
+        "ref": "signum = Vorzeichen",
+        "hyp": "Signum\n= Vorzeichen",
+        "cer": 0.10526315789473684
+      },
+      {
+        "image": "jakob_text_v2/images/text_081.jpg",
+        "ref": "Zähergrad",
+        "hyp": "tähergrad",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_082.jpg",
+        "ref": "Nennergrad",
+        "hyp": "Neuversgrad",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_083.jpg",
+        "ref": "falls",
+        "hyp": "falls",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_084.jpg",
+        "ref": "konvergiert nicht.",
+        "hyp": "Konvergiert nicht.",
+        "cer": 0.05555555555555555
+      },
+      {
+        "image": "jakob_text_v2/images/text_085.jpg",
+        "ref": "Warum",
+        "hyp": "Warum",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_086.jpg",
+        "ref": "eindeutig",
+        "hyp": "eindringig",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_087.jpg",
+        "ref": "bestimmten",
+        "hyp": "bestimmten",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_088.jpg",
+        "ref": "gegebenes",
+        "hyp": "gegebenes",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_089.jpg",
+        "ref": "durchlaufen.",
+        "hyp": "durch Laufens.",
+        "cer": 0.25
+      },
+      {
+        "image": "jakob_text_v2/images/text_090.jpg",
+        "ref": "immer wieder",
+        "hyp": "immer wieder",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_091.jpg",
+        "ref": "nach oben",
+        "hyp": "nach oben",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_092.jpg",
+        "ref": "beschränkt:",
+        "hyp": "beschränkt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_093.jpg",
+        "ref": "nach unten beschränkt:",
+        "hyp": "nach unten beschränkt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_094.jpg",
+        "ref": "str. monoton",
+        "hyp": "str. monoton",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_095.jpg",
+        "ref": "wachsend",
+        "hyp": "wadsad",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_096.jpg",
+        "ref": "Startwert",
+        "hyp": "Startwert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_097.jpg",
+        "ref": "Zweierpotenzen",
+        "hyp": "Zweierpotenzen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_098.jpg",
+        "ref": "Einsetzen von",
+        "hyp": "Einsehen von",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_099.jpg",
+        "ref": "Auflösen nach",
+        "hyp": "Auflösen nach",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_100.jpg",
+        "ref": "Inverse Laplace-Transformation",
+        "hyp": "Inverse Laplace-Transformation",
+        "cer": 0.0
+      }
+    ]
+  },
+  "vlm_qwen3_adapted": {
+    "mean_cer": 0.05471397785696083,
+    "adapter_path": "checkpoint/vlm_jakob_lora/best",
+    "predictions": [
+      {
+        "image": "jakob_text_v2/images/text_001.jpg",
+        "ref": "MI-Übung heute 16 Uhr fällt aus",
+        "hyp": "M1-Übung heute 16 Uhr fällt aus",
+        "cer": 0.03225806451612903
+      },
+      {
+        "image": "jakob_text_v2/images/text_002.jpg",
+        "ref": "INF-Übungen am Fr. fallen aus",
+        "hyp": "INF-Übungen am Fr. fallen aus",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_003.jpg",
+        "ref": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "hyp": "Hinweis: Grenzwerte eigentlich nur an Definitionslücken, Unstetigkeitsstellen und für interessant.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_004.jpg",
+        "ref": "aber was passiert bei",
+        "hyp": "aber was passiert bei",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_005.jpg",
+        "ref": "Graph von g:",
+        "hyp": "Graph von g:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_006.jpg",
+        "ref": "Heaviside-Funktion",
+        "hyp": "Heaviside-Funktion",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_007.jpg",
+        "ref": "Auf den Def.-bereichen stetig.",
+        "hyp": "Auf den Def. berechnen stetig.",
+        "cer": 0.1
+      },
+      {
+        "image": "jakob_text_v2/images/text_008.jpg",
+        "ref": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "hyp": "Derselbe Wert darf mehrfach vorkommen (Vielfachheit)",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_009.jpg",
+        "ref": "Die Vielfachheit der NST",
+        "hyp": "Die Vielfachheit der NST",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_010.jpg",
+        "ref": "lässt sich nicht „herauskürzen“ wie im Bsp. auf Folie",
+        "hyp": "lässt sich nicht \"herauskürzen\" wie im Bsp. auf Folie",
+        "cer": 0.03773584905660377
+      },
+      {
+        "image": "jakob_text_v2/images/text_011.jpg",
+        "ref": "stetig fortsetzbar mit",
+        "hyp": "stetig fortsetzbar mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_012.jpg",
+        "ref": "Polstelle",
+        "hyp": "Polstelle",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_013.jpg",
+        "ref": "(Polstellen checken u. GW bestimmen)",
+        "hyp": "(Polstellen chedden\nu. GW bestimmen)",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_014.jpg",
+        "ref": "Rest der Polynomdivision",
+        "hyp": "Rest der Polynomdivision",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_015.jpg",
+        "ref": "Asymptote",
+        "hyp": "Asymptote",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_016.jpg",
+        "ref": "Ziel: mₜ, die Steigung",
+        "hyp": "Ziel: mt, die Steigung",
+        "cer": 0.045454545454545456
+      },
+      {
+        "image": "jakob_text_v2/images/text_017.jpg",
+        "ref": "der Tangente, bestimmen",
+        "hyp": "der Tangente, bestimmen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_018.jpg",
+        "ref": "Mit Q Richtung P wandern",
+        "hyp": "Mit Richtung P wandern",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_019.jpg",
+        "ref": "nicht stetig, daher nicht diff'bar.",
+        "hyp": "nicht stetig, daher nicht diff'bar.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_020.jpg",
+        "ref": "Formel gilt auch für n ∈ IR",
+        "hyp": "Formel gilt auch für n ∈ ℝ",
+        "cer": 0.07407407407407407
+      },
+      {
+        "image": "jakob_text_v2/images/text_021.jpg",
+        "ref": "Tangente",
+        "hyp": "Tangente",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_022.jpg",
+        "ref": "Damit gilt:",
+        "hyp": "Damit gilt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_023.jpg",
+        "ref": "Die geometrische Reihe",
+        "hyp": "Die geometrische Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_024.jpg",
+        "ref": "ist eine Potenzreihe.",
+        "hyp": "ist eine Potenzreihe,",
+        "cer": 0.047619047619047616
+      },
+      {
+        "image": "jakob_text_v2/images/text_025.jpg",
+        "ref": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "hyp": "Jede Polynomfunktion ist eine (abbrechende) Potenzreihe.",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_026.jpg",
+        "ref": "Taylorreihen sind",
+        "hyp": "Taylorreihen sind",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_027.jpg",
+        "ref": "Potenzreihen mit",
+        "hyp": "Potenzreihen mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_028.jpg",
+        "ref": "Konvergiert für",
+        "hyp": "Konvergiert für",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_029.jpg",
+        "ref": "müsste getrennt betrachtet werden.",
+        "hyp": "müsse gemeint betrachtet werden.",
+        "cer": 0.11764705882352941
+      },
+      {
+        "image": "jakob_text_v2/images/text_030.jpg",
+        "ref": "Potenzreihe",
+        "hyp": "Potenzreihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_031.jpg",
+        "ref": "konvergiert auf",
+        "hyp": "Leouvengiet cens",
+        "cer": 0.6
+      },
+      {
+        "image": "jakob_text_v2/images/text_032.jpg",
+        "ref": "ganz",
+        "hyp": "dann",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_033.jpg",
+        "ref": "ist beliebig oft",
+        "hyp": "ist beliebig oft",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_034.jpg",
+        "ref": "diff'bar mit",
+        "hyp": "differenzierbar mit",
+        "cer": 0.6666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_035.jpg",
+        "ref": "Kreis mit",
+        "hyp": "Kreis mit",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_036.jpg",
+        "ref": "Radius",
+        "hyp": "Radius",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_037.jpg",
+        "ref": "Kreis allg.:",
+        "hyp": "Kreis allg.:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_038.jpg",
+        "ref": "Def.bereich:",
+        "hyp": "Def. bereich:",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_039.jpg",
+        "ref": "Koordinatenachsen:",
+        "hyp": "Koordinatenachsen:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_040.jpg",
+        "ref": "Schnittpunkte",
+        "hyp": "Schnittpunkte",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_041.jpg",
+        "ref": "Ebene:",
+        "hyp": "Ebene:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_042.jpg",
+        "ref": "Implizite Form:",
+        "hyp": "Implizite Form:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_043.jpg",
+        "ref": "Explizite Form:",
+        "hyp": "Explizite Form:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_044.jpg",
+        "ref": "Parallel",
+        "hyp": "Parallel",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_045.jpg",
+        "ref": "Normalparabeln",
+        "hyp": "Normale parabeln",
+        "cer": 0.14285714285714285
+      },
+      {
+        "image": "jakob_text_v2/images/text_046.jpg",
+        "ref": "nach oben verschobene",
+        "hyp": "nach oben verschobene",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_047.jpg",
+        "ref": "verschobene",
+        "hyp": "verschobene",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_048.jpg",
+        "ref": "Reihenschaltung von Widerständen:",
+        "hyp": "Reihenschaltung von Widerständen:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_049.jpg",
+        "ref": "Gradient: Vektor",
+        "hyp": "Gradient: Vektor",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_050.jpg",
+        "ref": "Hesse-Matrix:",
+        "hyp": "Hesse-Matrix:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_051.jpg",
+        "ref": "Tangentialebene von",
+        "hyp": "Tangente Ebene von",
+        "cer": 0.21052631578947367
+      },
+      {
+        "image": "jakob_text_v2/images/text_052.jpg",
+        "ref": "der Determinanten",
+        "hyp": "der Determinanten",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_053.jpg",
+        "ref": "Definitheit kann",
+        "hyp": "Definitheit kann",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_054.jpg",
+        "ref": "über Vorzeichen",
+        "hyp": "über Vorzeichen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_055.jpg",
+        "ref": "bestimmt werden;",
+        "hyp": "bestimmt werden:",
+        "cer": 0.0625
+      },
+      {
+        "image": "jakob_text_v2/images/text_056.jpg",
+        "ref": "Minimumstelle",
+        "hyp": "Minimumstelle",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_057.jpg",
+        "ref": "Was aber, wenn",
+        "hyp": "Was aber, wenn",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_058.jpg",
+        "ref": "Nebenbed. nicht so",
+        "hyp": "Nebenbed. nicht so",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_059.jpg",
+        "ref": "einfach umgestellt",
+        "hyp": "einfach umgestellt",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_060.jpg",
+        "ref": "und in die",
+        "hyp": "und in die",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_061.jpg",
+        "ref": "Funktion",
+        "hyp": "Funktion",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_062.jpg",
+        "ref": "eingesetzt werden kann?",
+        "hyp": "eingesetzt werden kann?.",
+        "cer": 0.043478260869565216
+      },
+      {
+        "image": "jakob_text_v2/images/text_063.jpg",
+        "ref": "entspricht",
+        "hyp": "entspuicht",
+        "cer": 0.1
+      },
+      {
+        "image": "jakob_text_v2/images/text_064.jpg",
+        "ref": "kleiner",
+        "hyp": "kleiner",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_065.jpg",
+        "ref": "Zylinder",
+        "hyp": "Zylinder",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_066.jpg",
+        "ref": "entspricht",
+        "hyp": "entspricht",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_067.jpg",
+        "ref": "Äußeres Integral",
+        "hyp": "Äußeres Integral",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_068.jpg",
+        "ref": "Induktion zeigen, dass",
+        "hyp": "Induktion zeigen, dass",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_069.jpg",
+        "ref": "konvergiert",
+        "hyp": "konvergiert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_070.jpg",
+        "ref": "ebenfalls divergent",
+        "hyp": "eben falls divergent",
+        "cer": 0.05263157894736842
+      },
+      {
+        "image": "jakob_text_v2/images/text_071.jpg",
+        "ref": "(harmonische Reihe)",
+        "hyp": "(harmonische Reihe)",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_072.jpg",
+        "ref": "evtl. konvergent",
+        "hyp": "entl. konvergent",
+        "cer": 0.0625
+      },
+      {
+        "image": "jakob_text_v2/images/text_073.jpg",
+        "ref": "divergiert",
+        "hyp": "divergiert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_074.jpg",
+        "ref": "Welche Reihe",
+        "hyp": "Welche Reihe",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_075.jpg",
+        "ref": "konvergiert gegen",
+        "hyp": "konnte gird gegen",
+        "cer": 0.29411764705882354
+      },
+      {
+        "image": "jakob_text_v2/images/text_076.jpg",
+        "ref": "vor allem keine",
+        "hyp": "vor allem keine",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_077.jpg",
+        "ref": "Nullfolge",
+        "hyp": "Null folge",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_078.jpg",
+        "ref": "aber kein hinreichendes",
+        "hyp": "aber kein hinreichendes",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_079.jpg",
+        "ref": "der Teilsummen",
+        "hyp": "der Teilsummen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_080.jpg",
+        "ref": "signum = Vorzeichen",
+        "hyp": "Signum\n= Vorzeichen",
+        "cer": 0.10526315789473684
+      },
+      {
+        "image": "jakob_text_v2/images/text_081.jpg",
+        "ref": "Zähergrad",
+        "hyp": "Tähergrad",
+        "cer": 0.1111111111111111
+      },
+      {
+        "image": "jakob_text_v2/images/text_082.jpg",
+        "ref": "Nennergrad",
+        "hyp": "Neuersgrad",
+        "cer": 0.3
+      },
+      {
+        "image": "jakob_text_v2/images/text_083.jpg",
+        "ref": "falls",
+        "hyp": "falls",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_084.jpg",
+        "ref": "konvergiert nicht.",
+        "hyp": "Konvergiert nicht.",
+        "cer": 0.05555555555555555
+      },
+      {
+        "image": "jakob_text_v2/images/text_085.jpg",
+        "ref": "Warum",
+        "hyp": "Warum",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_086.jpg",
+        "ref": "eindeutig",
+        "hyp": "eindringig",
+        "cer": 0.4444444444444444
+      },
+      {
+        "image": "jakob_text_v2/images/text_087.jpg",
+        "ref": "bestimmten",
+        "hyp": "bestimmten",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_088.jpg",
+        "ref": "gegebenes",
+        "hyp": "gegebenes",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_089.jpg",
+        "ref": "durchlaufen.",
+        "hyp": "durch Laufen.",
+        "cer": 0.16666666666666666
+      },
+      {
+        "image": "jakob_text_v2/images/text_090.jpg",
+        "ref": "immer wieder",
+        "hyp": "immer wieder",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_091.jpg",
+        "ref": "nach oben",
+        "hyp": "nach oben",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_092.jpg",
+        "ref": "beschränkt:",
+        "hyp": "beschränkt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_093.jpg",
+        "ref": "nach unten beschränkt:",
+        "hyp": "nach unten beschränkt:",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_094.jpg",
+        "ref": "str. monoton",
+        "hyp": "Str. monoton",
+        "cer": 0.08333333333333333
+      },
+      {
+        "image": "jakob_text_v2/images/text_095.jpg",
+        "ref": "wachsend",
+        "hyp": "wadsad",
+        "cer": 0.5
+      },
+      {
+        "image": "jakob_text_v2/images/text_096.jpg",
+        "ref": "Startwert",
+        "hyp": "Startwert",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_097.jpg",
+        "ref": "Zweierpotenzen",
+        "hyp": "Zweierpotenzen",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_098.jpg",
+        "ref": "Einsetzen von",
+        "hyp": "Einsehen von",
+        "cer": 0.15384615384615385
+      },
+      {
+        "image": "jakob_text_v2/images/text_099.jpg",
+        "ref": "Auflösen nach",
+        "hyp": "Auflösen nach",
+        "cer": 0.0
+      },
+      {
+        "image": "jakob_text_v2/images/text_100.jpg",
+        "ref": "Inverse Laplace-Transformation",
+        "hyp": "Inverse Laplace-Transformation",
+        "cer": 0.0
+      }
+    ]
+  },
+  "summary": {
+    "base_trocr_iam_cer": 0.33264572625944966,
+    "reptile_cer": 0.3319296366057332,
+    "jakob_finetune_cer": 0.14652723987970684,
+    "vlm_qwen3_cer": 0.057167195391060716,
+    "vlm_qwen3_adapted_cer": 0.05471397785696083,
+    "jakob_beats_reptile": true,
+    "absolute_improvement_vs_reptile_pp": 18.540239672602638
+  }
+}
