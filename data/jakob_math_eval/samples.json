@@ -1,0 +1,418 @@
+[
+  {
+    "image": "jakob_math_eval/eq_001.jpg",
+    "gt_latex": "y' = f(x) \\cdot g(y)"
+  },
+  {
+    "image": "jakob_math_eval/eq_002.jpg",
+    "gt_latex": "y' = f(ax + by + c)"
+  },
+  {
+    "image": "jakob_math_eval/eq_003.jpg",
+    "gt_latex": "\\sin(x) \\cdot y'' + \\frac{1}{x} y' + x^2 y = \\ln(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_004.jpg",
+    "gt_latex": "\\int \\frac{1}{y} \\, dy = -\\int f(x) \\, dx"
+  },
+  {
+    "image": "jakob_math_eval/eq_005.jpg",
+    "gt_latex": "y = K \\cdot e^{-\\int f(x) \\, dx}, \\quad K \\in \\mathbb{R}"
+  },
+  {
+    "image": "jakob_math_eval/eq_006.jpg",
+    "gt_latex": "y = \\underbrace{\\pm e^c}_{\\in \\mathbb{R} \\setminus \\{0\\}} \\cdot e^{-\\int f(x) \\, dx}"
+  },
+  {
+    "image": "jakob_math_eval/eq_007.jpg",
+    "gt_latex": "NR: -\\int \\frac{1}{x^2} \\, dx"
+  },
+  {
+    "image": "jakob_math_eval/eq_008.jpg",
+    "gt_latex": "= x^{-1} = \\frac{1}{x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_009.jpg",
+    "gt_latex": "y = C \\cdot e^{-\\int f(x) \\, dx}"
+  },
+  {
+    "image": "jakob_math_eval/eq_010.jpg",
+    "gt_latex": "= \\frac{k}{|x|} = \\frac{k}{\\pm x} = \\frac{\\pm k}{x} = \\frac{k}{x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_011.jpg",
+    "gt_latex": "y' = \\frac{K'(x) \\cdot x - K(x) \\cdot 1}{x^2} = \\frac{K'(x)}{x} - \\frac{K(x)}{x^2}"
+  },
+  {
+    "image": "jakob_math_eval/eq_012.jpg",
+    "gt_latex": "K'(x) = x \\cdot \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_013.jpg",
+    "gt_latex": "y = \\frac{K(x)}{x} = \\frac{x \\cdot \\sin(x) + \\cos(x) + C}{x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_014.jpg",
+    "gt_latex": "= \\sin(x) + \\frac{\\cos(x)}{x} + \\frac{C}{x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_015.jpg",
+    "gt_latex": "u = x \\\\ v' = \\cos(x) \\\\ v = \\sin(x) \\\\ u' = 1"
+  },
+  {
+    "image": "jakob_math_eval/eq_016.jpg",
+    "gt_latex": "K(x) = \\int x \\cdot \\cos(x) \\, dx"
+  },
+  {
+    "image": "jakob_math_eval/eq_017.jpg",
+    "gt_latex": "y_0 = C \\cdot e^{-\\int a \\, dx} = C \\cdot e^{-ax}"
+  },
+  {
+    "image": "jakob_math_eval/eq_018.jpg",
+    "gt_latex": "y' - 4y = \\sin(x) \\Rightarrow y_p = C_1 \\cdot \\sin(x) + C_2 \\cdot \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_019.jpg",
+    "gt_latex": "\\Rightarrow y_p = C \\cdot e^{-2x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_020.jpg",
+    "gt_latex": "y = y_0 + y_p = C \\cdot e^{-2x} + x^2 - x - \\frac{3}{2}"
+  },
+  {
+    "image": "jakob_math_eval/eq_021.jpg",
+    "gt_latex": "y' - 4y = \\sin(2x) + 3\\cos(2x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_022.jpg",
+    "gt_latex": "|y| = e^c \\cdot e^{-\\int f(x) \\, dx}"
+  },
+  {
+    "image": "jakob_math_eval/eq_023.jpg",
+    "gt_latex": "y' + a \\cdot y = g(x), \\quad 0 \\neq a \\in \\mathbb{R}"
+  },
+  {
+    "image": "jakob_math_eval/eq_024.jpg",
+    "gt_latex": "y_1' = \\cos(x), \\quad y_1'' = -\\sin(x), \\quad y_1''' = -\\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_025.jpg",
+    "gt_latex": "W = \\begin{pmatrix} \\sin(x) & \\cos(x) & e^{2x} \\\\ \\cos(x) & -\\sin(x) & 2e^{2x} \\\\ -\\sin(x) & -\\cos(x) & 4e^{2x} \\end{pmatrix}"
+  },
+  {
+    "image": "jakob_math_eval/eq_026.jpg",
+    "gt_latex": "\\det(W) = -\\sin^2(x) \\cdot 4e^{2x} - \\sin(x) \\cdot \\cos(x) \\cdot 2e^{2x} - \\cos^2(x) \\cdot e^{2x} \\\\ - \\sin^2(x) \\cdot e^{2x} + \\sin(x) \\cdot \\cos(x) \\cdot 2e^{2x} - \\cos^2(x) \\cdot 4e^{2x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_027.jpg",
+    "gt_latex": "\\lambda^2 + 2\\lambda + 1 = (\\lambda + 1)^2 = 0 \\Rightarrow \\lambda_{1,2} = -1"
+  },
+  {
+    "image": "jakob_math_eval/eq_028.jpg",
+    "gt_latex": "y' + ay = 0 \\\\ \\Rightarrow \\lambda^1 + a = 0 \\\\ \\Rightarrow \\lambda = -a"
+  },
+  {
+    "image": "jakob_math_eval/eq_029.jpg",
+    "gt_latex": "\\lambda_{2,3} = \\frac{3}{2} \\pm \\sqrt{\\frac{9}{4} + \\frac{16}{4}}"
+  },
+  {
+    "image": "jakob_math_eval/eq_030.jpg",
+    "gt_latex": "y_0 = C_1 \\cdot e^x + C_2 \\cdot e^{-x} + C_3 \\cdot e^{4x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_031.jpg",
+    "gt_latex": "C_1, C_2, C_3 \\in \\mathbb{R}"
+  },
+  {
+    "image": "jakob_math_eval/eq_032.jpg",
+    "gt_latex": "y_1 = e^{\\alpha x}, \\quad y_2 = x \\cdot e^{\\alpha x}, \\quad y_3 = x^2 \\cdot e^{\\alpha x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_033.jpg",
+    "gt_latex": "y_0 = C_1 \\cdot e^x + C_2 \\cdot xe^x + C_3 x^2 e^x + C_4 e^{3x}, \\\\ = (C_1 + C_2 x + C_3 x^2) e^x + C_4 e^{3x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_034.jpg",
+    "gt_latex": "C_1, C_2, C_3, C_4 \\in \\mathbb{R}"
+  },
+  {
+    "image": "jakob_math_eval/eq_035.jpg",
+    "gt_latex": "\\lambda^4 - 6\\lambda^3 + 12\\lambda^2 - 10\\lambda + 3 = 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_036.jpg",
+    "gt_latex": "y_1 = e^{\\alpha x} \\cdot \\sin(\\omega x) = e^{0 \\cdot x} \\cdot \\sin(2x) = \\sin(2x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_037.jpg",
+    "gt_latex": "y_2 = e^{\\alpha x} \\cdot \\cos(\\omega x) = e^{0 \\cdot x} \\cdot \\cos(2x) = \\cos(2x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_038.jpg",
+    "gt_latex": "y_3 = e^{\\lambda_3 x} = e^x"
+  },
+  {
+    "image": "jakob_math_eval/eq_039.jpg",
+    "gt_latex": "y_4 = e^{\\lambda_4 x} = e^{-x}"
+  },
+  {
+    "image": "jakob_math_eval/eq_040.jpg",
+    "gt_latex": "z_{1,2} = -\\frac{3}{2} \\pm \\sqrt{\\frac{9}{4} + 4}"
+  },
+  {
+    "image": "jakob_math_eval/eq_041.jpg",
+    "gt_latex": "z^2 + 3z - 4 = 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_042.jpg",
+    "gt_latex": "\\lambda_{1,2}^2 = -4, \\quad \\lambda_{3,4}^2 = 1"
+  },
+  {
+    "image": "jakob_math_eval/eq_043.jpg",
+    "gt_latex": "\\lambda_1 = 2, \\quad \\lambda_{2,3} = \\pm i"
+  },
+  {
+    "image": "jakob_math_eval/eq_044.jpg",
+    "gt_latex": "y_p = Q_n(x) \\\\ = Ax^3 + Bx^2 + Cx + D,"
+  },
+  {
+    "image": "jakob_math_eval/eq_045.jpg",
+    "gt_latex": "y''' - 3y' + 2y = 2\\sin(x) + \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_046.jpg",
+    "gt_latex": "y_p = A \\cdot \\sin(x) + B \\cdot \\cos(x), \\quad A, B \\in \\mathbb{R}"
+  },
+  {
+    "image": "jakob_math_eval/eq_047.jpg",
+    "gt_latex": "(2A + 4B) \\cdot \\sin(x) + (-4A + 2B) \\cdot \\cos(x) = 2\\sin(x) + 1 \\cdot \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_048.jpg",
+    "gt_latex": "-A \\cdot \\cos(x) + B \\cdot \\sin(x) - 3A \\cos(x) + 3B \\sin(x) + 2A \\sin(x) + 2B \\cos(x) = 2 \\cdot \\sin(x) + \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_049.jpg",
+    "gt_latex": "y = C_1 \\cdot e^x + C_2 x \\cdot e^x + C_3 e^{-2x} + \\frac{1}{2} \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_050.jpg",
+    "gt_latex": "\\begin{pmatrix} 1 & 0 & 1 & 0 \\\\ e^{\\pi/2} & \\frac{\\pi}{2} e^{\\pi/2} & e^{-\\pi} & 0 \\\\ e^{\\pi} & \\pi \\cdot e^{\\pi} & e^{-2\\pi} & 0 \\end{pmatrix}"
+  },
+  {
+    "image": "jakob_math_eval/eq_051.jpg",
+    "gt_latex": "y_s = \\frac{1}{2} \\cos(x)"
+  },
+  {
+    "image": "jakob_math_eval/eq_052.jpg",
+    "gt_latex": "F(\\omega = 0) = \\int_{-a}^{a} 1 \\cdot e^{-i \\cdot 0 \\cdot t} \\, dt = [t]_{-a}^{a} = 2a"
+  },
+  {
+    "image": "jakob_math_eval/eq_053.jpg",
+    "gt_latex": "\\sin(x) = \\frac{1}{2i} (e^{ix} - e^{-ix})"
+  },
+  {
+    "image": "jakob_math_eval/eq_054.jpg",
+    "gt_latex": "F(\\omega) = \\int_{-\\infty}^{\\infty} f(t) \\cdot e^{-i\\omega t} \\, dt"
+  },
+  {
+    "image": "jakob_math_eval/eq_055.jpg",
+    "gt_latex": "= \\int_{-a}^{a} 1 \\cdot e^{-i\\omega t} \\, dt = \\left[ -\\frac{1}{i\\omega} e^{-i\\omega t} \\right]_{-a}^{a}"
+  },
+  {
+    "image": "jakob_math_eval/eq_056.jpg",
+    "gt_latex": "= -\\frac{1}{i\\omega} e^{-i\\omega a} + \\frac{1}{i\\omega} e^{i\\omega a} = \\frac{1}{i\\omega} \\cdot \\underbrace{(e^{i\\omega a} - e^{-i\\omega a})}_{= 2i \\cdot \\sin(\\omega a)} \\\\ = \\frac{2i \\cdot \\sin(\\omega a)}{i\\omega} = \\frac{2 \\sin(\\omega \\cdot a)}{\\omega}"
+  },
+  {
+    "image": "jakob_math_eval/eq_057.jpg",
+    "gt_latex": "f(t) = \\begin{cases} e^{-at}, & t \\geq 0 \\\\ 0, & t < 0 \\end{cases}"
+  },
+  {
+    "image": "jakob_math_eval/eq_058.jpg",
+    "gt_latex": "= \\underbrace{\\lim_{t \\to \\infty} -\\frac{1}{a + i\\omega} e^{-(a + i\\omega) \\cdot t}}_{\\to 0}"
+  },
+  {
+    "image": "jakob_math_eval/eq_059.jpg",
+    "gt_latex": "\\left[ -\\frac{1}{a + i\\omega} \\cdot e^{-(a + i\\omega) \\cdot t} \\right]_0^{\\infty}"
+  },
+  {
+    "image": "jakob_math_eval/eq_060.jpg",
+    "gt_latex": "A(\\omega) = \\left| \\frac{1}{a + i\\omega} \\right| = \\frac{1}{\\sqrt{a^2 + \\omega^2}}"
+  },
+  {
+    "image": "jakob_math_eval/eq_061.jpg",
+    "gt_latex": "F(\\omega) = \\frac{1}{a + i\\omega}"
+  },
+  {
+    "image": "jakob_math_eval/eq_062.jpg",
+    "gt_latex": "F(\\omega) = \\begin{cases} \\pi, & |\\omega| \\leq \\omega_0 \\\\ 0, & |\\omega| > \\omega_0 \\end{cases}"
+  },
+  {
+    "image": "jakob_math_eval/eq_063.jpg",
+    "gt_latex": "f(t) = \\frac{1}{2\\pi} \\int_{-\\infty}^{\\infty} F(\\omega) \\cdot e^{i\\omega t} = \\frac{1}{2\\pi} \\int_{-\\omega_0}^{\\omega_0} \\pi \\cdot e^{i\\omega t} \\, d\\omega = \\frac{1}{2} \\int_{-\\omega_0}^{\\omega_0} e^{i\\omega t} \\, d\\omega"
+  },
+  {
+    "image": "jakob_math_eval/eq_064.jpg",
+    "gt_latex": "= \\frac{1}{2} \\cdot \\left[ \\frac{1}{it} e^{i\\omega t} \\right]_{-\\omega_0}^{\\omega_0} = \\frac{1}{2} \\left( \\frac{1}{it} e^{i\\omega_0 t} - \\frac{1}{it} \\cdot e^{-i\\omega_0 t} \\right)"
+  },
+  {
+    "image": "jakob_math_eval/eq_065.jpg",
+    "gt_latex": "f(0) = \\lim_{t \\to 0} \\frac{\\sin(\\omega_0 \\cdot t)}{t} \\underset{\\text{``}\\frac{0}{0}\\text{''}}{\\overset{\\text{L'H}}{=}} \\lim_{t \\to 0} \\frac{\\omega_0 \\cos(\\omega_0 \\cdot t)}{1} = \\omega_0"
+  },
+  {
+    "image": "jakob_math_eval/eq_066.jpg",
+    "gt_latex": "e^{-i\\omega t} = \\cos(\\omega t) - i \\cdot \\sin(\\omega t)"
+  },
+  {
+    "image": "jakob_math_eval/eq_067.jpg",
+    "gt_latex": "f(t) \\cdot e^{-i\\omega t} = f(t) \\cdot (\\cos(\\omega t) - i \\cdot \\sin(\\omega t)) \\\\ = f(t) \\cos(\\omega t) - i \\cdot f(t) \\sin(\\omega t)"
+  },
+  {
+    "image": "jakob_math_eval/eq_068.jpg",
+    "gt_latex": "f(t) = e^{-a \\cdot |t|}, \\quad a > 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_069.jpg",
+    "gt_latex": "F(\\omega) = 2 \\cdot F_c(\\omega) = \\frac{2a}{a^2 + \\omega^2}"
+  },
+  {
+    "image": "jakob_math_eval/eq_070.jpg",
+    "gt_latex": "= 0 - 2 \\cdot i \\underbrace{\\int_0^{\\infty} f(t) \\cdot \\sin(\\omega t) \\, dt}_{F_s(\\omega)}"
+  },
+  {
+    "image": "jakob_math_eval/eq_071.jpg",
+    "gt_latex": "F(\\omega) = -\\frac{2i}{\\omega} (1 - \\cos(\\omega T)), \\quad \\omega \\neq 0 \\\\ F(0) = 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_072.jpg",
+    "gt_latex": "F_s(\\omega) = \\int_0^{\\infty} f(t) \\cdot \\sin(\\omega t) \\, dt = \\int_0^T 1 \\cdot \\sin(\\omega t) \\, dt = \\left[ -\\frac{1}{\\omega} \\cos(\\omega t) \\right]_0^T"
+  },
+  {
+    "image": "jakob_math_eval/eq_073.jpg",
+    "gt_latex": "= -\\frac{1}{\\omega} \\cos(\\omega T) + \\frac{1}{\\omega} \\underbrace{\\cos(\\omega \\cdot 0)}_{= 1} = \\frac{1}{\\omega} (1 - \\cos(\\omega T))"
+  },
+  {
+    "image": "jakob_math_eval/eq_074.jpg",
+    "gt_latex": "g(t) = f(t) \\cdot (\\sigma(t - a) - \\sigma(t - b)) \\\\ = \\begin{cases} f(t), & a \\leq t \\leq b \\\\ 0, & \\text{sonst} \\end{cases}"
+  },
+  {
+    "image": "jakob_math_eval/eq_075.jpg",
+    "gt_latex": "g(t) = f(t) \\cdot \\sigma(t - a) = \\begin{cases} f(t), & t \\geq a \\\\ 0, & t < a \\end{cases}"
+  },
+  {
+    "image": "jakob_math_eval/eq_076.jpg",
+    "gt_latex": "\\delta(t) = \\begin{cases} \\infty, & t = 0 \\\\ 0, & t \\neq 0 \\end{cases}"
+  },
+  {
+    "image": "jakob_math_eval/eq_077.jpg",
+    "gt_latex": "\\int_0^{2\\pi} \\delta(t - \\pi) e^{-t} \\cos(t) \\, dt = e^{-\\pi} \\cos(\\pi) = -e^{-\\pi}, \\quad \\text{da } \\pi \\in [0, 2\\pi]"
+  },
+  {
+    "image": "jakob_math_eval/eq_078.jpg",
+    "gt_latex": "\\int_0^{2\\pi} \\delta(t + \\pi) e^{-t} \\cos(t) \\, dt = 0, \\quad \\text{da } -\\pi \\notin [0, 2\\pi]"
+  },
+  {
+    "image": "jakob_math_eval/eq_079.jpg",
+    "gt_latex": "\\frac{Df(t)}{Dt} = -e^{-t} \\sigma(t - 1) + \\underbrace{a}_{\\uparrow \\text{ Höhe des Sprungs, hier } f(1) = e^{-1}} \\cdot \\delta(t - 1)"
+  },
+  {
+    "image": "jakob_math_eval/eq_080.jpg",
+    "gt_latex": "I = (\\Sigma_0 + 4 \\cdot \\Sigma_1 + 2 \\cdot \\Sigma_2) \\cdot \\frac{h}{3} \\\\ = (1{,}379 + 4 \\cdot 3{,}7402 + 2 \\cdot 3{,}0379) \\cdot \\frac{0{,}1}{3} \\\\ = 0{,}7468"
+  },
+  {
+    "image": "jakob_math_eval/eq_081.jpg",
+    "gt_latex": "(\\Sigma_0)_T = (\\Sigma_0)_S \\\\ (\\Sigma_1)_T = (\\Sigma_1)_S + (\\Sigma_2)_S \\\\ = 6{,}7781"
+  },
+  {
+    "image": "jakob_math_eval/eq_082.jpg",
+    "gt_latex": "I = \\left( \\frac{1}{2} \\Sigma_0 + \\Sigma_1 \\right) \\cdot h \\\\ = 0{,}7462"
+  },
+  {
+    "image": "jakob_math_eval/eq_083.jpg",
+    "gt_latex": "f'(x_0) \\approx \\frac{f(x_0 + h) - f(x_0)}{h} = D^+ f(x_0), \\quad h > 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_084.jpg",
+    "gt_latex": "f'(x_0) = \\lim_{h \\to 0} \\frac{f(x_0 + h) - f(x_0)}{h}"
+  },
+  {
+    "image": "jakob_math_eval/eq_085.jpg",
+    "gt_latex": "D^+ f(x_0) = \\frac{m(x_0 + h) + n - (m \\cdot x_0 + n)}{h} = \\frac{mh}{h} = m"
+  },
+  {
+    "image": "jakob_math_eval/eq_086.jpg",
+    "gt_latex": "h = 0{,}1: \\quad D^+ f(1) = \\frac{f(1{,}1) - f(1)}{h} = \\frac{1{,}1^2 - 1^2}{0{,}1} = 2{,}1"
+  },
+  {
+    "image": "jakob_math_eval/eq_087.jpg",
+    "gt_latex": "f(x) = x^2; \\quad f'(x) = 2x, \\quad f'(1) = 2"
+  },
+  {
+    "image": "jakob_math_eval/eq_088.jpg",
+    "gt_latex": "f'(x_0) \\approx \\frac{f(x_0) - f(x_0 - h)}{h} = D^- f(x_0), \\quad h > 0"
+  },
+  {
+    "image": "jakob_math_eval/eq_089.jpg",
+    "gt_latex": "f'(x_0) \\approx \\frac{1}{2} (D^+ f(x_0) + D^- f(x_0))"
+  },
+  {
+    "image": "jakob_math_eval/eq_090.jpg",
+    "gt_latex": "Df(x_0) = \\frac{a \\cdot (x_0 + h)^2 + b(x_0 + h) + c - a(x_0 - h)^2 - b(x_0 - h) - c}{2h}"
+  },
+  {
+    "image": "jakob_math_eval/eq_091.jpg",
+    "gt_latex": "Tf(x; x_0) = \\sum_{k=0}^{\\infty} \\frac{f^{(k)}(x_0)}{k!} \\cdot (x - x_0)^k"
+  },
+  {
+    "image": "jakob_math_eval/eq_092.jpg",
+    "gt_latex": "\\approx x_{n-1} - \\frac{f(x_{n-1}) \\cdot 2h}{f(x_{n-1} + h) - f(x_{n-1} - h)}"
+  },
+  {
+    "image": "jakob_math_eval/eq_093.jpg",
+    "gt_latex": "x_n = x_{n-1} - \\frac{f(x_{n-1})}{f'(x_{n-1})}"
+  },
+  {
+    "image": "jakob_math_eval/eq_094.jpg",
+    "gt_latex": "\\mathrm{grad}(f(x, y)) = \\begin{pmatrix} (f(x_0 + h, y) - f(x_0 - h, y)) / 2h \\\\ (f(x, y_0 + h) - f(x, y_0 - h)) / 2h \\end{pmatrix}"
+  },
+  {
+    "image": "jakob_math_eval/eq_095.jpg",
+    "gt_latex": "\\nabla f(x, y) = \\mathrm{grad}(f(x, y)) = \\begin{pmatrix} 3y^2 + 2xy \\cos(x^2 y) \\\\ 6xy + x^2 \\cos(x^2 y) \\end{pmatrix}"
+  },
+  {
+    "image": "jakob_math_eval/eq_096.jpg",
+    "gt_latex": "\\Rightarrow \\mathrm{grad}(f(1, 1)) = (-1, +2)^T"
+  },
+  {
+    "image": "jakob_math_eval/eq_097.jpg",
+    "gt_latex": "\\mathrm{grad}(f(x, y)) = (-y^2, -2xy)^T"
+  },
+  {
+    "image": "jakob_math_eval/eq_098.jpg",
+    "gt_latex": "\\vec{x} = \\begin{pmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_n \\end{pmatrix}"
+  },
+  {
+    "image": "jakob_math_eval/eq_099.jpg",
+    "gt_latex": "|f'(x^{(1)})| = 0 < \\varepsilon"
+  },
+  {
+    "image": "jakob_math_eval/eq_100.jpg",
+    "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot f'(x^{(i)})"
+  },
+  {
+    "image": "jakob_math_eval/eq_101.jpg",
+    "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot \\frac{f(x^{(i)} + h) - f(x^{(i)} - h)}{2h}"
+  },
+  {
+    "image": "jakob_math_eval/eq_102.jpg",
+    "gt_latex": "x^{(0)} = 0, \\quad \\lambda_0 = 5, \\quad \\varepsilon = 0{,}01, \\quad h = 0.01"
+  },
+  {
+    "image": "jakob_math_eval/eq_103.jpg",
+    "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot f_x(x^{(i)}, y^{(i)})"
+  },
+  {
+    "image": "jakob_math_eval/eq_104.jpg",
+    "gt_latex": "(867)_9 = 8 \\cdot 9^2 + 6 \\cdot 9^1 + 7 \\cdot 9^0 = (709)_{10}"
+  }
+]

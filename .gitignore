@@ -68,8 +68,15 @@ wandb/
 data/Dr_Judith_Jakob_Slides/
 
 # --- Public-release hardening (ink2digital) ---
-# Private professor slide data — never publish
-data/
+# Professor slide data stays private, EXCEPT the two evaluation sets
+# released with the paper (author-annotated crops, published with the
+# lecturer's permission — see data/README.md and the paper's
+# Acknowledgment).
+data/*
+!data/README.md
+!data/jakob_math_eval
+!data/jakob_math
+!data/jakob_text_v2
 # outputs: publish eval-result JSONs only; drop rendered private slides
 outputs/*
 !outputs/*.json
