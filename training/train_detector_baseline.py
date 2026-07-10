@@ -79,6 +79,8 @@ def train_yolov8(
     patience: int = 20,
     save_period: int = 10,
     workers: int = 8,
+    lr0: float = 0.01,
+    lrf: float = 0.01,
 ) -> dict:
     """
     Train YOLOv8 on the handwriting detection dataset.
@@ -155,8 +157,8 @@ def train_yolov8(
         mixup=0.1,
         copy_paste=0.1,
         # Optimization
-        lr0=0.01,
-        lrf=0.01,
+        lr0=lr0,
+        lrf=lrf,
         momentum=0.937,
         weight_decay=0.0005,
         warmup_epochs=3.0,
@@ -173,7 +175,11 @@ def train_yolov8(
     logger.info("Evaluating on validation set...")
     val_results = model.val(data=data_yaml, device=device)
 
-    best_weights = Path(project) / name / 'weights' / 'best.pt'
+    # YOLO nests project inside itself: runs/detect/runs/detect/<name>
+    actual_run_dir = Path(project) / project / name
+    if not actual_run_dir.exists():
+        actual_run_dir = Path(project) / name
+    best_weights = actual_run_dir / 'weights' / 'best.pt'
     results_dict = {
         'model': model_size,
         'epochs': epochs,
@@ -188,7 +194,7 @@ def train_yolov8(
     }
 
     # Save training summary
-    summary_path = Path(project) / name / 'training_summary.json'
+    summary_path = actual_run_dir / 'training_summary.json'
     with open(summary_path, 'w') as f:
         json.dump(results_dict, f, indent=2)
     logger.info(f"Training summary saved -> {summary_path}")
@@ -224,6 +230,8 @@ def parse_args():
     parser.add_argument('--patience', type=int, default=20)
     parser.add_argument('--save-period', type=int, default=10)
     parser.add_argument('--workers', type=int, default=8)
+    parser.add_argument('--lr0', type=float, default=0.01, help='Initial learning rate')
+    parser.add_argument('--lrf', type=float, default=0.01, help='Final LR as fraction of lr0')
     return parser.parse_args()
 
 
@@ -243,4 +251,6 @@ if __name__ == '__main__':
         patience=args.patience,
         save_period=args.save_period,
         workers=args.workers,
+        lr0=args.lr0,
+        lrf=args.lrf,
     )

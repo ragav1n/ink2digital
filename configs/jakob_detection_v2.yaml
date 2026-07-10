@@ -1,0 +1,13 @@
+# Jakob slides fine-tuning dataset v2 (YOLO format)
+# 165 annotated slides total: 52 from v1 (4 lectures) + 113 from v2 (9 new lectures)
+# 900 boxes: 307 text + 593 math
+# Classes: text=0, math=1
+
+# Set to the ABSOLUTE path of this directory in your checkout
+# (ultralytics resolves relative paths against its datasets_dir setting).
+path: data/processed/jakob_detection_v2
+train: images/train
+val: images/val
+
+nc: 2
+names: ['text', 'math']

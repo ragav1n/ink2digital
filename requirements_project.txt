@@ -77,6 +77,9 @@ jiwer>=3.0.0
 # ─────────────────────────────────────────
 lxml>=4.9.1
 beautifulsoup4>=4.12.0
+pymupdf>=1.24.0       # slide editor: PDF → per-slide JPG run input (imports as `fitz`)
+python-pptx>=0.6.23   # slide editor: build .pptx downloads from edited slides
+# LibreOffice (system pkg, not pip) enables PowerPoint input: apt install libreoffice
 
 # ─────────────────────────────────────────
 # TAMER dependencies (already cloned)

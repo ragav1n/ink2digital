@@ -1,0 +1,48 @@
+# Mac (Apple Silicon) — INFERENCE ONLY.
+#
+# For running the OCR pipeline + slide editor on an Apple Silicon Mac.
+# NOT for training, and NOT for the CUDA server (use requirements_project.txt
+# there). No CUDA wheels, no bitsandbytes.
+#
+# System dependency (install separately, not via pip):
+#   LaTeX — `latex` + `dvipng`, needed for math rendering by
+#   infer.py:_render_latex_native and tools/slide_editor.py.
+#   Install BasicTeX, then:  sudo tlmgr update --self &&
+#   sudo tlmgr install amsmath amsfonts dvipng standalone preview
+#
+#   LibreOffice — needed ONLY to accept PowerPoint (.ppt/.pptx) input in the
+#   slide editor (rasterised to PDF via headless `soffice`). PDF and image-
+#   folder input do not need it.  Install:  brew install --cask libreoffice
+#
+# Install:  pip install -r requirements-mac.txt
+# After a working test run in Germany, freeze exact versions:
+#   pip freeze > requirements-mac.lock.txt   (then prefer the lock file)
+
+# --- PyTorch: plain PyPI wheels include Apple Silicon MPS support.
+# NO +cu124 suffix, NO --index-url.
+torch>=2.4.0
+torchvision>=0.19.0
+
+# --- MLX VLM backend (Apple Silicon Qwen3-VL). Pin exact versions once a
+# working combination is confirmed in Germany — the mlx-vlm API has drifted
+# across releases (see models/vlm_ocr_mlx.py header note).
+mlx>=0.30.0
+mlx-vlm>=0.3.4
+
+# --- Shared pipeline deps
+transformers>=4.49.0
+ultralytics>=8.3.0
+numpy>=1.24.0
+pillow>=10.1.0
+opencv-python>=4.9.0
+loguru>=0.7.0
+huggingface-hub>=0.26.0
+editdistance>=0.6.0   # post-OCR dedupe of duplicate text overlays
+
+# --- Slide editor (tools/slide_editor.py)
+flask>=3.0.0
+pymupdf>=1.24.0       # PDF → per-slide JPG conversion for run input (imports as `fitz`)
+python-pptx>=0.6.23   # build .pptx downloads from edited slides
+
+# Excluded on purpose: bitsandbytes, peft, accelerate-cuda extras,
+# pix2tex / TAMER deps — not used on the Mac VLM inference path.

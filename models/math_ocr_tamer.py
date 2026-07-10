@@ -58,11 +58,17 @@ class TAMERMathOCR:
         use_beam_search: bool = True,
         beam_size: int = 10,
         fallback_to_pix2tex: bool = True,
+        prefer_pix2tex: bool = True,
     ):
+        """`prefer_pix2tex=True` (default): try pix2tex first. Pix2tex has a much
+        broader LaTeX vocab (printed-math arXiv distribution) and produces real
+        LaTeX symbols on Jakob handwriting, whereas TAMER's HME100K base
+        hallucinates Chinese characters."""
         self.device = device
         self.use_beam_search = use_beam_search
         self.beam_size = beam_size
         self.fallback_to_pix2tex = fallback_to_pix2tex
+        self.prefer_pix2tex = prefer_pix2tex
 
         ckpt_dir = Path(checkpoint_dir or self.DEFAULT_CHECKPOINT_DIR)
         config = Path(config_path or self.DEFAULT_CONFIG)
@@ -72,8 +78,16 @@ class TAMERMathOCR:
         self._load(ckpt_dir, config)
 
     def _load(self, checkpoint_dir: Path, config_path: Path) -> None:
-        """Load TAMER or fall back to Pix2Tex."""
-        # Try TAMER first
+        """Load pix2tex (preferred) or TAMER."""
+        if self.prefer_pix2tex:
+            try:
+                self.model = self._load_pix2tex()
+                self.model_type = 'pix2tex'
+                logger.info("Pix2Tex math OCR loaded")
+                return
+            except Exception as e:
+                logger.warning(f"Pix2Tex load failed: {e}")
+
         try:
             self.model = self._load_tamer(checkpoint_dir, config_path)
             self.model_type = 'tamer'
@@ -82,8 +96,7 @@ class TAMERMathOCR:
         except Exception as e:
             logger.warning(f"TAMER load failed: {e}")
 
-        # Fall back to Pix2Tex
-        if self.fallback_to_pix2tex:
+        if self.fallback_to_pix2tex and not self.prefer_pix2tex:
             try:
                 self.model = self._load_pix2tex()
                 self.model_type = 'pix2tex'

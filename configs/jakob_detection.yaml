@@ -1,0 +1,12 @@
+# Jakob slides fine-tuning dataset (YOLO format)
+# 52 annotated slides from Dr. Judith Jakob's lectures
+# Classes: text=0, math=1
+
+# Set to the ABSOLUTE path of this directory in your checkout
+# (ultralytics resolves relative paths against its datasets_dir setting).
+path: data/processed/jakob_detection
+train: images/train
+val: images/val
+
+nc: 2
+names: ['text', 'math']

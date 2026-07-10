@@ -173,17 +173,28 @@ class YOLOv8Detector:
         conf_threshold: float = 0.35,
         iou_threshold: float = 0.45,
         device: str = 'cuda',
+        imgsz: int = 640,
     ):
         from ultralytics import YOLO
         import torch
 
-        self.device = device if torch.cuda.is_available() else 'cpu'
+        # Resolve the device so a Mac (Apple Silicon) can use 'mps'. A 'cuda'
+        # request still downgrades to cpu when CUDA is absent (unchanged
+        # behaviour); on the CUDA server this stays 'cuda'.
+        if device == 'cuda' and not torch.cuda.is_available():
+            mps_ok = hasattr(torch.backends, 'mps') and torch.backends.mps.is_available()
+            device = 'mps' if mps_ok else 'cpu'
+        elif device == 'mps':
+            mps_ok = hasattr(torch.backends, 'mps') and torch.backends.mps.is_available()
+            device = 'mps' if mps_ok else 'cpu'
+        self.device = device
         self.model_path = weights
         logger.info(f"Loading YOLOv8 from {weights} on {self.device}...")
         self.model = YOLO(weights)
         self.conf_threshold = conf_threshold
         self.iou_threshold = iou_threshold
-        logger.info("YOLOv8 loaded successfully")
+        self.imgsz = imgsz
+        logger.info(f"YOLOv8 loaded successfully (imgsz={imgsz})")
 
     def detect(
         self,
@@ -201,6 +212,7 @@ class YOLOv8Detector:
             conf=self.conf_threshold,
             iou=self.iou_threshold,
             device=self.device,
+            imgsz=self.imgsz,
             verbose=False,
         )
 
