@@ -1,0 +1,10 @@
+{
+  "model": "rtdetr-l.pt",
+  "imgsz": 1536,
+  "batch": 2,
+  "epochs": 100,
+  "save_dir": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\rtdetr_v1",
+  "best_weights": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\rtdetr_v1\\weights\\best.pt",
+  "mAP50": 0.4971112457705843,
+  "mAP50_95": 0.300909058023758
+}

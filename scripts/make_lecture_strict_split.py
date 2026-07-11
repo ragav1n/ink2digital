@@ -7,7 +7,9 @@ and emits a new YOLO dataset directory in which entire lectures are held out
 for validation, plus the matching dataset YAML.
 
 The lecture key is the filename with its trailing page marker (``_p01`` /
-``page-0001`` etc.) and extension stripped; slides of one lecture share the
+``page-0001`` etc.), extension, and any leading per-file 8-hex upload hash
+(``04d4ad37-...``, a Label-Studio-style export prefix that differs for every
+file of the same lecture) stripped; slides of one lecture then share the
 prefix. Validation lectures are chosen greedily to reach ~20% of slides while
 keeping both classes present in val.
 
@@ -33,10 +35,11 @@ from pathlib import Path
 from loguru import logger
 
 _PAGE_RE = re.compile(r'(_p\d+|_page[-_]?\d+|page-\d+)$', re.IGNORECASE)
+_HASH_RE = re.compile(r'^[0-9a-f]{8}-', re.IGNORECASE)
 
 
 def lecture_key(stem: str) -> str:
-    return _PAGE_RE.sub('', stem)
+    return _PAGE_RE.sub('', _HASH_RE.sub('', stem))
 
 
 def main():

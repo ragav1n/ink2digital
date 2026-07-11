@@ -1,0 +1,3067 @@
+{
+  "config": {
+    "data_files": [
+      "data\\jakob_math_eval\\samples.json",
+      "data\\jakob_math\\transcriptions.json"
+    ],
+    "n_samples": 134,
+    "backends_run": [
+      "smoldocling"
+    ],
+    "device": "cuda",
+    "git_sha": "e9d067c",
+    "include_post": true
+  },
+  "backends": {
+    "smoldocling": {
+      "overall": {
+        "raw": {
+          "exp_rate": 0.0,
+          "cer": 1.0049748468178559,
+          "bleu": 0.01272295260861203,
+          "n": 134
+        },
+        "post": {
+          "exp_rate": 0.0,
+          "cer": 0.7964362961523873,
+          "bleu": 0.012722952283623298,
+          "n": 134
+        }
+      },
+      "per_tag": {
+        "long": {
+          "n": 44,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 1.2144132047138687,
+            "bleu": 0.00449829422750354
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.820660519029206,
+            "bleu": 0.004498293418328181
+          }
+        },
+        "medium": {
+          "n": 74,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.9225353925962496,
+            "bleu": 0.015265799683875042
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.7790347490956062,
+            "bleu": 0.015265799576513224
+          }
+        },
+        "multi-line": {
+          "n": 13,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.9031411250581544,
+            "bleu": 0.02008172747682045
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.9031411250581544,
+            "bleu": 0.02008172747682045
+          }
+        },
+        "short": {
+          "n": 16,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.8103018383787477,
+            "bleu": 0.023580095433568954
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.8103018383787477,
+            "bleu": 0.023580095433568954
+          }
+        },
+        "with-frac": {
+          "n": 48,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.8600957755138997,
+            "bleu": 4.998205343985577e-05
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.6965148971723831,
+            "bleu": 4.998167394802853e-05
+          }
+        },
+        "with-integral": {
+          "n": 16,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.9094979279084984,
+            "bleu": 0.03288898384776236
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.5849786971392675,
+            "bleu": 0.03288898329630868
+          }
+        },
+        "with-matrix": {
+          "n": 10,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.6498053067448991,
+            "bleu": 0.022072848060276196
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.6498053067448991,
+            "bleu": 0.022072848060276196
+          }
+        },
+        "with-sqrt": {
+          "n": 3,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.5441423849089354,
+            "bleu": 1.7176013828855708e-08
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.5441423849089354,
+            "bleu": 1.7176013828855708e-08
+          }
+        },
+        "with-sum": {
+          "n": 8,
+          "raw": {
+            "exp_rate": 0.0,
+            "cer": 0.6408433397395017,
+            "bleu": 0.012398137159323095
+          },
+          "post": {
+            "exp_rate": 0.0,
+            "cer": 0.6408433397395017,
+            "bleu": 0.012398137159323095
+          }
+        }
+      },
+      "per_sample": [
+        {
+          "image": "jakob_math_eval/eq_001.jpg",
+          "gt_latex": "y' = f(x) \\cdot g(y)",
+          "pred_raw": "y ^ { \\prime } = f ( x ) \\cdot g ( y )",
+          "pred_post": "y ^ { \\prime } = f ( x ) \\cdot g ( y )",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.95,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 19
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.95,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 19
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_002.jpg",
+          "gt_latex": "y' = f(ax + by + c)",
+          "pred_raw": "y ^ { \\prime } = \\beta ( a x + b y + c )",
+          "pred_post": "y ^ { \\prime } = \\beta ( a x + b y + c )",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.2105263157894737,
+            "bleu": 2.0808957254213574e-08,
+            "edit": 23
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.2105263157894737,
+            "bleu": 2.0808957254213574e-08,
+            "edit": 23
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_003.jpg",
+          "gt_latex": "\\sin(x) \\cdot y'' + \\frac{1}{x} y' + x^2 y = \\ln(x)",
+          "pred_raw": "\\sin ( x ) \\cdot y ^ { \\prime \\prime } + \\frac { 1 } { x } y ^ { \\prime } + x ^ { 2 } y = \\ln ( x )",
+          "pred_post": "\\sin ( x ) \\cdot y ^ { \\prime \\prime } + \\frac { 1 } { x } y ^ { \\prime } + x ^ { 2 } y = \\ln ( x )",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 2.509862127045799e-06,
+            "edit": 51
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 2.509862127045799e-06,
+            "edit": 51
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_004.jpg",
+          "gt_latex": "\\int \\frac{1}{y} \\, dy = -\\int f(x) \\, dx",
+          "pred_raw": "S \\frac { 1 } { y } d y = - \\int f ( x ) d x",
+          "pred_post": "S \\frac { 1 } { y } d y = - \\int f ( x ) d x",
+          "tags": [
+            "with-integral",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4878048780487805,
+            "bleu": 1.8012296977776987e-08,
+            "edit": 20
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4878048780487805,
+            "bleu": 1.8012296977776987e-08,
+            "edit": 20
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_005.jpg",
+          "gt_latex": "y = K \\cdot e^{-\\int f(x) \\, dx}, \\quad K \\in \\mathbb{R}",
+          "pred_raw": "y = K \\cdot e ^ { - \\int f ( x ) d x } , K \\cdot e ^ { i R }",
+          "pred_post": "y = K \\cdot e ^ { - \\int f ( x ) d x } , K \\cdot e ^ { i R }",
+          "tags": [
+            "with-integral",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5357142857142857,
+            "bleu": 0.0997022300613484,
+            "edit": 30
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5357142857142857,
+            "bleu": 0.0997022300613484,
+            "edit": 30
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_006.jpg",
+          "gt_latex": "y = \\underbrace{\\pm e^c}_{\\in \\mathbb{R} \\setminus \\{0\\}} \\cdot e^{-\\int f(x) \\, dx}",
+          "pred_raw": "y = \\frac { \\pm e ^ { c } } { \\langle \\langle \\rangle } e ^ { - \\int f ( x ) d x }",
+          "pred_post": "y = \\frac { \\pm e ^ { c } } { \\langle \\langle \\rangle } e ^ { - \\int f ( x ) d x }",
+          "tags": [
+            "with-integral",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6666666666666666,
+            "bleu": 2.2679164467150174e-06,
+            "edit": 56
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6666666666666666,
+            "bleu": 2.2679164467150174e-06,
+            "edit": 56
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_007.jpg",
+          "gt_latex": "NR: -\\int \\frac{1}{x^2} \\, dx",
+          "pred_raw": "N R \\colon - \\int \\frac { 1 } { x ^ { 2 } } d x",
+          "pred_post": "N R \\colon - \\int \\frac { 1 } { x ^ { 2 } } d x",
+          "tags": [
+            "with-integral",
+            "with-frac",
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7586206896551724,
+            "bleu": 9.999999999999996e-11,
+            "edit": 22
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7586206896551724,
+            "bleu": 9.999999999999996e-11,
+            "edit": 22
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_008.jpg",
+          "gt_latex": "= x^{-1} = \\frac{1}{x}",
+          "pred_raw": "= x ^ { - 1 } = \\frac { 1 } { x }",
+          "pred_post": "= x ^ { - 1 } = \\frac { 1 } { x }",
+          "tags": [
+            "with-frac",
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 11
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 11
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_009.jpg",
+          "gt_latex": "y = C \\cdot e^{-\\int f(x) \\, dx}",
+          "pred_raw": "y = C \\cdot e ^ { - \\int f ( x ) d x }",
+          "pred_post": "y = C \\cdot e ^ { - \\int f ( x ) d x }",
+          "tags": [
+            "with-integral",
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.34375,
+            "bleu": 0.15310245452282373,
+            "edit": 11
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.34375,
+            "bleu": 0.15310245452282373,
+            "edit": 11
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_010.jpg",
+          "gt_latex": "= \\frac{k}{|x|} = \\frac{k}{\\pm x} = \\frac{\\pm k}{x} = \\frac{k}{x}",
+          "pred_raw": "z \\frac { x } { | x | } = \\frac { x } { \\pm x } = \\frac { \\pm x } { x } = \\frac { x } { x }",
+          "pred_post": "z \\frac { x } { | x | } = \\frac { x } { \\pm x } = \\frac { \\pm x } { x } = \\frac { x } { x }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.47692307692307695,
+            "bleu": 1.6990442453568333e-08,
+            "edit": 31
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.47692307692307695,
+            "bleu": 1.6990442453568333e-08,
+            "edit": 31
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_011.jpg",
+          "gt_latex": "y' = \\frac{K'(x) \\cdot x - K(x) \\cdot 1}{x^2} = \\frac{K'(x)}{x} - \\frac{K(x)}{x^2}",
+          "pred_raw": "y ^ { \\prime } = \\frac { u ^ { \\prime } ( x ) \\cdot x - u ( x ) ^ { \\prime \\prime } } { x ^ { 2 } } = \\frac { u ( x ) } { x } - \\frac { u ( x ) } { x ^ { 2 } }",
+          "pred_post": "y ^ { \\prime } = \\frac { u ^ { \\prime } ( x ) \\cdot x - u ( x ) ^ { \\prime \\prime } } { x ^ { 2 } } = \\frac { u ( x ) } { x } - \\frac { u ( x ) } { x ^ { 2 } }",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0853658536585367,
+            "bleu": 0.0002696665747633346,
+            "edit": 89
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0853658536585367,
+            "bleu": 0.0002696665747633346,
+            "edit": 89
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_012.jpg",
+          "gt_latex": "K'(x) = x \\cdot \\cos(x)",
+          "pred_raw": "K ^ { \\prime } ( x ) = X \\cdot \\cos ( x )",
+          "pred_post": "K ^ { \\prime } ( x ) = X \\cdot \\cos ( x )",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8695652173913043,
+            "bleu": 2.114742527145468e-08,
+            "edit": 20
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8695652173913043,
+            "bleu": 2.114742527145468e-08,
+            "edit": 20
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_013.jpg",
+          "gt_latex": "y = \\frac{K(x)}{x} = \\frac{x \\cdot \\sin(x) + \\cos(x) + C}{x}",
+          "pred_raw": "y = \\frac { u ( x ) } { x } = \\frac { x \\sin ( x ) + \\cos ( x ) + C } { x }",
+          "pred_post": "y = \\frac { u ( x ) } { x } = \\frac { x \\sin ( x ) + \\cos ( x ) + C } { x }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.45,
+            "bleu": 2.707832299892153e-06,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.45,
+            "bleu": 2.707832299892153e-06,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_014.jpg",
+          "gt_latex": "= \\sin(x) + \\frac{\\cos(x)}{x} + \\frac{C}{x}",
+          "pred_raw": "= \\sin ( x ) + \\frac { \\cos ( x ) } { x } + \\frac { C } { x }",
+          "pred_post": "= \\sin ( x ) + \\frac { \\cos ( x ) } { x } + \\frac { C } { x }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4186046511627907,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 18
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4186046511627907,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 18
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_015.jpg",
+          "gt_latex": "u = x \\\\ v' = \\cos(x) \\\\ v = \\sin(x) \\\\ u' = 1",
+          "pred_raw": "\\begin{array} { c } { { \\mu = x } } \\\\ { { \\nu ^ { \\prime } = \\cos ( x ) } } \\\\ { { \\nu = \\sin ( x ) } } \\\\ { { \\mu ^ { \\prime } = 1 } } \\end{array}",
+          "pred_post": "\\begin{array} { c } { { \\mu = x } } \\\\ { { \\nu ^ { \\prime } = \\cos ( x ) } } \\\\ { { \\nu = \\sin ( x ) } } \\\\ { { \\mu ^ { \\prime } = 1 } } \\end{array}",
+          "tags": [
+            "multi-line",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 2.3043478260869565,
+            "bleu": 2.927700221045444e-06,
+            "edit": 106
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 2.3043478260869565,
+            "bleu": 2.927700221045444e-06,
+            "edit": 106
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_016.jpg",
+          "gt_latex": "K(x) = \\int x \\cdot \\cos(x) \\, dx",
+          "pred_raw": "K ( x ) = \\int x \\cdot \\cos ( x ) d x",
+          "pred_post": "K ( x ) = \\int x \\cdot \\cos ( x ) d x",
+          "tags": [
+            "with-integral",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.2727272727272727,
+            "bleu": 0.1777835118938087,
+            "edit": 9
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.2727272727272727,
+            "bleu": 0.1777835118938087,
+            "edit": 9
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_017.jpg",
+          "gt_latex": "y_0 = C \\cdot e^{-\\int a \\, dx} = C \\cdot e^{-ax}",
+          "pred_raw": "y _ { 0 } = C e ^ { - \\int a d x } = C e ^ { - a x }",
+          "pred_post": "y _ { 0 } = C e ^ { - \\int a d x } = C e ^ { - a x }",
+          "tags": [
+            "with-integral",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5714285714285714,
+            "bleu": 3.5930411211578884e-06,
+            "edit": 28
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5714285714285714,
+            "bleu": 3.5930411211578884e-06,
+            "edit": 28
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_018.jpg",
+          "gt_latex": "y' - 4y = \\sin(x) \\Rightarrow y_p = C_1 \\cdot \\sin(x) + C_2 \\cdot \\cos(x)",
+          "pred_raw": "y ^ { \\prime } - 4 y = \\lfloor \\sin ( x ) \\rfloor = y _ { p } = C _ { 1 } \\cdot \\sin ( x ) + C _ { 2 } \\cdot \\cos ( x )",
+          "pred_post": "y ^ { \\prime } - 4 y = \\lfloor \\sin ( x ) \\rfloor = y _ { p } = C _ { 1 } \\cdot \\sin ( x ) + C _ { 2 } \\cdot \\cos ( x )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7945205479452054,
+            "bleu": 1.9327278234471264e-08,
+            "edit": 58
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7945205479452054,
+            "bleu": 1.9327278234471264e-08,
+            "edit": 58
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_019.jpg",
+          "gt_latex": "\\Rightarrow y_p = C \\cdot e^{-2x}",
+          "pred_raw": "> y _ { p } = C \\cdot e ^ { - 2 x }",
+          "pred_post": "> y _ { p } = C \\cdot e ^ { - 2 x }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6060606060606061,
+            "bleu": 0.0006500593264704509,
+            "edit": 20
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6060606060606061,
+            "bleu": 0.0006500593264704509,
+            "edit": 20
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_020.jpg",
+          "gt_latex": "y = y_0 + y_p = C \\cdot e^{-2x} + x^2 - x - \\frac{3}{2}",
+          "pred_raw": "y = y _ { 0 } + y _ { p } = C e ^ { - 2 x } + x ^ { 2 } - x ^ { - \\frac { 3 } { 2 } }",
+          "pred_post": "y = y _ { 0 } + y _ { p } = C e ^ { - 2 x } + x ^ { 2 } - x ^ { - \\frac { 3 } { 2 } }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7090909090909091,
+            "bleu": 3.582036271871227e-06,
+            "edit": 39
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7090909090909091,
+            "bleu": 3.582036271871227e-06,
+            "edit": 39
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_021.jpg",
+          "gt_latex": "y' - 4y = \\sin(2x) + 3\\cos(2x)",
+          "pred_raw": "y ^ { \\prime } - 4 y = \\sin ( \\lambda x ) + 3 \\cos ( 2 x )",
+          "pred_post": "y ^ { \\prime } - 4 y = \\sin ( \\lambda x ) + 3 \\cos ( 2 x )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 1.944130842154183e-08,
+            "edit": 30
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 1.944130842154183e-08,
+            "edit": 30
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_022.jpg",
+          "gt_latex": "|y| = e^c \\cdot e^{-\\int f(x) \\, dx}",
+          "pred_raw": "I y _ { 1 } = e ^ { c } \\cdot e ^ { - \\int f ( x ) d x }",
+          "pred_post": "I y _ { 1 } = e ^ { c } \\cdot e ^ { - \\int f ( x ) d x }",
+          "tags": [
+            "with-integral",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.75,
+            "bleu": 1.6817928310329892e-08,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.75,
+            "bleu": 1.6817928310329892e-08,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_023.jpg",
+          "gt_latex": "y' + a \\cdot y = g(x), \\quad 0 \\neq a \\in \\mathbb{R}",
+          "pred_raw": "y ^ { 1 } + a \\cdot y = g ( x ) , 0 \\neq a \\in ( x )",
+          "pred_post": "y ^ { 1 } + a \\cdot y = g ( x ) , 0 \\neq a \\in ( x )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5192307692307693,
+            "bleu": 0.2708641693996393,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5192307692307693,
+            "bleu": 0.2708641693996393,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_024.jpg",
+          "gt_latex": "y_1' = \\cos(x), \\quad y_1'' = -\\sin(x), \\quad y_1''' = -\\cos(x)",
+          "pred_raw": "y _ { 1 } ^ { \\prime } = \\cos \\langle x \\rangle , \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\,",
+          "pred_post": "",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 11.619047619047619,
+            "bleu": 7.944774452552396e-09,
+            "edit": 732
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 0.0,
+            "edit": 63
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_025.jpg",
+          "gt_latex": "W = \\begin{pmatrix} \\sin(x) & \\cos(x) & e^{2x} \\\\ \\cos(x) & -\\sin(x) & 2e^{2x} \\\\ -\\sin(x) & -\\cos(x) & 4e^{2x} \\end{pmatrix}",
+          "pred_raw": "W = \\left ( \\begin{array} { c c c } { { \\sin | x | } } & { { \\cos ( x ) } } & { { e ^ { 2 x } } } \\\\ { { \\cos ( x ) } } & { { - \\sin | x | } } & { { e ^ { 2 x } } } \\\\ { { - \\sin ( x ) } } & { { - \\cos ( x ) } } & { { 4 e ^ { 2 x } } } \\end{array} \\right )",
+          "pred_post": "W = \\left ( \\begin{array} { c c c } { { \\sin | x | } } & { { \\cos ( x ) } } & { { e ^ { 2 x } } } \\\\ { { \\cos ( x ) } } & { { - \\sin | x | } } & { { e ^ { 2 x } } } \\\\ { { - \\sin ( x ) } } & { { - \\cos ( x ) } } & { { 4 e ^ { 2 x } } } \\end{array} \\right )",
+          "tags": [
+            "with-matrix",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.176,
+            "bleu": 1.7564696583894347e-06,
+            "edit": 147
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.176,
+            "bleu": 1.7564696583894347e-06,
+            "edit": 147
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_026.jpg",
+          "gt_latex": "\\det(W) = -\\sin^2(x) \\cdot 4e^{2x} - \\sin(x) \\cdot \\cos(x) \\cdot 2e^{2x} - \\cos^2(x) \\cdot e^{2x} \\\\ - \\sin^2(x) \\cdot e^{2x} + \\sin(x) \\cdot \\cos(x) \\cdot 2e^{2x} - \\cos^2(x) \\cdot 4e^{2x}",
+          "pred_raw": "\\det ( w ) = - \\sin 2 ( x ) \\cdot 4 e ^ { 2 x } - \\sin 1 ( x ) \\cdot \\cos ( x ) \\cdot 2 e ^ { 2 x } - \\cos ^ { 2 } ( x ) \\cdot e ^ { 2 x } \\\\ - \\sin ^ { 2 } ( x ) \\cdot e ^ { 2 x } + \\sin ( x ) \\cdot \\cos ( x ) \\cdot 2 e ^ { 2 x } - \\cos ^ { 2 } ( x ) \\cdot 4 e ^ { 2 x }",
+          "pred_post": "\\det ( w ) = - \\sin 2 ( x ) \\cdot 4 e ^ { 2 x } - \\sin 1 ( x ) \\cdot \\cos ( x ) \\cdot 2 e ^ { 2 x } - \\cos ^ { 2 } ( x ) \\cdot e ^ { 2 x } \\\\ - \\sin ^ { 2 } ( x ) \\cdot e ^ { 2 x } + \\sin ( x ) \\cdot \\cos ( x ) \\cdot 2 e ^ { 2 x } - \\cos ^ { 2 } ( x ) \\cdot 4 e ^ { 2 x }",
+          "tags": [
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 1.9160155301150992e-06,
+            "edit": 84
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 1.9160155301150992e-06,
+            "edit": 84
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_027.jpg",
+          "gt_latex": "\\lambda^2 + 2\\lambda + 1 = (\\lambda + 1)^2 = 0 \\Rightarrow \\lambda_{1,2} = -1",
+          "pred_raw": "d ^ { 2 } t + 2 t + 1 = ( d t + 1 ) ^ { 2 } = 0 \\\\ = \\lambda _ { 1 1 2 } = - 1",
+          "pred_post": "d ^ { 2 } t + 2 t + 1 = ( d t + 1 ) ^ { 2 } = 0 \\\\ = \\lambda _ { 1 1 2 } = - 1",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6233766233766234,
+            "bleu": 0.00048650851458044794,
+            "edit": 48
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6233766233766234,
+            "bleu": 0.00048650851458044794,
+            "edit": 48
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_028.jpg",
+          "gt_latex": "y' + ay = 0 \\\\ \\Rightarrow \\lambda^1 + a = 0 \\\\ \\Rightarrow \\lambda = -a",
+          "pred_raw": "y ^ { \\prime } + a y = 0 \\\\ \\Rightarrow \\lambda ^ { 1 } + a = 0 \\\\ = \\ > \\lambda = - a",
+          "pred_post": "y ^ { \\prime } + a y = 0 \\\\ \\Rightarrow \\lambda ^ { 1 } + a = 0 \\\\ = \\ > \\lambda = - a",
+          "tags": [
+            "multi-line",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 0.25967818327214803,
+            "edit": 32
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 0.25967818327214803,
+            "edit": 32
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_029.jpg",
+          "gt_latex": "\\lambda_{2,3} = \\frac{3}{2} \\pm \\sqrt{\\frac{9}{4} + \\frac{16}{4}}",
+          "pred_raw": "\\lambda _ { 2 1 3 } = \\frac { 3 } { 2 } + \\sqrt { \\frac { 9 } { 4 } + \\frac { 1 6 } { 4 } }",
+          "pred_post": "\\lambda _ { 2 1 3 } = \\frac { 3 } { 2 } + \\sqrt { \\frac { 9 } { 4 } + \\frac { 1 6 } { 4 } }",
+          "tags": [
+            "with-sqrt",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.49230769230769234,
+            "bleu": 1.546110352064315e-08,
+            "edit": 32
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.49230769230769234,
+            "bleu": 1.546110352064315e-08,
+            "edit": 32
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_030.jpg",
+          "gt_latex": "y_0 = C_1 \\cdot e^x + C_2 \\cdot e^{-x} + C_3 \\cdot e^{4x}",
+          "pred_raw": "y _ { 0 } = C _ { i } e ^ { x } + C _ { 2 } e ^ { - x } + C _ { 3 } e ^ { u x } ,",
+          "pred_post": "y _ { 0 } = C _ { i } e ^ { x } + C _ { 2 } e ^ { - x } + C _ { 3 } e ^ { u x } ,",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8070175438596491,
+            "bleu": 1.6446911277959506e-08,
+            "edit": 46
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8070175438596491,
+            "bleu": 1.6446911277959506e-08,
+            "edit": 46
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_031.jpg",
+          "gt_latex": "C_1, C_2, C_3 \\in \\mathbb{R}",
+          "pred_raw": "C _ { 1 1 } C _ { 2 1 } C _ { 3 1 } \\in \\mathbb { R }",
+          "pred_post": "C _ { 1 1 } C _ { 2 1 } C _ { 3 1 } \\in \\mathbb { R }",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9642857142857143,
+            "bleu": 1.4440028195847323e-08,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9642857142857143,
+            "bleu": 1.4440028195847323e-08,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_032.jpg",
+          "gt_latex": "y_1 = e^{\\alpha x}, \\quad y_2 = x \\cdot e^{\\alpha x}, \\quad y_3 = x^2 \\cdot e^{\\alpha x}",
+          "pred_raw": "y _ { 1 } = e ^ { a x } , y _ { 2 } = x \\cdot e ^ { a x } , y _ { 3 } = x ^ { 2 } , e ^ { a x }",
+          "pred_post": "y _ { 1 } = e ^ { a x } , y _ { 2 } = x \\cdot e ^ { a x } , y _ { 3 } = x ^ { 2 } , e ^ { a x }",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6363636363636364,
+            "bleu": 0.00032370115225866945,
+            "edit": 56
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6363636363636364,
+            "bleu": 0.00032370115225866945,
+            "edit": 56
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_033.jpg",
+          "gt_latex": "y_0 = C_1 \\cdot e^x + C_2 \\cdot xe^x + C_3 x^2 e^x + C_4 e^{3x}, \\\\ = (C_1 + C_2 x + C_3 x^2) e^x + C_4 e^{3x}",
+          "pred_raw": "y _ { 0 } = C _ { 1 } \\cdot e ^ { x } + C _ { 2 } \\cdot x e ^ { x } + C _ { 3 } x ^ { 2 } e ^ { x } + C _ { 4 } e ^ { 3 x } , \\\\ = C _ { 1 } + C _ { 2 } x + G _ { 3 } x ^ { 2 } ) e ^ { x } + C _ { 4 } e ^ { 3 x }",
+          "pred_post": "y _ { 0 } = C _ { 1 } \\cdot e ^ { x } + C _ { 2 } \\cdot x e ^ { x } + C _ { 3 } x ^ { 2 } e ^ { x } + C _ { 4 } e ^ { 3 x } , \\\\ = C _ { 1 } + C _ { 2 } x + G _ { 3 } x ^ { 2 } ) e ^ { x } + C _ { 4 } e ^ { 3 x }",
+          "tags": [
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9545454545454546,
+            "bleu": 2.1969613905296813e-06,
+            "edit": 105
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9545454545454546,
+            "bleu": 2.1969613905296813e-06,
+            "edit": 105
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_034.jpg",
+          "gt_latex": "C_1, C_2, C_3, C_4 \\in \\mathbb{R}",
+          "pred_raw": "c _ { 1 } , c _ { 2 } , c _ { 3 } , c _ { 4 } , \\in \\mathbb { R }",
+          "pred_post": "c _ { 1 } , c _ { 2 } , c _ { 3 } , c _ { 4 } , \\in \\mathbb { R }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0909090909090908,
+            "bleu": 1.3627007684972876e-08,
+            "edit": 36
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0909090909090908,
+            "bleu": 1.3627007684972876e-08,
+            "edit": 36
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_035.jpg",
+          "gt_latex": "\\lambda^4 - 6\\lambda^3 + 12\\lambda^2 - 10\\lambda + 3 = 0",
+          "pred_raw": "l ^ { 4 } - b l ^ { 3 } + 1 2 l ^ { 2 } - 1 0 l + 3 = 0",
+          "pred_post": "l ^ { 4 } - b l ^ { 3 } + 1 2 l ^ { 2 } - 1 0 l + 3 = 0",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6428571428571429,
+            "bleu": 0.09615094016178544,
+            "edit": 36
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6428571428571429,
+            "bleu": 0.09615094016178544,
+            "edit": 36
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_036.jpg",
+          "gt_latex": "y_1 = e^{\\alpha x} \\cdot \\sin(\\omega x) = e^{0 \\cdot x} \\cdot \\sin(2x) = \\sin(2x)",
+          "pred_raw": "y _ { 1 } = e ^ { d x } \\cdot \\sin ( \\omega x ) \\ = e ^ { 0 \\cdot x } \\cdot \\sin ( 2 x ) = \\sin ( \\partial x )",
+          "pred_post": "y _ { 1 } = e ^ { d x } \\cdot \\sin ( \\omega x ) \\ = e ^ { 0 \\cdot x } \\cdot \\sin ( 2 x ) = \\sin ( \\partial x )",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.49382716049382713,
+            "bleu": 1.9804854718069608e-08,
+            "edit": 40
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.49382716049382713,
+            "bleu": 1.9804854718069608e-08,
+            "edit": 40
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_037.jpg",
+          "gt_latex": "y_2 = e^{\\alpha x} \\cdot \\cos(\\omega x) = e^{0 \\cdot x} \\cdot \\cos(2x) = \\cos(2x)",
+          "pred_raw": "y _ { 2 } = e ^ { d x } \\cdot \\cos ( \\omega x ) = e ^ { d x } \\cdot \\cos ( 2 x ) = \\cos ( 2 x )",
+          "pred_post": "y _ { 2 } = e ^ { d x } \\cdot \\cos ( \\omega x ) = e ^ { d x } \\cdot \\cos ( 2 x ) = \\cos ( 2 x )",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.41975308641975306,
+            "bleu": 1.9173088201510916e-08,
+            "edit": 34
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.41975308641975306,
+            "bleu": 1.9173088201510916e-08,
+            "edit": 34
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_038.jpg",
+          "gt_latex": "y_3 = e^{\\lambda_3 x} = e^x",
+          "pred_raw": "y _ { 3 } = e ^ { x } = e ^ { x }",
+          "pred_post": "y _ { 3 } = e ^ { x } = e ^ { x }",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8148148148148148,
+            "bleu": 1.852018278610637e-08,
+            "edit": 22
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8148148148148148,
+            "bleu": 1.852018278610637e-08,
+            "edit": 22
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_039.jpg",
+          "gt_latex": "y_4 = e^{\\lambda_4 x} = e^{-x}",
+          "pred_raw": "y _ { 4 } = e ^ { \\lambda u x } = e ^ { - x }",
+          "pred_post": "y _ { 4 } = e ^ { \\lambda u x } = e ^ { - x }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5666666666666667,
+            "bleu": 1.7782794104834934e-08,
+            "edit": 17
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5666666666666667,
+            "bleu": 1.7782794104834934e-08,
+            "edit": 17
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_040.jpg",
+          "gt_latex": "z_{1,2} = -\\frac{3}{2} \\pm \\sqrt{\\frac{9}{4} + 4}",
+          "pred_raw": "z _ { 1 1 2 } = - \\frac { 3 } { 2 } \\pm \\sqrt { \\frac { 9 } { 4 } + 4 }",
+          "pred_post": "z _ { 1 1 2 } = - \\frac { 3 } { 2 } \\pm \\sqrt { \\frac { 9 } { 4 } + 4 }",
+          "tags": [
+            "with-sqrt",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.46938775510204084,
+            "bleu": 1.793415067982854e-08,
+            "edit": 23
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.46938775510204084,
+            "bleu": 1.793415067982854e-08,
+            "edit": 23
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_041.jpg",
+          "gt_latex": "z^2 + 3z - 4 = 0",
+          "pred_raw": "z ^ { 2 } + 3 z - 4 = 0",
+          "pred_post": "z ^ { 2 } + 3 z - 4 = 0",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4375,
+            "bleu": 0.22416933513168116,
+            "edit": 7
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4375,
+            "bleu": 0.22416933513168116,
+            "edit": 7
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_042.jpg",
+          "gt_latex": "\\lambda_{1,2}^2 = -4, \\quad \\lambda_{3,4}^2 = 1",
+          "pred_raw": "l _ { 1 1 2 } ^ { 2 } = - 4 \\cdot \\cdot \\cdot l _ { 3 1 4 } ^ { 2 } = 1",
+          "pred_post": "l _ { 1 1 2 } ^ { 2 } = - 4 \\cdot \\cdot \\cdot l _ { 3 1 4 } ^ { 2 } = 1",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9787234042553191,
+            "bleu": 2.4232627192687607e-06,
+            "edit": 46
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9787234042553191,
+            "bleu": 2.4232627192687607e-06,
+            "edit": 46
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_043.jpg",
+          "gt_latex": "\\lambda_1 = 2, \\quad \\lambda_{2,3} = \\pm i",
+          "pred_raw": "\\lambda _ { 1 } = 2 _ { 1 } \\lambda _ { 2 1 3 } = \\pm i",
+          "pred_post": "\\lambda _ { 1 } = 2 _ { 1 } \\lambda _ { 2 1 3 } = \\pm i",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.47619047619047616,
+            "bleu": 0.0005626933391936236,
+            "edit": 20
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.47619047619047616,
+            "bleu": 0.0005626933391936236,
+            "edit": 20
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_044.jpg",
+          "gt_latex": "y_p = Q_n(x) \\\\ = Ax^3 + Bx^2 + Cx + D,",
+          "pred_raw": "y _ { p } = Q _ { n } ( x ) \\\\ = A _ { x } ^ { 3 } + B _ { x } ^ { 2 } + C _ { x } + D _ { i }",
+          "pred_post": "y _ { p } = Q _ { n } ( x ) \\\\ = A _ { x } ^ { 3 } + B _ { x } ^ { 2 } + C _ { x } + D _ { i }",
+          "tags": [
+            "multi-line",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.435897435897436,
+            "bleu": 2.2952177337295303e-06,
+            "edit": 56
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.435897435897436,
+            "bleu": 2.2952177337295303e-06,
+            "edit": 56
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_045.jpg",
+          "gt_latex": "y''' - 3y' + 2y = 2\\sin(x) + \\cos(x)",
+          "pred_raw": "y ^ { \\prime \\prime \\prime } - 3 y ^ { \\prime } + 2 y = 2 \\sin ( x ) + \\cos ( x )",
+          "pred_post": "y ^ { \\prime \\prime \\prime } - 3 y ^ { \\prime } + 2 y = 2 \\sin ( x ) + \\cos ( x )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.3611111111111112,
+            "bleu": 1.944130842154183e-08,
+            "edit": 49
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.3611111111111112,
+            "bleu": 1.944130842154183e-08,
+            "edit": 49
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_046.jpg",
+          "gt_latex": "y_p = A \\cdot \\sin(x) + B \\cdot \\cos(x), \\quad A, B \\in \\mathbb{R}",
+          "pred_raw": "y _ { p } = A \\cdot \\sin ( x ) + B \\cdot \\cos ( x ) \\cdot A _ { i } B \\in \\mathbb { R }",
+          "pred_post": "y _ { p } = A \\cdot \\sin ( x ) + B \\cdot \\cos ( x ) \\cdot A _ { i } B \\in \\mathbb { R }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.42424242424242425,
+            "bleu": 0.0007379930304517494,
+            "edit": 28
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.42424242424242425,
+            "bleu": 0.0007379930304517494,
+            "edit": 28
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_047.jpg",
+          "gt_latex": "(2A + 4B) \\cdot \\sin(x) + (-4A + 2B) \\cdot \\cos(x) = 2\\sin(x) + 1 \\cdot \\cos(x)",
+          "pred_raw": "( 2 A + U B ) \\cdot s i n ( x ) \\ + ( 1 - u A + t 2 B ) \\cdot c \\circ s ( x ) = 2 s i n ( x ) + A , \\cos ( x )",
+          "pred_post": "( 2 A + U B ) \\cdot s i n ( x ) \\ + ( 1 - u A + t 2 B ) \\cdot c \\circ s ( x ) = 2 s i n ( x ) + A , \\cos ( x )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5949367088607594,
+            "bleu": 2.0205155049797005e-08,
+            "edit": 47
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5949367088607594,
+            "bleu": 2.0205155049797005e-08,
+            "edit": 47
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_048.jpg",
+          "gt_latex": "-A \\cdot \\cos(x) + B \\cdot \\sin(x) - 3A \\cos(x) + 3B \\sin(x) + 2A \\sin(x) + 2B \\cos(x) = 2 \\cdot \\sin(x) + \\cos(x)",
+          "pred_raw": "A \\cdot \\cos u x \\, \\, \\, \\, + \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\,",
+          "pred_post": "",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 6.166666666666667,
+            "bleu": 9.466897250289655e-09,
+            "edit": 703
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 0.0,
+            "edit": 114
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_049.jpg",
+          "gt_latex": "y = C_1 \\cdot e^x + C_2 x \\cdot e^x + C_3 e^{-2x} + \\frac{1}{2} \\cos(x)",
+          "pred_raw": "y = C _ { 1 } \\cdot e ^ { x } + C _ { 2 } x \\cdot e ^ { x } + C _ { 3 } e ^ { - 2 x } + \\frac { 1 } { 2 } \\cos ( x )",
+          "pred_post": "y = C _ { 1 } \\cdot e ^ { x } + C _ { 2 } x \\cdot e ^ { x } + C _ { 3 } e ^ { - 2 x } + \\frac { 1 } { 2 } \\cos ( x )",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6338028169014085,
+            "bleu": 2.814459158744313e-06,
+            "edit": 45
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6338028169014085,
+            "bleu": 2.814459158744313e-06,
+            "edit": 45
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_050.jpg",
+          "gt_latex": "\\begin{pmatrix} 1 & 0 & 1 & 0 \\\\ e^{\\pi/2} & \\frac{\\pi}{2} e^{\\pi/2} & e^{-\\pi} & 0 \\\\ e^{\\pi} & \\pi \\cdot e^{\\pi} & e^{-2\\pi} & 0 \\end{pmatrix}",
+          "pred_raw": "( \\begin{matrix} \\pi & 0 \\\\ e ^ { \\pi / 2 } & 0 \\\\ e ^ { \\pi } & \\pi e ^ { \\pi } \\\\ \\end{matrix} )",
+          "pred_post": "( \\begin{matrix} \\pi & 0 \\\\ e ^ { \\pi / 2 } & 0 \\\\ e ^ { \\pi } & \\pi e ^ { \\pi } \\\\ \\end{matrix} )",
+          "tags": [
+            "with-matrix",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5208333333333334,
+            "bleu": 0.0007379930304517494,
+            "edit": 75
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5208333333333334,
+            "bleu": 0.0007379930304517494,
+            "edit": 75
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_051.jpg",
+          "gt_latex": "y_s = \\frac{1}{2} \\cos(x)",
+          "pred_raw": "y _ { s } = \\frac { 1 } { 2 } \\cos c x",
+          "pred_post": "y _ { s } = \\frac { 1 } { 2 } \\cos c x",
+          "tags": [
+            "with-frac",
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.64,
+            "bleu": 1.5811388307166433e-08,
+            "edit": 16
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.64,
+            "bleu": 1.5811388307166433e-08,
+            "edit": 16
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_052.jpg",
+          "gt_latex": "F(\\omega = 0) = \\int_{-a}^{a} 1 \\cdot e^{-i \\cdot 0 \\cdot t} \\, dt = [t]_{-a}^{a} = 2a",
+          "pred_raw": "F \\omega = o \\Big | _ { t } \\int _ { a } ^ { a } 1 \\cdot e ^ { - i \\cdot o \\cdot k } d t = [ t \\int _ { - a } ^ { a } 1 \\cdot a = 2 a",
+          "pred_post": "F \\omega = o \\Big | _ { t } \\int _ { a } ^ { a } 1 \\cdot e ^ { - i \\cdot o \\cdot k } d t = [ t \\int _ { - a } ^ { a } 1 \\cdot a = 2 a",
+          "tags": [
+            "with-integral",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6976744186046512,
+            "bleu": 2.2666325997799223e-06,
+            "edit": 60
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6976744186046512,
+            "bleu": 2.2666325997799223e-06,
+            "edit": 60
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_053.jpg",
+          "gt_latex": "\\sin(x) = \\frac{1}{2i} (e^{ix} - e^{-ix})",
+          "pred_raw": "\\sin ( x ) = \\frac { 1 } { 2 i } ( e ^ { i x } - e ^ { - i x } )",
+          "pred_post": "\\sin ( x ) = \\frac { 1 } { 2 i } ( e ^ { i x } - e ^ { - i x } )",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5609756097560976,
+            "bleu": 1.620533448929206e-08,
+            "edit": 23
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5609756097560976,
+            "bleu": 1.620533448929206e-08,
+            "edit": 23
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_054.jpg",
+          "gt_latex": "F(\\omega) = \\int_{-\\infty}^{\\infty} f(t) \\cdot e^{-i\\omega t} \\, dt",
+          "pred_raw": "F ( w ) = \\int _ { - \\infty } ^ { \\infty } f ( t ) \\cdot e ^ { - i w t } d t",
+          "pred_post": "F ( w ) = \\int _ { - \\infty } ^ { \\infty } f ( t ) \\cdot e ^ { - i w t } d t",
+          "tags": [
+            "with-integral",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4925373134328358,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 33
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4925373134328358,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 33
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_055.jpg",
+          "gt_latex": "= \\int_{-a}^{a} 1 \\cdot e^{-i\\omega t} \\, dt = \\left[ -\\frac{1}{i\\omega} e^{-i\\omega t} \\right]_{-a}^{a}",
+          "pred_raw": "= 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0 = 0",
+          "pred_post": "",
+          "tags": [
+            "with-integral",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 6.1923076923076925,
+            "bleu": 8.823258755041363e-09,
+            "edit": 644
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 0.0,
+            "edit": 104
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_056.jpg",
+          "gt_latex": "= -\\frac{1}{i\\omega} e^{-i\\omega a} + \\frac{1}{i\\omega} e^{i\\omega a} = \\frac{1}{i\\omega} \\cdot \\underbrace{(e^{i\\omega a} - e^{-i\\omega a})}_{= 2i \\cdot \\sin(\\omega a)} \\\\ = \\frac{2i \\cdot \\sin(\\omega a)}{i\\omega} = \\frac{2 \\sin(\\omega \\cdot a)}{\\omega}",
+          "pred_raw": "= - \\frac { 1 } { i \\omega } e ^ { - i \\omega a } + \\frac { 1 } { i \\omega } e ^ { - i \\omega a } = \\frac { 1 } { i \\omega } \\underbrace { ( e ^ { i \\omega a } - e ^ { - i \\omega a } ) } _ { = 2 i \\cdot \\sin ( \\omega a ) } \\\\ = \\frac { 2 i \\cdot \\sin ( \\omega a ) } { i \\omega } = \\frac { 2 \\sin ( \\omega a ) } { \\omega }",
+          "pred_post": "= - \\frac { 1 } { i \\omega } e ^ { - i \\omega a } + \\frac { 1 } { i \\omega } e ^ { - i \\omega a } = \\frac { 1 } { i \\omega } \\underbrace { ( e ^ { i \\omega a } - e ^ { - i \\omega a } ) } _ { = 2 i \\cdot \\sin ( \\omega a ) } \\\\ = \\frac { 2 i \\cdot \\sin ( \\omega a ) } { i \\omega } = \\frac { 2 \\sin ( \\omega a ) } { \\omega }",
+          "tags": [
+            "with-frac",
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.35039370078740156,
+            "bleu": 1.67837197006775e-06,
+            "edit": 89
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.35039370078740156,
+            "bleu": 1.67837197006775e-06,
+            "edit": 89
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_057.jpg",
+          "gt_latex": "f(t) = \\begin{cases} e^{-at}, & t \\geq 0 \\\\ 0, & t < 0 \\end{cases}",
+          "pred_raw": "f ( t ) = \\{ \\begin{matrix} e ^ { - a t } \\\\ 0 \\\\ 0 \\end{matrix} , t ^ { 2 0 } \\}",
+          "pred_post": "f ( t ) = \\{ \\begin{matrix} e ^ { - a t } \\\\ 0 \\\\ 0 \\end{matrix} , t ^ { 2 0 } \\}",
+          "tags": [
+            "with-matrix",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7272727272727273,
+            "bleu": 3.0405596992197163e-06,
+            "edit": 48
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7272727272727273,
+            "bleu": 3.0405596992197163e-06,
+            "edit": 48
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_058.jpg",
+          "gt_latex": "= \\underbrace{\\lim_{t \\to \\infty} -\\frac{1}{a + i\\omega} e^{-(a + i\\omega) \\cdot t}}_{\\to 0}",
+          "pred_raw": "= \\lim _ { t \\to \\infty } \\frac { 1 } { a t i w } e ^ { - ( a t i w ) t }",
+          "pred_post": "= \\lim _ { t \\to \\infty } \\frac { 1 } { a t i w } e ^ { - ( a t i w ) t }",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5869565217391305,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 54
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5869565217391305,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 54
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_059.jpg",
+          "gt_latex": "\\left[ -\\frac{1}{a + i\\omega} \\cdot e^{-(a + i\\omega) \\cdot t} \\right]_0^{\\infty}",
+          "pred_raw": "[ - \\frac { 1 } { a + i \\omega } \\cdot e ^ { - l a t i \\omega } ] _ { 0 } ^ { + }",
+          "pred_post": "[ - \\frac { 1 } { a + i \\omega } \\cdot e ^ { - l a t i \\omega } ] _ { 0 } ^ { + }",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5555555555555556,
+            "bleu": 1.7498177562569057e-08,
+            "edit": 45
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5555555555555556,
+            "bleu": 1.7498177562569057e-08,
+            "edit": 45
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_060.jpg",
+          "gt_latex": "A(\\omega) = \\left| \\frac{1}{a + i\\omega} \\right| = \\frac{1}{\\sqrt{a^2 + \\omega^2}}",
+          "pred_raw": "A ( w ) = 1 \\frac { 1 } { a + w } | = \\frac { 1 } { \\sqrt { a ^ { 2 } + w ^ { 2 } } }",
+          "pred_post": "A ( w ) = 1 \\frac { 1 } { a + w } | = \\frac { 1 } { \\sqrt { a ^ { 2 } + w ^ { 2 } } }",
+          "tags": [
+            "with-sqrt",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6707317073170732,
+            "bleu": 1.8132787286095436e-08,
+            "edit": 55
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6707317073170732,
+            "bleu": 1.8132787286095436e-08,
+            "edit": 55
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_061.jpg",
+          "gt_latex": "F(\\omega) = \\frac{1}{a + i\\omega}",
+          "pred_raw": "F ( \\omega ) \\colon = \\frac { 1 } { a + i \\omega }",
+          "pred_post": "F ( \\omega ) \\colon = \\frac { 1 } { a + i \\omega }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5151515151515151,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 17
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5151515151515151,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 17
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_062.jpg",
+          "gt_latex": "F(\\omega) = \\begin{cases} \\pi, & |\\omega| \\leq \\omega_0 \\\\ 0, & |\\omega| > \\omega_0 \\end{cases}",
+          "pred_raw": "F ( w ) = \\{ \\begin{matrix} \\pi _ { 1 } & i w _ { 1 } \\leq w _ { 0 } \\\\ 0 , & i w _ { 1 } \\rangle \\end{matrix} \\}",
+          "pred_post": "F ( w ) = \\{ \\begin{matrix} \\pi _ { 1 } & i w _ { 1 } \\leq w _ { 0 } \\\\ 0 , & i w _ { 1 } \\rangle \\end{matrix} \\}",
+          "tags": [
+            "with-matrix",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7157894736842105,
+            "bleu": 1.9045685211954037e-08,
+            "edit": 68
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7157894736842105,
+            "bleu": 1.9045685211954037e-08,
+            "edit": 68
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_063.jpg",
+          "gt_latex": "f(t) = \\frac{1}{2\\pi} \\int_{-\\infty}^{\\infty} F(\\omega) \\cdot e^{i\\omega t} = \\frac{1}{2\\pi} \\int_{-\\omega_0}^{\\omega_0} \\pi \\cdot e^{i\\omega t} \\, d\\omega = \\frac{1}{2} \\int_{-\\omega_0}^{\\omega_0} e^{i\\omega t} \\, d\\omega",
+          "pred_raw": "f ( t ) = \\frac { 1 } { 2 \\pi } \\int _ { - \\infty } ^ { \\infty } F ( \\omega ) \\cdot e ^ { i \\omega t } = \\frac { 1 } { 2 \\pi } \\int _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } \\pi \\cdot e ^ { i \\omega t } d \\omega = \\frac { 1 } { 2 } \\int _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } e ^ { i \\omega t } d \\omega",
+          "pred_post": "f ( t ) = \\frac { 1 } { 2 \\pi } \\int _ { - \\infty } ^ { \\infty } F ( \\omega ) \\cdot e ^ { i \\omega t } = \\frac { 1 } { 2 \\pi } \\int _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } \\pi \\cdot e ^ { i \\omega t } d \\omega = \\frac { 1 } { 2 } \\int _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } e ^ { i \\omega t } d \\omega",
+          "tags": [
+            "with-integral",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.44144144144144143,
+            "bleu": 1.5095097783685445e-06,
+            "edit": 98
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.44144144144144143,
+            "bleu": 1.5095097783685445e-06,
+            "edit": 98
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_064.jpg",
+          "gt_latex": "= \\frac{1}{2} \\cdot \\left[ \\frac{1}{it} e^{i\\omega t} \\right]_{-\\omega_0}^{\\omega_0} = \\frac{1}{2} \\left( \\frac{1}{it} e^{i\\omega_0 t} - \\frac{1}{it} \\cdot e^{-i\\omega_0 t} \\right)",
+          "pred_raw": "= \\frac { 1 } { 2 } \\cdot [ \\frac { 1 } { i t } e ^ { i \\omega t } ] _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } = \\frac { 1 } { 2 } \\cdot [ \\frac { 1 } { i t } e ^ { i \\omega t } - \\frac { 1 } { i t } \\cdot e ^ { - i \\omega t } ]",
+          "pred_post": "= \\frac { 1 } { 2 } \\cdot [ \\frac { 1 } { i t } e ^ { i \\omega t } ] _ { - \\omega _ { 0 } } ^ { \\omega _ { 0 } } = \\frac { 1 } { 2 } \\cdot [ \\frac { 1 } { i t } e ^ { i \\omega t } - \\frac { 1 } { i t } \\cdot e ^ { - i \\omega t } ]",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5388888888888889,
+            "bleu": 1.5483270034177482e-08,
+            "edit": 97
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5388888888888889,
+            "bleu": 1.5483270034177482e-08,
+            "edit": 97
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_065.jpg",
+          "gt_latex": "f(0) = \\lim_{t \\to 0} \\frac{\\sin(\\omega_0 \\cdot t)}{t} \\underset{\\text{``}\\frac{0}{0}\\text{''}}{\\overset{\\text{L'H}}{=}} \\lim_{t \\to 0} \\frac{\\omega_0 \\cos(\\omega_0 \\cdot t)}{1} = \\omega_0",
+          "pred_raw": "f ( 0 ) = \\lim _ { t \\to 0 } \\frac { \\sin ( \\omega _ { 0 } t ) } { t } \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\",
+          "pred_post": "",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 3.6595744680851063,
+            "bleu": 9.392348952473783e-09,
+            "edit": 688
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 0.0,
+            "edit": 188
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_066.jpg",
+          "gt_latex": "e^{-i\\omega t} = \\cos(\\omega t) - i \\cdot \\sin(\\omega t)",
+          "pred_raw": "e ^ { - i \\omega t } = \\cos ( \\omega t ) \\, \\, - i \\cdot \\sin ( \\omega t )",
+          "pred_post": "e ^ { - i \\omega t } = \\cos ( \\omega t ) \\, \\, - i \\cdot \\sin ( \\omega t )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.32142857142857145,
+            "bleu": 0.0005066196814935077,
+            "edit": 18
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.32142857142857145,
+            "bleu": 0.0005066196814935077,
+            "edit": 18
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_067.jpg",
+          "gt_latex": "f(t) \\cdot e^{-i\\omega t} = f(t) \\cdot (\\cos(\\omega t) - i \\cdot \\sin(\\omega t)) \\\\ = f(t) \\cos(\\omega t) - i \\cdot f(t) \\sin(\\omega t)",
+          "pred_raw": "f ( t ) \\cdot e ^ { - i \\omega t } = f ( t ) \\cdot ( \\cos ( \\omega t ) - i \\sin ( \\omega t ) ) \\\\ = f ( t ) \\cos ( \\omega t ) - i \\cdot f ( t ) \\sin ( \\omega t )",
+          "pred_post": "f ( t ) \\cdot e ^ { - i \\omega t } = f ( t ) \\cdot ( \\cos ( \\omega t ) - i \\sin ( \\omega t ) ) \\\\ = f ( t ) \\cos ( \\omega t ) - i \\cdot f ( t ) \\sin ( \\omega t )",
+          "tags": [
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.2814814814814815,
+            "bleu": 0.0003938028723890127,
+            "edit": 38
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.2814814814814815,
+            "bleu": 0.0003938028723890127,
+            "edit": 38
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_068.jpg",
+          "gt_latex": "f(t) = e^{-a \\cdot |t|}, \\quad a > 0",
+          "pred_raw": "f ( t ) = e ^ { - a \\cdot | t | } , a > 0",
+          "pred_post": "f ( t ) = e ^ { - a \\cdot | t | } , a > 0",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 0.0006439931434255674,
+            "edit": 16
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4444444444444444,
+            "bleu": 0.0006439931434255674,
+            "edit": 16
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_069.jpg",
+          "gt_latex": "F(\\omega) = 2 \\cdot F_c(\\omega) = \\frac{2a}{a^2 + \\omega^2}",
+          "pred_raw": "F ( w ) = 2 F _ { c } ( w ) = \\frac { 2 a } { a ^ { 2 } + w ^ { 2 } }",
+          "pred_post": "F ( w ) = 2 F _ { c } ( w ) = \\frac { 2 a } { a ^ { 2 } + w ^ { 2 } }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7288135593220338,
+            "bleu": 2.4808415026665273e-06,
+            "edit": 43
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7288135593220338,
+            "bleu": 2.4808415026665273e-06,
+            "edit": 43
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_070.jpg",
+          "gt_latex": "= 0 - 2 \\cdot i \\underbrace{\\int_0^{\\infty} f(t) \\cdot \\sin(\\omega t) \\, dt}_{F_s(\\omega)}",
+          "pred_raw": "= 0 - 2 i \\int _ { 0 } ^ { \\infty } f l t ) - \\sin ( u t ) d t",
+          "pred_post": "= 0 - 2 i \\int _ { 0 } ^ { \\infty } f l t ) - \\sin ( u t ) d t",
+          "tags": [
+            "with-integral",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6444444444444445,
+            "bleu": 0.09562406586044402,
+            "edit": 58
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6444444444444445,
+            "bleu": 0.09562406586044402,
+            "edit": 58
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_071.jpg",
+          "gt_latex": "F(\\omega) = -\\frac{2i}{\\omega} (1 - \\cos(\\omega T)), \\quad \\omega \\neq 0 \\\\ F(0) = 0",
+          "pred_raw": "F ( \\omega ) = - \\frac { 2 i } { w } ( 1 - \\cos \\omega T ) \\ , \\omega \\neq 0",
+          "pred_post": "F ( \\omega ) = - \\frac { 2 i } { w } ( 1 - \\cos \\omega T ) \\ , \\omega \\neq 0",
+          "tags": [
+            "with-frac",
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4166666666666667,
+            "bleu": 0.0005031747631775737,
+            "edit": 35
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4166666666666667,
+            "bleu": 0.0005031747631775737,
+            "edit": 35
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_072.jpg",
+          "gt_latex": "F_s(\\omega) = \\int_0^{\\infty} f(t) \\cdot \\sin(\\omega t) \\, dt = \\int_0^T 1 \\cdot \\sin(\\omega t) \\, dt = \\left[ -\\frac{1}{\\omega} \\cos(\\omega t) \\right]_0^T",
+          "pred_raw": "F _ { S } \\left ( \\omega \\right ) = \\int _ { 0 } ^ { \\infty } \\delta \\left ( t \\right ) \\cdot \\sin \\omega t \\right ) d t = \\int _ { 0 } ^ { T } 1 \\cdot s i n \\omega t \\right ) d t = \\left [ - \\frac { 1 } { \\omega } \\cos ( \\omega t ) \\right ] _ { 0 } ^ { T }",
+          "pred_post": "F _ { S } \\left ( \\omega \\right ) = \\int _ { 0 } ^ { \\infty } \\delta \\left ( t \\right ) \\cdot \\sin \\omega t \\right ) d t = \\int _ { 0 } ^ { T } 1 \\cdot s i n \\omega t \\right ) d t = \\left [ - \\frac { 1 } { \\omega } \\cos ( \\omega t ) \\right ] _ { 0 } ^ { T }",
+          "tags": [
+            "with-integral",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7290322580645161,
+            "bleu": 1.7443919030643562e-06,
+            "edit": 113
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7290322580645161,
+            "bleu": 1.7443919030643562e-06,
+            "edit": 113
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_073.jpg",
+          "gt_latex": "= -\\frac{1}{\\omega} \\cos(\\omega T) + \\frac{1}{\\omega} \\underbrace{\\cos(\\omega \\cdot 0)}_{= 1} = \\frac{1}{\\omega} (1 - \\cos(\\omega T))",
+          "pred_raw": "= - \\frac { 1 } { \\omega } \\cos ( \\omega T ) + \\frac { 1 } { \\omega } \\cos ( \\omega \\cdot 0 ) = \\frac { 1 } { \\omega } ( 1 - \\cos ( \\omega T ) )",
+          "pred_post": "= - \\frac { 1 } { \\omega } \\cos ( \\omega T ) + \\frac { 1 } { \\omega } \\cos ( \\omega \\cdot 0 ) = \\frac { 1 } { \\omega } ( 1 - \\cos ( \\omega T ) )",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.3609022556390977,
+            "bleu": 1.825741858761343e-08,
+            "edit": 48
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.3609022556390977,
+            "bleu": 1.825741858761343e-08,
+            "edit": 48
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_074.jpg",
+          "gt_latex": "g(t) = f(t) \\cdot (\\sigma(t - a) - \\sigma(t - b)) \\\\ = \\begin{cases} f(t), & a \\leq t \\leq b \\\\ 0, & \\text{sonst} \\end{cases}",
+          "pred_raw": "g ( t ) = f ( t ) \\cdot ( \\sigma l t - a _ { t } ) - \\sigma ( t - b ) \\\\ = \\{ \\begin{matrix} f ( t ) & a _ { \\leq t } \\leq b \\\\ 0 & s o n s t \\end{matrix} \\}",
+          "pred_post": "g ( t ) = f ( t ) \\cdot ( \\sigma l t - a _ { t } ) - \\sigma ( t - b ) \\\\ = \\{ \\begin{matrix} f ( t ) & a _ { \\leq t } \\leq b \\\\ 0 & s o n s t \\end{matrix} \\}",
+          "tags": [
+            "with-matrix",
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.472,
+            "bleu": 0.00046720473635682624,
+            "edit": 59
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.472,
+            "bleu": 0.00046720473635682624,
+            "edit": 59
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_075.jpg",
+          "gt_latex": "g(t) = f(t) \\cdot \\sigma(t - a) = \\begin{cases} f(t), & t \\geq a \\\\ 0, & t < a \\end{cases}",
+          "pred_raw": "g ( t ) = f ( t ) \\cdot \\sigma ( t - a ) \\\\ = \\{ \\begin{matrix} f ( t ) & t \\\\ 0 & k \\end{matrix} \\}",
+          "pred_post": "g ( t ) = f ( t ) \\cdot \\sigma ( t - a ) \\\\ = \\{ \\begin{matrix} f ( t ) & t \\\\ 0 & k \\end{matrix} \\}",
+          "tags": [
+            "with-matrix",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4888888888888889,
+            "bleu": 3.1686340319528912e-06,
+            "edit": 44
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4888888888888889,
+            "bleu": 3.1686340319528912e-06,
+            "edit": 44
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_076.jpg",
+          "gt_latex": "\\delta(t) = \\begin{cases} \\infty, & t = 0 \\\\ 0, & t \\neq 0 \\end{cases}",
+          "pred_raw": "6 ( t ) = \\{ \\begin{matrix} \\infty & t = 0 \\\\ 0 & t \\ne 0 \\end{matrix} \\}",
+          "pred_post": "6 ( t ) = \\{ \\begin{matrix} \\infty & t = 0 \\\\ 0 & t \\ne 0 \\end{matrix} \\}",
+          "tags": [
+            "with-matrix",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.37142857142857144,
+            "bleu": 0.21951524437880804,
+            "edit": 26
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.37142857142857144,
+            "bleu": 0.21951524437880804,
+            "edit": 26
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_077.jpg",
+          "gt_latex": "\\int_0^{2\\pi} \\delta(t - \\pi) e^{-t} \\cos(t) \\, dt = e^{-\\pi} \\cos(\\pi) = -e^{-\\pi}, \\quad \\text{da } \\pi \\in [0, 2\\pi]",
+          "pred_raw": "\\int _ { 0 } ^ { 2 \\pi } \\delta ( t - \\pi ) e ^ { - t } \\cos ( t ) \\, d t = e ^ { - \\pi } \\cos ( \\pi ) = - e ^ { - \\pi } \\quad , d a \\quad \\mathbb { T } \\in [ 0 , 2 \\pi ]",
+          "pred_post": "\\int _ { 0 } ^ { 2 \\pi } \\delta ( t - \\pi ) e ^ { - t } \\cos ( t ) \\, d t = e ^ { - \\pi } \\cos ( \\pi ) = - e ^ { - \\pi } \\quad , d a \\quad \\mathbb { T } \\in [ 0 , 2 \\pi ]",
+          "tags": [
+            "with-integral",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5210084033613446,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 62
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5210084033613446,
+            "bleu": 1.8803015469192558e-08,
+            "edit": 62
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_078.jpg",
+          "gt_latex": "\\int_0^{2\\pi} \\delta(t + \\pi) e^{-t} \\cos(t) \\, dt = 0, \\quad \\text{da } -\\pi \\notin [0, 2\\pi]",
+          "pred_raw": "\\int _ { 0 } ^ { 2 \\pi } \\delta ( t + \\pi ) \\, e ^ { - t } \\cos ( t ) d t = 0 \\quad , \\, d a = \\pi \\notin [ 0 , 2 \\pi ]",
+          "pred_post": "\\int _ { 0 } ^ { 2 \\pi } \\delta ( t + \\pi ) \\, e ^ { - t } \\cos ( t ) d t = 0 \\quad , \\, d a = \\pi \\notin [ 0 , 2 \\pi ]",
+          "tags": [
+            "with-integral",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.44680851063829785,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 42
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.44680851063829785,
+            "bleu": 1.9108855847670226e-08,
+            "edit": 42
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_079.jpg",
+          "gt_latex": "\\frac{Df(t)}{Dt} = -e^{-t} \\sigma(t - 1) + \\underbrace{a}_{\\uparrow \\text{ Höhe des Sprungs, hier } f(1) = e^{-1}} \\cdot \\delta(t - 1)",
+          "pred_raw": "\\frac { D f ( t ) } { D t } = - e ^ { - t } \\sigma ( t - 1 ) + \\frac { a \\cdot \\delta ( t - 1 ) } { 1 } \\\\ & \\tilde { H } i s h e \\, d e s s u r p s \\, , \\, h i v e \\, f ( 1 ) = e ^ { - 1 }",
+          "pred_post": "\\frac { D f ( t ) } { D t } = - e ^ { - t } \\sigma ( t - 1 ) + \\frac { a \\cdot \\delta ( t - 1 ) } { 1 } \\\\ & \\tilde { H } i s h e \\, d e s s u r p s \\, , \\, h i v e \\, f ( 1 ) = e ^ { - 1 }",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8582089552238806,
+            "bleu": 1.725312374794096e-08,
+            "edit": 115
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8582089552238806,
+            "bleu": 1.725312374794096e-08,
+            "edit": 115
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_080.jpg",
+          "gt_latex": "I = (\\Sigma_0 + 4 \\cdot \\Sigma_1 + 2 \\cdot \\Sigma_2) \\cdot \\frac{h}{3} \\\\ = (1{,}379 + 4 \\cdot 3{,}7402 + 2 \\cdot 3{,}0379) \\cdot \\frac{0{,}1}{3} \\\\ = 0{,}7468",
+          "pred_raw": "I = ( 2 0 + 4 \\xi _ { n } + 2 \\xi _ { n } ) \\cdot \\frac { \\hbar } { 3 } \\\\ = ( 1 3 \\xi _ { n } + 4 \\xi _ { n } + 2 \\xi _ { n } ) \\cdot 3 3 \\xi _ { n } ) ^ { 0 . 1 } \\\\ = 0 , 7 \\, 4 6 8",
+          "pred_post": "I = ( 2 0 + 4 \\xi _ { n } + 2 \\xi _ { n } ) \\cdot \\frac { \\hbar } { 3 } \\\\ = ( 1 3 \\xi _ { n } + 4 \\xi _ { n } + 2 \\xi _ { n } ) \\cdot 3 3 \\xi _ { n } ) ^ { 0 . 1 } \\\\ = 0 , 7 \\, 4 6 8",
+          "tags": [
+            "with-frac",
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6918238993710691,
+            "bleu": 3.7194474439304053e-06,
+            "edit": 110
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6918238993710691,
+            "bleu": 3.7194474439304053e-06,
+            "edit": 110
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_081.jpg",
+          "gt_latex": "(\\Sigma_0)_T = (\\Sigma_0)_S \\\\ (\\Sigma_1)_T = (\\Sigma_1)_S + (\\Sigma_2)_S \\\\ = 6{,}7781",
+          "pred_raw": "\\begin{array} { c } { { ( \\zeta _ { 0 } ) _ { T } = ( \\zeta _ { 0 } ) _ { s } } } \\\\ { { ( \\zeta _ { 1 } ) _ { t } = ( \\zeta _ { 1 } ) _ { s } + ( \\zeta _ { 2 } ) _ { s } } } \\\\ { { = 6 _ { 1 } 7 7 8 1 \\end{array} } } \\end{array}",
+          "pred_post": "\\begin{array} { c } { { ( \\zeta _ { 0 } ) _ { T } = ( \\zeta _ { 0 } ) _ { s } } } \\\\ { { ( \\zeta _ { 1 } ) _ { t } = ( \\zeta _ { 1 } ) _ { s } + ( \\zeta _ { 2 } ) _ { s } } } \\\\ { { = 6 _ { 1 } 7 7 8 1 \\end{array} } } \\end{array}",
+          "tags": [
+            "multi-line",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.9770114942528736,
+            "bleu": 1.6159099112420576e-08,
+            "edit": 172
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.9770114942528736,
+            "bleu": 1.6159099112420576e-08,
+            "edit": 172
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_082.jpg",
+          "gt_latex": "I = \\left( \\frac{1}{2} \\Sigma_0 + \\Sigma_1 \\right) \\cdot h \\\\ = 0{,}7462",
+          "pred_raw": "\\begin{array} { c } { { \\mathbb { I } \\colon ( \\mathbb { I } \\varepsilon _ { 0 } + \\mathbb { I } _ { 1 } ) \\cdot h } } \\\\ { = 0 , 7 4 6 2 } \\end{array}",
+          "pred_post": "\\begin{array} { c } { { \\mathbb { I } \\colon ( \\mathbb { I } \\varepsilon _ { 0 } + \\mathbb { I } _ { 1 } ) \\cdot h } } \\\\ { = 0 , 7 4 6 2 } \\end{array}",
+          "tags": [
+            "with-frac",
+            "multi-line",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.5277777777777777,
+            "bleu": 2.32030580630206e-06,
+            "edit": 110
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.5277777777777777,
+            "bleu": 2.32030580630206e-06,
+            "edit": 110
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_083.jpg",
+          "gt_latex": "f'(x_0) \\approx \\frac{f(x_0 + h) - f(x_0)}{h} = D^+ f(x_0), \\quad h > 0",
+          "pred_raw": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } ) } { h } = D ^ { + } f ( x _ { 0 } ) , h > 0",
+          "pred_post": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } ) } { h } = D ^ { + } f ( x _ { 0 } ) , h > 0",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9014084507042254,
+            "bleu": 0.00030289764085869716,
+            "edit": 64
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9014084507042254,
+            "bleu": 0.00030289764085869716,
+            "edit": 64
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_084.jpg",
+          "gt_latex": "f'(x_0) = \\lim_{h \\to 0} \\frac{f(x_0 + h) - f(x_0)}{h}",
+          "pred_raw": "f ^ { \\prime } ( x _ { 0 } ) = \\lim _ { h \\rightarrow 0 } \\frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } ) } { h }",
+          "pred_post": "f ^ { \\prime } ( x _ { 0 } ) = \\lim _ { h \\rightarrow 0 } \\frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } ) } { h }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0740740740740742,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 58
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0740740740740742,
+            "bleu": 1.6068568384918748e-08,
+            "edit": 58
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_085.jpg",
+          "gt_latex": "D^+ f(x_0) = \\frac{m(x_0 + h) + n - (m \\cdot x_0 + n)}{h} = \\frac{mh}{h} = m",
+          "pred_raw": "D ^ { + } f ( x _ { 0 } ) = \\frac { m ( x _ { 0 } + h ) + n - ( m \\cdot x _ { 0 } + h ) } { h } - \\frac { m h } { h } = m",
+          "pred_post": "D ^ { + } f ( x _ { 0 } ) = \\frac { m ( x _ { 0 } + h ) + n - ( m \\cdot x _ { 0 } + h ) } { h } - \\frac { m h } { h } = m",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.618421052631579,
+            "bleu": 0.0003618952327231,
+            "edit": 47
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.618421052631579,
+            "bleu": 0.0003618952327231,
+            "edit": 47
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_086.jpg",
+          "gt_latex": "h = 0{,}1: \\quad D^+ f(1) = \\frac{f(1{,}1) - f(1)}{h} = \\frac{1{,}1^2 - 1^2}{0{,}1} = 2{,}1",
+          "pred_raw": "h = 0 , 1 \\colon \\quad D ^ { \\dagger } f ( 1 ) = \\frac { f ( 1 , 1 ) - f ( 1 ) } { h } = \\frac { 1 , 1 ^ { 2 } - 1 ^ { 2 } } { 0 , 1 } = 2 , 1",
+          "pred_post": "h = 0 , 1 \\colon \\quad D ^ { \\dagger } f ( 1 ) = \\frac { f ( 1 , 1 ) - f ( 1 ) } { h } = \\frac { 1 , 1 ^ { 2 } - 1 ^ { 2 } } { 0 , 1 } = 2 , 1",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6923076923076923,
+            "bleu": 2.1803272463604532e-06,
+            "edit": 63
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6923076923076923,
+            "bleu": 2.1803272463604532e-06,
+            "edit": 63
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_087.jpg",
+          "gt_latex": "f(x) = x^2; \\quad f'(x) = 2x, \\quad f'(1) = 2",
+          "pred_raw": "f ( x ) = x ^ { 2 } \\colon i \\beta ^ { \\prime } ( x ) = 2 x \\cdot \\beta ^ { \\prime } ( 1 ) = 2",
+          "pred_post": "f ( x ) = x ^ { 2 } \\colon i \\beta ^ { \\prime } ( x ) = 2 x \\cdot \\beta ^ { \\prime } ( 1 ) = 2",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.3555555555555556,
+            "bleu": 2.4435249850686498e-06,
+            "edit": 61
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.3555555555555556,
+            "bleu": 2.4435249850686498e-06,
+            "edit": 61
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_088.jpg",
+          "gt_latex": "f'(x_0) \\approx \\frac{f(x_0) - f(x_0 - h)}{h} = D^- f(x_0), \\quad h > 0",
+          "pred_raw": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { f ( x _ { 0 } ) - f ( x _ { 0 } - h ) } { h } = D ^ { - } f ( x _ { 0 } ) _ { 1 }",
+          "pred_post": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { f ( x _ { 0 } ) - f ( x _ { 0 } - h ) } { h } = D ^ { - } f ( x _ { 0 } ) _ { 1 }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9436619718309859,
+            "bleu": 1.8092176085444783e-08,
+            "edit": 67
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9436619718309859,
+            "bleu": 1.8092176085444783e-08,
+            "edit": 67
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_089.jpg",
+          "gt_latex": "f'(x_0) \\approx \\frac{1}{2} (D^+ f(x_0) + D^- f(x_0))",
+          "pred_raw": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { 1 } { 2 } ( D ^ { + } f ( x _ { 0 } ) + D ^ { - } f ( x _ { 0 } ) )",
+          "pred_post": "f ^ { \\prime } ( x _ { 0 } ) \\approx \\frac { 1 } { 2 } ( D ^ { + } f ( x _ { 0 } ) + D ^ { - } f ( x _ { 0 } ) )",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.1320754716981132,
+            "bleu": 1.4213743671458585e-08,
+            "edit": 60
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.1320754716981132,
+            "bleu": 1.4213743671458585e-08,
+            "edit": 60
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_090.jpg",
+          "gt_latex": "Df(x_0) = \\frac{a \\cdot (x_0 + h)^2 + b(x_0 + h) + c - a(x_0 - h)^2 - b(x_0 - h) - c}{2h}",
+          "pred_raw": "D f ( x _ { 0 } ) = \\frac { a \\cdot ( x _ { 0 } + h ) ^ { 2 } + b ( x _ { 0 } + h ) ^ { 2 } \\in - a ( x _ { 0 } - h ) ^ { 2 } - b ( x _ { 0 } - h ) } { 2 h }",
+          "pred_post": "D f ( x _ { 0 } ) = \\frac { a \\cdot ( x _ { 0 } + h ) ^ { 2 } + b ( x _ { 0 } + h ) ^ { 2 } \\in - a ( x _ { 0 } - h ) ^ { 2 } - b ( x _ { 0 } - h ) } { 2 h }",
+          "tags": [
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8426966292134831,
+            "bleu": 1.8674659739198186e-08,
+            "edit": 75
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8426966292134831,
+            "bleu": 1.8674659739198186e-08,
+            "edit": 75
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_091.jpg",
+          "gt_latex": "Tf(x; x_0) = \\sum_{k=0}^{\\infty} \\frac{f^{(k)}(x_0)}{k!} \\cdot (x - x_0)^k",
+          "pred_raw": "T f ( x ; x _ { 0 } ) = \\sum _ { k = 0 } ^ { \\infty } \\frac { f ( x ) } { h ! } . ( x - x _ { 0 } ) ^ { k }",
+          "pred_post": "T f ( x ; x _ { 0 } ) = \\sum _ { k = 0 } ^ { \\infty } \\frac { f ( x ) } { h ! } . ( x - x _ { 0 } ) ^ { k }",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7432432432432432,
+            "bleu": 1.4287202157066316e-08,
+            "edit": 55
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7432432432432432,
+            "bleu": 1.4287202157066316e-08,
+            "edit": 55
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_092.jpg",
+          "gt_latex": "\\approx x_{n-1} - \\frac{f(x_{n-1}) \\cdot 2h}{f(x_{n-1} + h) - f(x_{n-1} - h)}",
+          "pred_raw": "\\approx x _ { n - 1 } - \\frac { f ( x _ { n - 1 } ) \\cdot 2 h } { f ( x _ { n - 1 } + h ) - f ( x _ { n - 1 } - h ) }",
+          "pred_post": "\\approx x _ { n - 1 } - \\frac { f ( x _ { n - 1 } ) \\cdot 2 h } { f ( x _ { n - 1 } + h ) - f ( x _ { n - 1 } - h ) }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5194805194805194,
+            "bleu": 1.843049403544504e-08,
+            "edit": 40
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5194805194805194,
+            "bleu": 1.843049403544504e-08,
+            "edit": 40
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_093.jpg",
+          "gt_latex": "x_n = x_{n-1} - \\frac{f(x_{n-1})}{f'(x_{n-1})}",
+          "pred_raw": "x _ { n } = x _ { n - 1 } - \\frac { f ( x _ { n - 1 } ) } { f ( x _ { n - 1 } ) }",
+          "pred_post": "x _ { n } = x _ { n - 1 } - \\frac { f ( x _ { n - 1 } ) } { f ( x _ { n - 1 } ) }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.782608695652174,
+            "bleu": 1.5048435368825326e-08,
+            "edit": 36
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.782608695652174,
+            "bleu": 1.5048435368825326e-08,
+            "edit": 36
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_094.jpg",
+          "gt_latex": "\\mathrm{grad}(f(x, y)) = \\begin{pmatrix} (f(x_0 + h, y) - f(x_0 - h, y)) / 2h \\\\ (f(x, y_0 + h) - f(x, y_0 - h)) / 2h \\end{pmatrix}",
+          "pred_raw": "g r a d ( f ( x , y ) ) = \\left ( \\begin{array} { c } ( f ( x _ { 0 } + h , y ) - f ( x _ { 0 } - h , y ) ) / 2 h \\\\ ( f ( x _ { 1 } , y _ { 0 } + h ) - f ( x _ { 1 } , y _ { 0 } - h ) ) / 2 h \\end{array} \\right )",
+          "pred_post": "g r a d ( f ( x , y ) ) = \\left ( \\begin{array} { c } ( f ( x _ { 0 } + h , y ) - f ( x _ { 0 } - h , y ) ) / 2 h \\\\ ( f ( x _ { 1 } , y _ { 0 } + h ) - f ( x _ { 1 } , y _ { 0 } - h ) ) / 2 h \\end{array} \\right )",
+          "tags": [
+            "with-matrix",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8320610687022901,
+            "bleu": 1.8207052815234227e-08,
+            "edit": 109
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8320610687022901,
+            "bleu": 1.8207052815234227e-08,
+            "edit": 109
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_095.jpg",
+          "gt_latex": "\\nabla f(x, y) = \\mathrm{grad}(f(x, y)) = \\begin{pmatrix} 3y^2 + 2xy \\cos(x^2 y) \\\\ 6xy + x^2 \\cos(x^2 y) \\end{pmatrix}",
+          "pred_raw": "\\nabla f ( x , y ) = g _ { u d } ( f ( x , y ) ) = \\left ( \\begin{array} { c } 3 y ^ { 2 + 2 x y } \\cos ( x ^ { 2 } y ) \\\\ 6 x y + x ^ { 2 } \\cos ( x ^ { 2 } y ) \\end{array} \\right )",
+          "pred_post": "\\nabla f ( x , y ) = g _ { u d } ( f ( x , y ) ) = \\left ( \\begin{array} { c } 3 y ^ { 2 + 2 x y } \\cos ( x ^ { 2 } y ) \\\\ 6 x y + x ^ { 2 } \\cos ( x ^ { 2 } y ) \\end{array} \\right )",
+          "tags": [
+            "with-matrix",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7310924369747899,
+            "bleu": 1.7110523722415425e-08,
+            "edit": 87
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7310924369747899,
+            "bleu": 1.7110523722415425e-08,
+            "edit": 87
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_096.jpg",
+          "gt_latex": "\\Rightarrow \\mathrm{grad}(f(1, 1)) = (-1, +2)^T",
+          "pred_raw": "= g a d ( f ( 1 , 1 ) ) = ( - 1 , 1 ^ { + 2 } ) ^ { T }",
+          "pred_post": "= g a d ( f ( 1 , 1 ) ) = ( - 1 , 1 ^ { + 2 } ) ^ { T }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9361702127659575,
+            "bleu": 1.3747081027228597e-08,
+            "edit": 44
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9361702127659575,
+            "bleu": 1.3747081027228597e-08,
+            "edit": 44
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_097.jpg",
+          "gt_latex": "\\mathrm{grad}(f(x, y)) = (-y^2, -2xy)^T",
+          "pred_raw": "g r a d ( f ( x _ { y } ) ) = ( - y ^ { 2 } , - 2 x _ { y } ) ^ { T }",
+          "pred_post": "g r a d ( f ( x _ { y } ) ) = ( - y ^ { 2 } , - 2 x _ { y } ) ^ { T }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.205128205128205,
+            "bleu": 1.300118653206341e-08,
+            "edit": 47
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.205128205128205,
+            "bleu": 1.300118653206341e-08,
+            "edit": 47
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_098.jpg",
+          "gt_latex": "\\vec{x} = \\begin{pmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_n \\end{pmatrix}",
+          "pred_raw": "\\vec { x } = ( \\begin{matrix} x _ { 1 } \\\\ x _ { 2 } \\\\ x _ { n } \\end{matrix} )",
+          "pred_post": "\\vec { x } = ( \\begin{matrix} x _ { 1 } \\\\ x _ { 2 } \\\\ x _ { n } \\end{matrix} )",
+          "tags": [
+            "with-matrix",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.4626865671641791,
+            "bleu": 1.843049403544504e-08,
+            "edit": 31
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.4626865671641791,
+            "bleu": 1.843049403544504e-08,
+            "edit": 31
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_099.jpg",
+          "gt_latex": "|f'(x^{(1)})| = 0 < \\varepsilon",
+          "pred_raw": "| f ^ { \\prime \\prime } ( x ^ { \\prime \\prime } ) | = 0 < \\epsilon",
+          "pred_post": "| f ^ { \\prime \\prime } ( x ^ { \\prime \\prime } ) | = 0 < \\epsilon",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.4516129032258065,
+            "bleu": 0.0005442191097209931,
+            "edit": 45
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.4516129032258065,
+            "bleu": 0.0005442191097209931,
+            "edit": 45
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_100.jpg",
+          "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot f'(x^{(i)})",
+          "pred_raw": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - \\lambda i \\cdot f ^ { \\prime } ( x ^ { i i } )",
+          "pred_post": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - \\lambda i \\cdot f ^ { \\prime } ( x ^ { i i } )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7551020408163265,
+            "bleu": 1.7234972093430443e-08,
+            "edit": 37
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7551020408163265,
+            "bleu": 1.7234972093430443e-08,
+            "edit": 37
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_101.jpg",
+          "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot \\frac{f(x^{(i)} + h) - f(x^{(i)} - h)}{2h}",
+          "pred_raw": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - \\lambda _ { i } \\cdot \\frac { f ( x ^ { ( i ) } + h ) - g ( x ^ { ( i ) } - h ) } { 2 h }",
+          "pred_post": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - \\lambda _ { i } \\cdot \\frac { f ( x ^ { ( i ) } + h ) - g ( x ^ { ( i ) } - h ) } { 2 h }",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.575,
+            "bleu": 1.8092176085444783e-08,
+            "edit": 46
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.575,
+            "bleu": 1.8092176085444783e-08,
+            "edit": 46
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_102.jpg",
+          "gt_latex": "x^{(0)} = 0, \\quad \\lambda_0 = 5, \\quad \\varepsilon = 0{,}01, \\quad h = 0.01",
+          "pred_raw": "x ^ { ( o ) } = 0 , \\lambda _ { 0 } = 5 , \\varepsilon = 0 , 0 1 , \\dots , h = 0 . 0 1 \\colon",
+          "pred_post": "x ^ { ( o ) } = 0 , \\lambda _ { 0 } = 5 , \\varepsilon = 0 , 0 1 , \\dots , h = 0 . 0 1 \\colon",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5789473684210527,
+            "bleu": 3.2158597312946456e-06,
+            "edit": 44
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5789473684210527,
+            "bleu": 3.2158597312946456e-06,
+            "edit": 44
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_103.jpg",
+          "gt_latex": "x^{(i+1)} = x^{(i)} - \\lambda_i \\cdot f_x(x^{(i)}, y^{(i)})",
+          "pred_raw": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - j _ { i } f _ { x } ( x ^ { ( i ) } , y ^ { ( i ) } )",
+          "pred_post": "x ^ { ( i + 1 ) } = x ^ { ( i ) } - j _ { i } f _ { x } ( x ^ { ( i ) } , y ^ { ( i ) } )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7966101694915254,
+            "bleu": 1.4519590590476799e-08,
+            "edit": 47
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7966101694915254,
+            "bleu": 1.4519590590476799e-08,
+            "edit": 47
+          }
+        },
+        {
+          "image": "jakob_math_eval/eq_104.jpg",
+          "gt_latex": "(867)_9 = 8 \\cdot 9^2 + 6 \\cdot 9^1 + 7 \\cdot 9^0 = (709)_{10}",
+          "pred_raw": "( 8 6 \\cdot 7 ) g = 8 \\cdot 9 ^ { 2 } + 6 \\cdot 9 ^ { 1 } + 7 \\cdot 9 ^ { 0 } = ( 7 0 9 ) _ { 1 0 }",
+          "pred_post": "( 8 6 \\cdot 7 ) g = 8 \\cdot 9 ^ { 2 } + 6 \\cdot 9 ^ { 1 } + 7 \\cdot 9 ^ { 0 } = ( 7 0 9 ) _ { 1 0 }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6290322580645161,
+            "bleu": 0.0007149815613469048,
+            "edit": 39
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6290322580645161,
+            "bleu": 0.0007149815613469048,
+            "edit": 39
+          }
+        },
+        {
+          "image": "jakob_math/math_001.jpg",
+          "gt_latex": "\\sum_{k=0}^{3} (-1)^k \\cdot 4k = 1\\cdot4\\cdot0 + (-1)\\cdot4\\cdot1 + 1\\cdot4\\cdot2 + (-1)\\cdot4\\cdot3 = 0 - 4 + 8 - 12 = -8",
+          "pred_raw": "\\sum _ { k = 0 } ^ { 3 } ( - 1 ) ^ { k } \\cdot 4 k = 1 \\cdot 4 \\cdot 0 + ( - 1 ) \\cdot 4 \\cdot 1 + 1 \\cdot 4 \\cdot 2 + ( - 1 ) \\cdot 4 \\cdot 3 \\\\ = 0 - 4 + 8 - 1 2 = - 8",
+          "pred_post": "\\sum _ { k = 0 } ^ { 3 } ( - 1 ) ^ { k } \\cdot 4 k = 1 \\cdot 4 \\cdot 0 + ( - 1 ) \\cdot 4 \\cdot 1 + 1 \\cdot 4 \\cdot 2 + ( - 1 ) \\cdot 4 \\cdot 3 \\\\ = 0 - 4 + 8 - 1 2 = - 8",
+          "tags": [
+            "with-sum",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.38524590163934425,
+            "bleu": 0.09898622400269719,
+            "edit": 47
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.38524590163934425,
+            "bleu": 0.09898622400269719,
+            "edit": 47
+          }
+        },
+        {
+          "image": "jakob_math/math_002.jpg",
+          "gt_latex": "\\prod_{k=1}^{4} k = 1\\cdot2\\cdot3\\cdot4 = 4! = 24",
+          "pred_raw": "\\prod _ { k = 1 } ^ { 4 } k = 1 . 2 . 3 . 4 = 4 ! = 2 4",
+          "pred_post": "\\prod _ { k = 1 } ^ { 4 } k = 1 . 2 . 3 . 4 = 4 ! = 2 4",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5510204081632653,
+            "bleu": 2.8008294160628e-06,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5510204081632653,
+            "bleu": 2.8008294160628e-06,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math/math_003.jpg",
+          "gt_latex": "A(n) = \\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}",
+          "pred_raw": "A ( n ) = \\sum _ { k = 1 } ^ { n } k = \\frac { n \\cdot ( n + 1 ) } { 2 }",
+          "pred_post": "A ( n ) = \\sum _ { k = 1 } ^ { n } k = \\frac { n \\cdot ( n + 1 ) } { 2 }",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7142857142857143,
+            "bleu": 2.383194988649598e-06,
+            "edit": 30
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7142857142857143,
+            "bleu": 2.383194988649598e-06,
+            "edit": 30
+          }
+        },
+        {
+          "image": "jakob_math/math_004.jpg",
+          "gt_latex": "(\\varepsilon_0)_T = (\\varepsilon_0)_S \\qquad (\\varepsilon_1)_T = (\\varepsilon_1)_S + (\\varepsilon_2)_S = 6{,}7781",
+          "pred_raw": "( \\xi _ { 0 } ) _ { _ { T } } = ( \\xi _ { 0 } ) _ { _ { S } } \\\\ ( \\xi _ { 1 } , \\iota _ { 1 } = ( \\xi _ { 1 } ) _ { _ { S } } + ( \\xi _ { 2 } ) _ { _ { S } } ) \\\\ = \\sigma _ { 1 } \\gamma _ { 7 } \\gamma _ { 8 } \\gamma",
+          "pred_post": "( \\xi _ { 0 } ) _ { _ { T } } = ( \\xi _ { 0 } ) _ { _ { S } } \\\\ ( \\xi _ { 1 } , \\iota _ { 1 } = ( \\xi _ { 1 } ) _ { _ { S } } + ( \\xi _ { 2 } ) _ { _ { S } } ) \\\\ = \\sigma _ { 1 } \\gamma _ { 7 } \\gamma _ { 8 } \\gamma",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.5486725663716814,
+            "bleu": 1.4479536166012627e-08,
+            "edit": 175
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.5486725663716814,
+            "bleu": 1.4479536166012627e-08,
+            "edit": 175
+          }
+        },
+        {
+          "image": "jakob_math/math_005.jpg",
+          "gt_latex": "(1+x)^{n+1} = (1+x)^n \\cdot (1+x) \\geq (1+nx)(1+x) = 1 + nx + x + nx^2",
+          "pred_raw": "( 1 + x ) ^ { n + 1 } = ( 1 + x ) ^ { n } \\cdot ( 1 + x ) \\ \\Xi \\ \\left ( 1 + n x \\right ) ( 1 + x ) = 1 + n x + x + n x ^ { 2 } \\ \\Xi _ { 0 }",
+          "pred_post": "( 1 + x ) ^ { n + 1 } = ( 1 + x ) ^ { n } \\cdot ( 1 + x ) \\ \\Xi \\ \\left ( 1 + n x \\right ) ( 1 + x ) = 1 + n x + x + n x ^ { 2 } \\ \\Xi _ { 0 }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0571428571428572,
+            "bleu": 0.0004048363266777556,
+            "edit": 74
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0571428571428572,
+            "bleu": 0.0004048363266777556,
+            "edit": 74
+          }
+        },
+        {
+          "image": "jakob_math/math_006.jpg",
+          "gt_latex": "S_2 = \\sum_{k=0}^{2} \\frac{1}{2^k} = 1+\\frac{1}{2}+\\frac{1}{4} = \\frac{3}{2}+\\frac{1}{4} = \\frac{7}{4}, \\quad S_3=\\frac{15}{8}, \\quad S_4=\\frac{31}{16}, \\ldots",
+          "pred_raw": "s _ { 2 } = \\sum _ { k = 0 } ^ { 2 } \\frac { 1 } { 2 ^ { k } } = 1 + \\frac { 1 } { 2 } + \\frac { 1 } { 4 } = \\frac { 3 } { 2 } + \\frac { 1 } { 4 } = \\frac { 7 } { 4 } \\quad i \\quad s _ { 3 } = \\frac { 1 5 } { 8 } ; s _ { 4 } = \\frac { 3 1 } { 1 6 } .",
+          "pred_post": "s _ { 2 } = \\sum _ { k = 0 } ^ { 2 } \\frac { 1 } { 2 ^ { k } } = 1 + \\frac { 1 } { 2 } + \\frac { 1 } { 4 } = \\frac { 3 } { 2 } + \\frac { 1 } { 4 } = \\frac { 7 } { 4 } \\quad i \\quad s _ { 3 } = \\frac { 1 5 } { 8 } ; s _ { 4 } = \\frac { 3 1 } { 1 6 } .",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7295597484276729,
+            "bleu": 1.549813636911861e-08,
+            "edit": 116
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7295597484276729,
+            "bleu": 1.549813636911861e-08,
+            "edit": 116
+          }
+        },
+        {
+          "image": "jakob_math/math_007.jpg",
+          "gt_latex": "\\sum_{k=1}^{\\infty} \\frac{1}{k^2} = \\frac{\\pi^2}{6}",
+          "pred_raw": "\\sum _ { k = 1 } ^ { \\infty } \\frac { 1 } { k ^ { 2 } } = \\frac { \\pi ^ { 2 } } { 6 } \\, .",
+          "pred_post": "\\sum _ { k = 1 } ^ { \\infty } \\frac { 1 } { k ^ { 2 } } = \\frac { \\pi ^ { 2 } } { 6 } \\, .",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7647058823529411,
+            "bleu": 1.2909944498976996e-08,
+            "edit": 39
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7647058823529411,
+            "bleu": 1.2909944498976996e-08,
+            "edit": 39
+          }
+        },
+        {
+          "image": "jakob_math/math_008.jpg",
+          "gt_latex": "\\sum_{k=1}^{\\infty}\\left(-\\frac{7}{9}\\right)^k = \\sum_{k=0}^{\\infty}\\left(-\\frac{7}{9}\\right)^k - \\left(-\\frac{7}{9}\\right)^0 = \\frac{1}{1-\\left(-\\frac{7}{9}\\right)} - 1 = -\\frac{7}{16}",
+          "pred_raw": "\\sum _ { k = 1 } ^ { \\infty } ( - \\frac { 7 } { 9 } ) ^ { k } = \\sum _ { k = 0 } ^ { \\infty } ( - \\frac { 7 } { 9 } ) ^ { k } - ( - \\frac { 7 } { 9 } ) ^ { 0 } = \\frac { 1 } { 1 - ( \\frac { 7 } { 9 } ) } - 1 = - \\frac { 7 } { 1 6 }",
+          "pred_post": "\\sum _ { k = 1 } ^ { \\infty } ( - \\frac { 7 } { 9 } ) ^ { k } = \\sum _ { k = 0 } ^ { \\infty } ( - \\frac { 7 } { 9 } ) ^ { k } - ( - \\frac { 7 } { 9 } ) ^ { 0 } = \\frac { 1 } { 1 - ( \\frac { 7 } { 9 } ) } - 1 = - \\frac { 7 } { 1 6 }",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.654054054054054,
+            "bleu": 0.000193425906216342,
+            "edit": 121
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.654054054054054,
+            "bleu": 0.000193425906216342,
+            "edit": 121
+          }
+        },
+        {
+          "image": "jakob_math/math_009.jpg",
+          "gt_latex": "\\sum_{k=0}^{\\infty} \\left(1+\\frac{k}{2}\\right)",
+          "pred_raw": "= \\sum _ { k = 0 } ^ { \\infty } 1 + \\frac { k } { 2 }",
+          "pred_post": "= \\sum _ { k = 0 } ^ { \\infty } 1 + \\frac { k } { 2 }",
+          "tags": [
+            "with-sum",
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.6956521739130435,
+            "bleu": 9.999999999999996e-11,
+            "edit": 32
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.6956521739130435,
+            "bleu": 9.999999999999996e-11,
+            "edit": 32
+          }
+        },
+        {
+          "image": "jakob_math/math_010.jpg",
+          "gt_latex": "\\exists\\, y \\in \\mathbb{Z} : ax - ny = b",
+          "pred_raw": "\\exists y \\in \\mathbb { Z } \\colon a x - n y = b",
+          "pred_post": "\\exists y \\in \\mathbb { Z } \\colon a x - n y = b",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.325,
+            "bleu": 4.67137977844985e-06,
+            "edit": 13
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.325,
+            "bleu": 4.67137977844985e-06,
+            "edit": 13
+          }
+        },
+        {
+          "image": "jakob_math/math_011.jpg",
+          "gt_latex": "l:\\quad g=\\operatorname{ggT}(a,n) \\qquad (\\text{Vor.: } g \\mid b)",
+          "pred_raw": "l \\colon g = g g T ( a , n ) \\colon ( V a r \\colon g ^ { \\prime } b )",
+          "pred_post": "l \\colon g = g g T ( a , n ) \\colon ( V a r \\colon g ^ { \\prime } b )",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8461538461538461,
+            "bleu": 1.6817928310329892e-08,
+            "edit": 55
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8461538461538461,
+            "bleu": 1.6817928310329892e-08,
+            "edit": 55
+          }
+        },
+        {
+          "image": "jakob_math/math_012.jpg",
+          "gt_latex": "ax=b \\text{ in } \\mathbb{Z}/n\\mathbb{Z} \\iff ax \\equiv b \\pmod{n}",
+          "pred_raw": "a x = b \\quad i n \\ \\mathbb { Z } / \\mathbb { Z } \\ \\mathbb { Z } \\ \\in \\ > \\ a x = b \\bmod n",
+          "pred_post": "a x = b \\quad i n \\ \\mathbb { Z } / \\mathbb { Z } \\ \\mathbb { Z } \\ \\in \\ > \\ a x = b \\bmod n",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7692307692307693,
+            "bleu": 1.569021931528573e-08,
+            "edit": 50
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7692307692307693,
+            "bleu": 1.569021931528573e-08,
+            "edit": 50
+          }
+        },
+        {
+          "image": "jakob_math/math_013.jpg",
+          "gt_latex": "a'x - n'y = b' \\iff a'x \\equiv b' \\pmod{n'}",
+          "pred_raw": "a ^ { \\prime } x - n ^ { \\prime } y = b ^ { \\prime } \\Theta + c ^ { \\prime } x = b ^ { \\prime } m o d u ^ { \\prime }",
+          "pred_post": "a ^ { \\prime } x - n ^ { \\prime } y = b ^ { \\prime } \\Theta + c ^ { \\prime } x = b ^ { \\prime } m o d u ^ { \\prime }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 2.0232558139534884,
+            "bleu": 1.4861461986496396e-08,
+            "edit": 87
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 2.0232558139534884,
+            "bleu": 1.4861461986496396e-08,
+            "edit": 87
+          }
+        },
+        {
+          "image": "jakob_math/math_014.jpg",
+          "gt_latex": "\\operatorname{ggT}(a',n') = 1",
+          "pred_raw": "g g T ( a ^ { \\prime } , n ^ { \\prime } ) = 1",
+          "pred_post": "g g T ( a ^ { \\prime } , n ^ { \\prime } ) = 1",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.2413793103448276,
+            "bleu": 2.8433291833789312e-06,
+            "edit": 36
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.2413793103448276,
+            "bleu": 2.8433291833789312e-06,
+            "edit": 36
+          }
+        },
+        {
+          "image": "jakob_math/math_015.jpg",
+          "gt_latex": "\\operatorname{ggT}(8,12)=4=g",
+          "pred_raw": "g g T ( 8 , 1 2 ) = 4 = g",
+          "pred_post": "g g T ( 8 , 1 2 ) = 4 = g",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8928571428571429,
+            "bleu": 9.999999999999996e-11,
+            "edit": 25
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8928571428571429,
+            "bleu": 9.999999999999996e-11,
+            "edit": 25
+          }
+        },
+        {
+          "image": "jakob_math/math_016.jpg",
+          "gt_latex": "IL = \\left\\{ x_k = x_0 + k\\cdot n' \\mid k \\in \\{0,1,\\ldots,g-1\\} \\right\\} = \\left\\{ x_k = 2 + k\\cdot3 \\mid k \\in \\{0,1,\\ldots,g-1\\} \\right\\} = \\{2,5,8,11\\}",
+          "pred_raw": "l _ { L } = \\vartheta \\, x _ { k } = x _ { 0 } + k \\cdot n ^ { \\prime } \\, \\, \\, \\, \\, \\, l \\, \\, k \\in \\, \\, \\, \\, \\, \\, \\mathcal { O } _ { i } \\, \\, l _ { i } \\cdot \\cdot \\cdot \\, \\, g - l \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I",
+          "pred_post": "l _ { L } = \\vartheta \\, x _ { k } = x _ { 0 } + k \\cdot n ^ { \\prime } \\, \\, \\, \\, \\, \\, l \\, \\, k \\in \\, \\, \\, \\, \\, \\, \\mathcal { O } _ { i } \\, \\, l _ { i } \\cdot \\cdot \\cdot \\, \\, g - l \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I } \\, \\, \\, \\, \\, \\, \\mathcal { I",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 5.225806451612903,
+            "bleu": 9.262646563711095e-07,
+            "edit": 810
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 5.225806451612903,
+            "bleu": 9.262646563711095e-07,
+            "edit": 810
+          }
+        },
+        {
+          "image": "jakob_math/math_017.jpg",
+          "gt_latex": "N=\\prod_{i=1}^{k} n_i",
+          "pred_raw": "N = \\prod _ { i = 1 } ^ { k } n _ { i }",
+          "pred_post": "N = \\prod _ { i = 1 } ^ { k } n _ { i }",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8571428571428571,
+            "bleu": 9.999999999999996e-11,
+            "edit": 18
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8571428571428571,
+            "bleu": 9.999999999999996e-11,
+            "edit": 18
+          }
+        },
+        {
+          "image": "jakob_math/math_018.jpg",
+          "gt_latex": "x = 3\\cdot77 + 3\\cdot55 + 6\\cdot35 \\equiv 221 \\pmod{385}",
+          "pred_raw": "x = 3 . 7 7 + 3 . 5 5 + 6 . 3 5 \\Xi 2 2 1 m o d 3 8 5",
+          "pred_post": "x = 3 . 7 7 + 3 . 5 5 + 6 . 3 5 \\Xi 2 2 1 m o d 3 8 5",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5714285714285714,
+            "bleu": 2.8008294160628e-06,
+            "edit": 32
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5714285714285714,
+            "bleu": 2.8008294160628e-06,
+            "edit": 32
+          }
+        },
+        {
+          "image": "jakob_math/math_019.jpg",
+          "gt_latex": "\\varphi(n) = \\sum_{\\substack{1 \\le i \\le n \\\\ \\operatorname{ggT}(i,n)=1}} 1",
+          "pred_raw": "\\varphi ( n ) = \\sum _ { \\substack { 1 \\leq i \\leq n \\\\ g g T i i n } } 1",
+          "pred_post": "\\varphi ( n ) = \\sum _ { \\substack { 1 \\leq i \\leq n \\\\ g g T i i n } } 1",
+          "tags": [
+            "with-sum",
+            "multi-line",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.44,
+            "bleu": 3.021375399547262e-06,
+            "edit": 33
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.44,
+            "bleu": 3.021375399547262e-06,
+            "edit": 33
+          }
+        },
+        {
+          "image": "jakob_math/math_020.jpg",
+          "gt_latex": "5^4 \\equiv 1 \\pmod{12}",
+          "pred_raw": "5 ^ { 4 } \\equiv 1 m o d 1 2",
+          "pred_post": "5 ^ { 4 } \\equiv 1 m o d 1 2",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.5909090909090909,
+            "bleu": 3.5084396971297723e-06,
+            "edit": 13
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.5909090909090909,
+            "bleu": 3.5084396971297723e-06,
+            "edit": 13
+          }
+        },
+        {
+          "image": "jakob_math/math_021.jpg",
+          "gt_latex": "p = 11:\\quad a^{10} \\equiv 1 \\pmod{11}",
+          "pred_raw": "p = 1 1 1 \\colon a ^ { 1 0 } \\colon = 1 m o d 1 1",
+          "pred_post": "p = 1 1 1 \\colon a ^ { 1 0 } \\colon = 1 m o d 1 1",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7105263157894737,
+            "bleu": 2.980810825562251e-06,
+            "edit": 27
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7105263157894737,
+            "bleu": 2.980810825562251e-06,
+            "edit": 27
+          }
+        },
+        {
+          "image": "jakob_math/math_022.jpg",
+          "gt_latex": "5^3 \\bmod 11 \\equiv 125 \\bmod 11 \\equiv 4 \\bmod 11",
+          "pred_raw": "5 3 _ { m o d 1 1 } \\equiv 1 2 5 m o d 1 1 \\equiv 4 m o d 1 1",
+          "pred_post": "5 3 _ { m o d 1 1 } \\equiv 1 2 5 m o d 1 1 \\equiv 4 m o d 1 1",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.44,
+            "bleu": 2.606465464245322e-06,
+            "edit": 22
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.44,
+            "bleu": 2.606465464245322e-06,
+            "edit": 22
+          }
+        },
+        {
+          "image": "jakob_math/math_023.jpg",
+          "gt_latex": "\\varphi(72) = \\varphi(2^3 \\cdot 3^2) = \\varphi(2^3)\\cdot\\varphi(3^2) = (2^3 - 2^2)\\cdot(3^2 - 3^1) = 4\\cdot6 = 24",
+          "pred_raw": "\\ell ( 1 7 2 ) = \\ell ( 2 ^ { 3 } \\cdot 3 ^ { 2 } ) \\ \\# \\ell ( 2 ^ { 3 } ) \\cdot \\ell ( 1 3 ^ { 2 } ) \\ \\# \\ ( 2 ^ { 3 } - 2 ^ { 2 } ) \\cdot ( 3 ^ { 2 } - 3 ^ { 1 } )",
+          "pred_post": "\\ell ( 1 7 2 ) = \\ell ( 2 ^ { 3 } \\cdot 3 ^ { 2 } ) \\ \\# \\ell ( 2 ^ { 3 } ) \\cdot \\ell ( 1 3 ^ { 2 } ) \\ \\# \\ ( 2 ^ { 3 } - 2 ^ { 2 } ) \\cdot ( 3 ^ { 2 } - 3 ^ { 1 } )",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.9203539823008849,
+            "bleu": 1.540637309198448e-08,
+            "edit": 104
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.9203539823008849,
+            "bleu": 1.540637309198448e-08,
+            "edit": 104
+          }
+        },
+        {
+          "image": "jakob_math/math_024.jpg",
+          "gt_latex": "\\varphi(n) = \\varphi\\left(p_1^{k_1}\\cdots p_\\ell^{k_\\ell}\\right) = \\varphi\\left(p_1^{k_1}\\right)\\cdots\\varphi\\left(p_\\ell^{k_\\ell}\\right)",
+          "pred_raw": "\\ell ( \\ln ) = \\ell ( \\ell _ { \\rho _ { 1 } } ^ { \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\, \\",
+          "pred_post": "",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 5.306569343065694,
+            "bleu": 7.921210848770835e-09,
+            "edit": 727
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0,
+            "bleu": 0.0,
+            "edit": 137
+          }
+        },
+        {
+          "image": "jakob_math/math_025.jpg",
+          "gt_latex": "(2^3 - 2^2) = 2^3\\left(1-\\frac{2^2}{2^3}\\right) = 2^3\\left(1-\\frac{1}{2}\\right)",
+          "pred_raw": "( 2 ^ { 3 } - 2 ^ { 2 } ) = 2 ^ { 3 } ( 1 - \\frac { 2 ^ { 2 } } { 2 ^ { 3 } } ) = 2 ^ { 3 } ( 1 - \\frac { 1 } { 2 } )",
+          "pred_post": "( 2 ^ { 3 } - 2 ^ { 2 } ) = 2 ^ { 3 } ( 1 - \\frac { 2 ^ { 2 } } { 2 ^ { 3 } } ) = 2 ^ { 3 } ( 1 - \\frac { 1 } { 2 } )",
+          "tags": [
+            "with-frac",
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.8734177215189873,
+            "bleu": 1.5282332396023317e-08,
+            "edit": 69
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.8734177215189873,
+            "bleu": 1.5282332396023317e-08,
+            "edit": 69
+          }
+        },
+        {
+          "image": "jakob_math/math_026.jpg",
+          "gt_latex": "y_k = f(x_{k-1};y_{k-1}) \\cdot h + y_{k-1} = y_{k-1} + h \\cdot f(x_{k-1};y_{k-1})",
+          "pred_raw": "y _ { k } = f ( x _ { k - 1 } i y _ { k - 1 } ) \\cdot h + y _ { k - 1 } \\\\ = y _ { k - 1 } + h \\cdot f ( x _ { k - 1 } i y _ { k - 1 } )",
+          "pred_post": "y _ { k } = f ( x _ { k - 1 } i y _ { k - 1 } ) \\cdot h + y _ { k - 1 } \\\\ = y _ { k - 1 } + h \\cdot f ( x _ { k - 1 } i y _ { k - 1 } )",
+          "tags": [
+            "long"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.7037037037037037,
+            "bleu": 0.000400006400803521,
+            "edit": 57
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.7037037037037037,
+            "bleu": 0.000400006400803521,
+            "edit": 57
+          }
+        },
+        {
+          "image": "jakob_math/math_027.jpg",
+          "gt_latex": "t_{x_0} = f(x_0;y_0)\\cdot(x-x_0)+y_0",
+          "pred_raw": "t _ { x _ { 0 } } = f ( x _ { 0 } y _ { 0 } ) \\cdot ( x - x _ { 0 } ) + y _ { 0 }",
+          "pred_post": "t _ { x _ { 0 } } = f ( x _ { 0 } y _ { 0 } ) \\cdot ( x - x _ { 0 } ) + y _ { 0 }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.2777777777777777,
+            "bleu": 1.265417536299133e-08,
+            "edit": 46
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.2777777777777777,
+            "bleu": 1.265417536299133e-08,
+            "edit": 46
+          }
+        },
+        {
+          "image": "jakob_math/math_028.jpg",
+          "gt_latex": "t_{y_1} = f(x_1;y_1)\\cdot(x-x_1)+y_1",
+          "pred_raw": "t _ { y _ { 1 } } = f ( x _ { y _ { 1 } } y _ { 1 } ) \\cdot ( x - x _ { 1 } ) + y _ { 1 }",
+          "pred_post": "t _ { y _ { 1 } } = f ( x _ { y _ { 1 } } y _ { 1 } ) \\cdot ( x - x _ { 1 } ) + y _ { 1 }",
+          "tags": [
+            "medium"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.5,
+            "bleu": 1.2349031162827175e-08,
+            "edit": 54
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.5,
+            "bleu": 1.2349031162827175e-08,
+            "edit": 54
+          }
+        },
+        {
+          "image": "jakob_math/math_029.jpg",
+          "gt_latex": "\\text{z.B. } h = 0{,}05",
+          "pred_raw": "z . B . \\ h = 0 _ { i } 0 ^ { 5 }",
+          "pred_post": "z . B . \\ h = 0 _ { i } 0 ^ { 5 }",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 1.0434782608695652,
+            "bleu": 3.2406944690277953e-06,
+            "edit": 24
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 1.0434782608695652,
+            "bleu": 3.2406944690277953e-06,
+            "edit": 24
+          }
+        },
+        {
+          "image": "jakob_math/math_030.jpg",
+          "gt_latex": "y_s = (x+1)\\cdot e^x",
+          "pred_raw": "y _ { s } = ( x + 1 ) \\cdot e ^ { x }",
+          "pred_post": "y _ { s } = ( x + 1 ) \\cdot e ^ { x }",
+          "tags": [
+            "short"
+          ],
+          "raw": {
+            "exp_rate": 0,
+            "cer": 0.85,
+            "bleu": 1.5573555317989802e-08,
+            "edit": 17
+          },
+          "post": {
+            "exp_rate": 0,
+            "cer": 0.85,
+            "bleu": 1.5573555317989802e-08,
+            "edit": 17
+          }
+        }
+      ],
+      "wall_seconds": 373.0
+    }
+  }
+}

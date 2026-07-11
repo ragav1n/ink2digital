@@ -1,0 +1,1420 @@
+{
+  "config": {
+    "dataset": "fhswf/german_handwriting",
+    "split": "train",
+    "n_samples": 200,
+    "seed": 0,
+    "device": "cuda",
+    "prompt": "models/vlm_ocr.py::_TEXT_PROMPT (unchanged, deployed)",
+    "adapter": null
+  },
+  "overall_cer": 0.050829523072133245,
+  "per_writer": {
+    "unknown": {
+      "n": 200,
+      "cer": 0.050829523072133245
+    }
+  },
+  "per_sample": [
+    {
+      "index": 6311,
+      "writer": "unknown",
+      "gt": "Dies wollte Heinrich nicht und forderte den Papst auf zurück zutreten.",
+      "pred": "Dies wollte Heinrich nicht und forderte den Papst auf zurückzutreten.",
+      "cer": 0.014285714285714285
+    },
+    {
+      "index": 6890,
+      "writer": "unknown",
+      "gt": "und finde es gut das wir ihn geguckt haben, da man auch was neues gelernt hat.",
+      "pred": "und finde es gut, das wir ihn gesehen haben, da man auch was neues gelernt hat.",
+      "cer": 0.07692307692307693
+    },
+    {
+      "index": 663,
+      "writer": "unknown",
+      "gt": "- Unterscheidungskriterien unterschiedlicher Mediensysteme",
+      "pred": "• Unterscheidungskriterien unterschiedlicher Mediensysteme.",
+      "cer": 0.034482758620689655
+    },
+    {
+      "index": 4242,
+      "writer": "unknown",
+      "gt": "Zusammenfassung Organisation :",
+      "pred": "Zusammenfassung Organisation:",
+      "cer": 0.03333333333333333
+    },
+    {
+      "index": 8376,
+      "writer": "unknown",
+      "gt": "aber gute Gründe hat.",
+      "pred": "aber gute Gründe hat.",
+      "cer": 0.0
+    },
+    {
+      "index": 7961,
+      "writer": "unknown",
+      "gt": "Zum einen hat man die Kontrolle über was",
+      "pred": "Zum einen hat man die Kontrolle über was",
+      "cer": 0.0
+    },
+    {
+      "index": 6634,
+      "writer": "unknown",
+      "gt": "Fortbewegung des Tiefs.",
+      "pred": "Fortbewegung des Tiefs.",
+      "cer": 0.0
+    },
+    {
+      "index": 4969,
+      "writer": "unknown",
+      "gt": "und den Sprachinstinkt zu informieren.",
+      "pred": "und den Sprachinstinkt zu informieren.",
+      "cer": 0.0
+    },
+    {
+      "index": 7808,
+      "writer": "unknown",
+      "gt": "zusammen und formulieren eine These über",
+      "pred": "zusammen und formulieren eine These über",
+      "cer": 0.0
+    },
+    {
+      "index": 5866,
+      "writer": "unknown",
+      "gt": "- hoher Luftdruck",
+      "pred": "hoher Luftdruck",
+      "cer": 0.11764705882352941
+    },
+    {
+      "index": 9558,
+      "writer": "unknown",
+      "gt": "Kommunikationsinhalte: Texte, Audio, Bilder, Filme",
+      "pred": "• Kommunikationsinhalte: Texte, Audio, Bilder, Filme",
+      "cer": 0.04
+    },
+    {
+      "index": 3578,
+      "writer": "unknown",
+      "gt": "- Identität('==='): Überprüft, ob 2 Arrays die gleichen Schlüsselwerte hat, in der gleichen Reihenfolge",
+      "pred": "-Identität (==): Überprüft, ob 2 Arrays die gleichen Schlüsselwerk hat, in der gleichen Reihenfolge",
+      "cer": 0.06796116504854369
+    },
+    {
+      "index": 8268,
+      "writer": "unknown",
+      "gt": "- Strukturelle Umgestaltung in Industrie,",
+      "pred": "- Strukturelle Umgestaltung in Industrie.",
+      "cer": 0.024390243902439025
+    },
+    {
+      "index": 2281,
+      "writer": "unknown",
+      "gt": "- Ausgaben",
+      "pred": "- Ausgaben",
+      "cer": 0.0
+    },
+    {
+      "index": 4617,
+      "writer": "unknown",
+      "gt": "Absatzpreis 50.000€ / St.",
+      "pred": "Absatzpreis 50.000€ /St.",
+      "cer": 0.04
+    },
+    {
+      "index": 2289,
+      "writer": "unknown",
+      "gt": "Testprotokoll",
+      "pred": "Testgratokoll",
+      "cer": 0.15384615384615385
+    },
+    {
+      "index": 1553,
+      "writer": "unknown",
+      "gt": "Python",
+      "pred": "Python",
+      "cer": 0.0
+    },
+    {
+      "index": 10131,
+      "writer": "unknown",
+      "gt": "zu beobachten",
+      "pred": "zu beobachten",
+      "cer": 0.0
+    },
+    {
+      "index": 4104,
+      "writer": "unknown",
+      "gt": "zufälligen Hälfte werden zwei Keimzellen",
+      "pred": "zufälligen Hälfte werden zwei Keimzellen",
+      "cer": 0.0
+    },
+    {
+      "index": 8725,
+      "writer": "unknown",
+      "gt": "Aufgrund des Lichtmangels können die Laubbäume weniger Chlorophyll",
+      "pred": "Aufgrund des Lichtmangels können die Laubbäume weniger Chlorophyll",
+      "cer": 0.0
+    },
+    {
+      "index": 9861,
+      "writer": "unknown",
+      "gt": "Passives Verfahren",
+      "pred": "• Passives Verfahren",
+      "cer": 0.1111111111111111
+    },
+    {
+      "index": 2407,
+      "writer": "unknown",
+      "gt": "Geschäftsprozess und Szenario",
+      "pred": "Geschäftprozess und Scenario",
+      "cer": 0.06896551724137931
+    },
+    {
+      "index": 5081,
+      "writer": "unknown",
+      "gt": "- 3. Reife",
+      "pred": "-3. Keife",
+      "cer": 0.2
+    },
+    {
+      "index": 1618,
+      "writer": "unknown",
+      "gt": "Die Wolken ziehen schnell vorbei.",
+      "pred": "Die Wolken ziehen schnell vorbei.",
+      "cer": 0.0
+    },
+    {
+      "index": 1208,
+      "writer": "unknown",
+      "gt": "KI verbessert die Effizienz von Solarpanel-Arrays.",
+      "pred": "Kl überprüft die Effizienz von Solarpanel-Arrays.",
+      "cer": 0.18
+    },
+    {
+      "index": 5409,
+      "writer": "unknown",
+      "gt": "Nicht unterbrechbare :",
+      "pred": "Nicht unterschreiben:",
+      "cer": 0.36363636363636365
+    },
+    {
+      "index": 7735,
+      "writer": "unknown",
+      "gt": "wird durch die Tatsache, dass die Schwiegereltern",
+      "pred": "wird durch die Tatsache, dass die Schwingungen",
+      "cer": 0.14285714285714285
+    },
+    {
+      "index": 9171,
+      "writer": "unknown",
+      "gt": "Wirtschaft fördern und unterstützen, damit sich das Land entwickeln kann",
+      "pred": "Wirtschaft fördern und unterstützen, damit sich das Land entwickeln kann",
+      "cer": 0.0
+    },
+    {
+      "index": 1649,
+      "writer": "unknown",
+      "gt": "Software",
+      "pred": "Software",
+      "cer": 0.0
+    },
+    {
+      "index": 5796,
+      "writer": "unknown",
+      "gt": "- Konflikt mit der Bibel: Indianer werden dort nicht erwähnt",
+      "pred": "Widerspruch mit der Bibel: Indianer werden dort nicht erwähnt",
+      "cer": 0.18333333333333332
+    },
+    {
+      "index": 7113,
+      "writer": "unknown",
+      "gt": "Stück an sich",
+      "pred": "1. Teil anfüllen",
+      "cer": 1.0
+    },
+    {
+      "index": 5180,
+      "writer": "unknown",
+      "gt": "tolerante, kreative Vielfalt der Stadt",
+      "pred": "tolerante, kreative Vielfalt der Stadt",
+      "cer": 0.0
+    },
+    {
+      "index": 10008,
+      "writer": "unknown",
+      "gt": "3. Komplettdurchlauf und Kodieren",
+      "pred": "3. Komplett durchlauf und Kodieren",
+      "cer": 0.030303030303030304
+    },
+    {
+      "index": 10492,
+      "writer": "unknown",
+      "gt": "Der Sonnenuntergang sieht sehr schön aus.",
+      "pred": "Der Sonnenuntergang sieht sehr schön aus.",
+      "cer": 0.0
+    },
+    {
+      "index": 3350,
+      "writer": "unknown",
+      "gt": "case Ausdruck",
+      "pred": "case Ausdruck",
+      "cer": 0.0
+    },
+    {
+      "index": 9052,
+      "writer": "unknown",
+      "gt": "- nicht friedlich verhandelt, komplex und anspruchsvolle Verhandlungen",
+      "pred": "- nicht friedlich verhandelt, komplex und anspruchsvolle Verhandlungen",
+      "cer": 0.0
+    },
+    {
+      "index": 7815,
+      "writer": "unknown",
+      "gt": "die Beantwortung dieser Frage für uns alle sei.",
+      "pred": "die Beantwortung dieser Frage für uns alle sei.",
+      "cer": 0.0
+    },
+    {
+      "index": 7253,
+      "writer": "unknown",
+      "gt": "Arbeitslosen und Umweltschutz",
+      "pred": "Arbeitsschutz und Umweltschutz",
+      "cer": 0.20689655172413793
+    },
+    {
+      "index": 8541,
+      "writer": "unknown",
+      "gt": "aus der Luft als Kohlenstoffquelle für den Aufbau Ihrer organischen Substanzen",
+      "pred": "aus der Luft als Kohlenstoffquelle für den Aufbau ihrer organischen Substanzen",
+      "cer": 0.01282051282051282
+    },
+    {
+      "index": 4267,
+      "writer": "unknown",
+      "gt": "sozialdemokratischer Wohlfahrtsstaat:",
+      "pred": "sozialdemokratischer Wohlfahrtsstaat:",
+      "cer": 0.0
+    },
+    {
+      "index": 1020,
+      "writer": "unknown",
+      "gt": "Digitale Lebensläufe erleichtern die Jobsuche.",
+      "pred": "Digitale Lebensläufe erleichtern die Jobsuche.",
+      "cer": 0.0
+    },
+    {
+      "index": 8989,
+      "writer": "unknown",
+      "gt": "- Verfassung Österreich",
+      "pred": "Verfassung Österreich",
+      "cer": 0.08695652173913043
+    },
+    {
+      "index": 230,
+      "writer": "unknown",
+      "gt": "- Vorteil: Erfassen voller Heterogenität, Verstehen der Kausalketten",
+      "pred": "Vorteil: Erfassen voller Heterogenität, Verstehen der Kausal ketten",
+      "cer": 0.04411764705882353
+    },
+    {
+      "index": 1528,
+      "writer": "unknown",
+      "gt": "Studentenjobs helfen beim Geldverdienen.",
+      "pred": "Studentenjobs helfen beim Geldverdienen.",
+      "cer": 0.0
+    },
+    {
+      "index": 6534,
+      "writer": "unknown",
+      "gt": "Corporate-Venture-Capital: - mit freien Finanzmitteln an auf-",
+      "pred": "Corporate-Venture-Capital: - mit freien Finanzmitteln an auf-",
+      "cer": 0.0
+    },
+    {
+      "index": 10244,
+      "writer": "unknown",
+      "gt": "- Kanzler, Präsidenten",
+      "pred": "- Kauter, Präsidenten",
+      "cer": 0.13636363636363635
+    },
+    {
+      "index": 18,
+      "writer": "unknown",
+      "gt": "- Unit-Nonresponse / Totalausfälle: keine Daten von einem Merkmalsträger",
+      "pred": "- Unit-Nonresponse / Totalausfälle: keine Daten von einem Mehrmalsträger-",
+      "cer": 0.041666666666666664
+    },
+    {
+      "index": 10025,
+      "writer": "unknown",
+      "gt": "Digitalisierung",
+      "pred": "• Digitalisierung",
+      "cer": 0.13333333333333333
+    },
+    {
+      "index": 8086,
+      "writer": "unknown",
+      "gt": "die mangelnde Kontrolle dieser Arbeits -",
+      "pred": "die mangelnde Kontrolle dieser Arbeit-",
+      "cer": 0.05
+    },
+    {
+      "index": 5458,
+      "writer": "unknown",
+      "gt": "- Abhängig von der Taste und Drücken / Loslassen",
+      "pred": "- Abhängig von der Taste und Drücken/loslassen",
+      "cer": 0.0625
+    },
+    {
+      "index": 3996,
+      "writer": "unknown",
+      "gt": "Zur Zuordnung berücksichtigt man die grundlegenden Werteorientierungen und",
+      "pred": "Zur Zuordnung berücksichtigt man die grundlegenden Werteorientierungen und",
+      "cer": 0.0
+    },
+    {
+      "index": 5328,
+      "writer": "unknown",
+      "gt": "- Tröpfchenbewässerung -> trotzdem hoher Verbrauch",
+      "pred": "- Tröpfchenbewässerung - Trotzdem hoher Verbrauch",
+      "cer": 0.04
+    },
+    {
+      "index": 1031,
+      "writer": "unknown",
+      "gt": "Bildhauerei formt Materie zu Kunstwerken.",
+      "pred": "Bildhauer forst Matere zu Kunstwerken",
+      "cer": 0.12195121951219512
+    },
+    {
+      "index": 3130,
+      "writer": "unknown",
+      "gt": "Lineare Regression",
+      "pred": "Lineare Regression",
+      "cer": 0.0
+    },
+    {
+      "index": 9298,
+      "writer": "unknown",
+      "gt": "- einige gründeten ihre eigenen Läden => neues Leben entstand",
+      "pred": "einige gründeten ihre eigenen läden => neues leben entstand",
+      "cer": 0.06557377049180328
+    },
+    {
+      "index": 3632,
+      "writer": "unknown",
+      "gt": "soziale Herkunft",
+      "pred": "Soziale Werkunftr",
+      "cer": 0.1875
+    },
+    {
+      "index": 3909,
+      "writer": "unknown",
+      "gt": "Hilfsmittel",
+      "pred": "Hilfsmittel",
+      "cer": 0.0
+    },
+    {
+      "index": 2334,
+      "writer": "unknown",
+      "gt": "- dient zur Erkennung & Beseitigung von Fehlerzuständen",
+      "pred": "-dient zur Erkennung & Beseitigung von Fehlerzuständen",
+      "cer": 0.01818181818181818
+    },
+    {
+      "index": 8896,
+      "writer": "unknown",
+      "gt": "nach dem \"Alles-oder-Nichts-Gesetz\".",
+      "pred": "nach dem „Alles-oder-Nichts-Gesetz“.",
+      "cer": 0.05555555555555555
+    },
+    {
+      "index": 7339,
+      "writer": "unknown",
+      "gt": "- Knüpft an Vorgänger an und deren Ideen",
+      "pred": "- Knüpft an Vorgänger an und deren Ideen",
+      "cer": 0.0
+    },
+    {
+      "index": 1494,
+      "writer": "unknown",
+      "gt": "Studenten organisieren Proteste und Demonstrationen.",
+      "pred": "Studenten organisieren Proteste und Demonstrationen.",
+      "cer": 0.0
+    },
+    {
+      "index": 1318,
+      "writer": "unknown",
+      "gt": "KI optimiert Prozesse.",
+      "pred": "ki optimiert Prozesse.",
+      "cer": 0.09090909090909091
+    },
+    {
+      "index": 5243,
+      "writer": "unknown",
+      "gt": "- Nachteile:",
+      "pred": "-Nachteile:",
+      "cer": 0.08333333333333333
+    },
+    {
+      "index": 8322,
+      "writer": "unknown",
+      "gt": "- Bezug zu diesem Thema verloren",
+      "pred": "- Bezug zu diesem Thema verloren",
+      "cer": 0.0
+    },
+    {
+      "index": 8016,
+      "writer": "unknown",
+      "gt": "- Grenze sei ab sofort und für alle geöffnet",
+      "pred": "Grenze sei ab sofort und für alle geöffnet",
+      "cer": 0.045454545454545456
+    },
+    {
+      "index": 1786,
+      "writer": "unknown",
+      "gt": "Ein Herz schlägt.",
+      "pred": "Ein Herz schlägt.",
+      "cer": 0.0
+    },
+    {
+      "index": 4938,
+      "writer": "unknown",
+      "gt": "C: - konstante, niedrige Geburten- und Sterberate",
+      "pred": "C: -konstante, niedrige Geburten- und Sterberate",
+      "cer": 0.02040816326530612
+    },
+    {
+      "index": 9031,
+      "writer": "unknown",
+      "gt": "1840er- Jahre: viele Arbeitslosen infolge der Zurückdrängung traditioneller Erwerbszweige",
+      "pred": "1840er-Jahre: viele Arbeitslosen infolge der Zurückdrängung traditioneller Erwerbszweige",
+      "cer": 0.011235955056179775
+    },
+    {
+      "index": 4769,
+      "writer": "unknown",
+      "gt": "Raumschiff: v=0,8c",
+      "pred": "Raumschiff: v = 0,8c",
+      "cer": 0.1111111111111111
+    },
+    {
+      "index": 2044,
+      "writer": "unknown",
+      "gt": "Hoffnung",
+      "pred": "Hoffnung",
+      "cer": 0.0
+    },
+    {
+      "index": 8969,
+      "writer": "unknown",
+      "gt": "- Elektrische Bahn ausgebaut, gut, preiswert",
+      "pred": "- Elektrische Bahn ausgebaut, gut, preiswert",
+      "cer": 0.0
+    },
+    {
+      "index": 5451,
+      "writer": "unknown",
+      "gt": "Idee: -> Wartezeit reduzieren indem der",
+      "pred": ") dec: -> Wartzeit reduzieren indem der",
+      "cer": 0.10256410256410256
+    },
+    {
+      "index": 8852,
+      "writer": "unknown",
+      "gt": "bezeichnet.",
+      "pred": "bezeichnet.",
+      "cer": 0.0
+    },
+    {
+      "index": 3329,
+      "writer": "unknown",
+      "gt": "Suchen mit Mustern",
+      "pred": "Suchen mit Mustern",
+      "cer": 0.0
+    },
+    {
+      "index": 9882,
+      "writer": "unknown",
+      "gt": "10. Gefahr Fehler zu machen, daher wenn möglich",
+      "pred": "10. Gefahr Fehler zu machen, daher wenn möglich",
+      "cer": 0.0
+    },
+    {
+      "index": 8965,
+      "writer": "unknown",
+      "gt": "- Entlassung im Jahr 1890",
+      "pred": "- Entlassung im Jahr 1890",
+      "cer": 0.0
+    },
+    {
+      "index": 9627,
+      "writer": "unknown",
+      "gt": "nur die geeignetste übrig bleibt",
+      "pred": "nur die geeignetste übrig bleibt.",
+      "cer": 0.03125
+    },
+    {
+      "index": 4712,
+      "writer": "unknown",
+      "gt": "- nicht vorhanden wegen Gravitationskraft",
+      "pred": "- nicht vorhanden wegen Gravitationskraft",
+      "cer": 0.0
+    },
+    {
+      "index": 7290,
+      "writer": "unknown",
+      "gt": "- Soziale Marktwirtschaft als Leitbild / Sozialversicherungen",
+      "pred": "Soziale Marktwirtschaft als Leitbild/Sozialverpflichtungen",
+      "cer": 0.14754098360655737
+    },
+    {
+      "index": 1501,
+      "writer": "unknown",
+      "gt": "Sportangebote fördern die Gesundheit.",
+      "pred": "Sportangebote fördern die Gesundheit.",
+      "cer": 0.0
+    },
+    {
+      "index": 9769,
+      "writer": "unknown",
+      "gt": "- Diskursanalyse",
+      "pred": "-Diskursanalyse",
+      "cer": 0.0625
+    },
+    {
+      "index": 6306,
+      "writer": "unknown",
+      "gt": "König Heinrich bekam dadurch seine Herrschaft zurück. Daraufhin setzte er den Papst",
+      "pred": "König Heinrich bekam dadurch seine Herrschaft zurück. Daraufhin setzte er den Papst",
+      "cer": 0.0
+    },
+    {
+      "index": 5194,
+      "writer": "unknown",
+      "gt": "-> Partner der Wolfsburg AG",
+      "pred": "ls Partner der Wolfsburg AG",
+      "cer": 0.07407407407407407
+    },
+    {
+      "index": 9431,
+      "writer": "unknown",
+      "gt": "- Unbewusste Manipulation : z.B Soziale Erwünschtheit",
+      "pred": "Unbewusste Manipulation 2.13 Soziale Erwünschtheit",
+      "cer": 0.1320754716981132
+    },
+    {
+      "index": 3966,
+      "writer": "unknown",
+      "gt": "a) Geschäftsführer",
+      "pred": "a) Geschäftsführer",
+      "cer": 0.0
+    },
+    {
+      "index": 4756,
+      "writer": "unknown",
+      "gt": "Erde wechselt das Inertialsystem nicht",
+      "pred": "Erde wechselt das Inertialsystem nicht",
+      "cer": 0.0
+    },
+    {
+      "index": 3012,
+      "writer": "unknown",
+      "gt": "OOA (Objektorientierte Analyse)",
+      "pred": "OOA (Objektorientierte Analyse)",
+      "cer": 0.0
+    },
+    {
+      "index": 3102,
+      "writer": "unknown",
+      "gt": "- Hard-Margin Klassifikationen sind sehr anfällig für Ausreißer",
+      "pred": "- Hard-Margin Klassifikatoren sind sehr anfällig für Ausreißer",
+      "cer": 0.031746031746031744
+    },
+    {
+      "index": 3059,
+      "writer": "unknown",
+      "gt": "- Tupel",
+      "pred": "-Tupel",
+      "cer": 0.14285714285714285
+    },
+    {
+      "index": 540,
+      "writer": "unknown",
+      "gt": "- Institutionen sind formell gesetzte und im allgemeinen",
+      "pred": "- Institutionen sind formell gesetzte und im allgemeinen",
+      "cer": 0.0
+    },
+    {
+      "index": 10039,
+      "writer": "unknown",
+      "gt": "und gemessenem Wert",
+      "pred": "und gemessenem Wert",
+      "cer": 0.0
+    },
+    {
+      "index": 10758,
+      "writer": "unknown",
+      "gt": "Das Auto fährt sehr schnell.",
+      "pred": "Das Auto fährt sehr schnell.",
+      "cer": 0.0
+    },
+    {
+      "index": 4260,
+      "writer": "unknown",
+      "gt": "- Lebenschancen und Güter werden über gesellschaftliche Institutionen verteilt",
+      "pred": "-Lebenschancen und Güter werden über gesellschaftliche Institutionen verteilt",
+      "cer": 0.01282051282051282
+    },
+    {
+      "index": 7807,
+      "writer": "unknown",
+      "gt": "die Wirkungen von Worten.",
+      "pred": "die Wirkungen von Worten.",
+      "cer": 0.0
+    },
+    {
+      "index": 1131,
+      "writer": "unknown",
+      "gt": "Datenschutz gewährleistet Privatsphäre.",
+      "pred": "Datenschutz gewährleistet Privatsphäre.",
+      "cer": 0.0
+    },
+    {
+      "index": 1471,
+      "writer": "unknown",
+      "gt": "Mentoren spielen eine wichtige Rolle für Studenten.",
+      "pred": "Mentoren spielen eine wichtige Rolle für Studenten.",
+      "cer": 0.0
+    },
+    {
+      "index": 2133,
+      "writer": "unknown",
+      "gt": "reagiert mit einem definierten Verhalten auf seine Umgebung",
+      "pred": "reagiert mit einem definierten Verhalten auf seine Umgebung",
+      "cer": 0.0
+    },
+    {
+      "index": 2450,
+      "writer": "unknown",
+      "gt": "10. System-Grenzen",
+      "pred": "10. System-Grenzen",
+      "cer": 0.0
+    },
+    {
+      "index": 633,
+      "writer": "unknown",
+      "gt": "- Konfliktfähig ist eine Gruppe erst wenn sie für Wirtschaft und Gesellschaft",
+      "pred": "Konfliktfähig ist eine Gruppe erst wenn sie für Wirtschaft und Gesellschaft",
+      "cer": 0.025974025974025976
+    },
+    {
+      "index": 1314,
+      "writer": "unknown",
+      "gt": "Campus-Partys bieten Gelegenheit zum Feiern.",
+      "pred": "Campus-Partys bieten Gelegenheit zum Feiern.",
+      "cer": 0.0
+    },
+    {
+      "index": 8857,
+      "writer": "unknown",
+      "gt": "1) Durch die spannungsgesteuerten Na+-Kanäle diffundieren Na+-Ionen entlang des elektrochemischen",
+      "pred": "Durch die spannungsgesteuerten Na+-Kanäle diffundieren Na+-Ionen entlang des elektrochemischen",
+      "cer": 0.030927835051546393
+    },
+    {
+      "index": 6410,
+      "writer": "unknown",
+      "gt": "Funktion / Wirkung der Bühnenanweisung",
+      "pred": "Funktion/Wirkung der Bühnenanweisung",
+      "cer": 0.05263157894736842
+    },
+    {
+      "index": 8594,
+      "writer": "unknown",
+      "gt": "-> Attribute für Gott -> Anerkennung",
+      "pred": "→ Attribute für Gott → Anerkennung",
+      "cer": 0.1111111111111111
+    },
+    {
+      "index": 4515,
+      "writer": "unknown",
+      "gt": "z.B. - Kapitalbedarf ermitteln",
+      "pred": "z.B. - Kapitalbedarf ermitteln",
+      "cer": 0.0
+    },
+    {
+      "index": 8549,
+      "writer": "unknown",
+      "gt": "Reich Gottes (Himmelreich",
+      "pred": "Reich Gottes (Himmelreich",
+      "cer": 0.0
+    },
+    {
+      "index": 3858,
+      "writer": "unknown",
+      "gt": "=> deskriptiv; keine Wertung bzgl. (Un-) Gerechtigkeit",
+      "pred": "\\rightarrow deskriptiv; keine Wertung bzgl. (Un-)Gerechtigkeit",
+      "cer": 0.2222222222222222
+    },
+    {
+      "index": 3525,
+      "writer": "unknown",
+      "gt": "- Objekte : Instanzen von Klassen, die eigene Eigenschaften & Methoden haben",
+      "pred": "- Objekte: Instanzen von Klassen, die eigene Eigenschaften & Methoden haben",
+      "cer": 0.013157894736842105
+    },
+    {
+      "index": 9663,
+      "writer": "unknown",
+      "gt": "Berücksichtigung des Kontextes: Wer sagt / schreibt etwas?",
+      "pred": "• Berücksichtigung des Kontextes: Wer sagt/schreibt etwas?",
+      "cer": 0.06896551724137931
+    },
+    {
+      "index": 6871,
+      "writer": "unknown",
+      "gt": "- 8. Magnetspulen sollen die Anwesenheit durch Gehirnströme beweisen",
+      "pred": "- 8 Magnetspalten sollen die Anwesenheit durch Gehirnströme beweisen",
+      "cer": 0.04411764705882353
+    },
+    {
+      "index": 9497,
+      "writer": "unknown",
+      "gt": "durch die unabhängige Variable gebildet werden.",
+      "pred": "durch die unabhängige Variable gebildet werden.",
+      "cer": 0.0
+    },
+    {
+      "index": 4509,
+      "writer": "unknown",
+      "gt": "- gemeinsame Zielvorstellungen",
+      "pred": "-gemeinsame Zielvorstellungen.",
+      "cer": 0.06666666666666667
+    },
+    {
+      "index": 7382,
+      "writer": "unknown",
+      "gt": "zweiten Aussage zu, da die Marquise den",
+      "pred": "zweiten Aussage zu, da die Marquise den",
+      "cer": 0.0
+    },
+    {
+      "index": 8071,
+      "writer": "unknown",
+      "gt": "- Demokratieförderung, Menschenrechte, Wirtschafts -",
+      "pred": "- Demokratieförderung, Menschenrechte, Wirtschaft.",
+      "cer": 0.057692307692307696
+    },
+    {
+      "index": 10817,
+      "writer": "unknown",
+      "gt": "Die Vögel singen heute sehr laut.",
+      "pred": "Die Vögel singen heute sehr laut.",
+      "cer": 0.0
+    },
+    {
+      "index": 10505,
+      "writer": "unknown",
+      "gt": "Herr Maier ist wütend wegen seinem Nachbarn.",
+      "pred": "Herr Maier ist wütend wegen seinem Nachbarn.",
+      "cer": 0.0
+    },
+    {
+      "index": 5855,
+      "writer": "unknown",
+      "gt": "b.) 1970 waren es ca. 6,8 Mio. Besucher  versechsfacht",
+      "pred": "b) 1940 waren es ca. 6,9 Mio. Besucher versehstfahrt",
+      "cer": 0.14814814814814814
+    },
+    {
+      "index": 1349,
+      "writer": "unknown",
+      "gt": "Ehrenamtliches Engagement stärkt den Lebenslauf.",
+      "pred": "Ehrenamtliches Engagement sticht den Lebendlauf.",
+      "cer": 0.08333333333333333
+    },
+    {
+      "index": 5313,
+      "writer": "unknown",
+      "gt": "- positive Aspekte",
+      "pred": "-positive Aspekte",
+      "cer": 0.05555555555555555
+    },
+    {
+      "index": 1889,
+      "writer": "unknown",
+      "gt": "Das Chamäleon wechselt seine Farbe.",
+      "pred": "Das Chamäleon wechselt seine Farbe.",
+      "cer": 0.0
+    },
+    {
+      "index": 7969,
+      "writer": "unknown",
+      "gt": "Sprache ist Notwendig um das Gedachte",
+      "pred": "Sprache ist notwendig um das Gedächtnis",
+      "cer": 0.13513513513513514
+    },
+    {
+      "index": 9618,
+      "writer": "unknown",
+      "gt": "- Datenerfassung, trivial, wird fast nur virtuell gemacht",
+      "pred": "- Daten erfassung, trivial, wird fast nur virtuell gemacht",
+      "cer": 0.017543859649122806
+    },
+    {
+      "index": 10324,
+      "writer": "unknown",
+      "gt": "- Heterogenität",
+      "pred": "- Heterogenität",
+      "cer": 0.0
+    },
+    {
+      "index": 5493,
+      "writer": "unknown",
+      "gt": "- Eigene Erfahrungen der SHK",
+      "pred": "Eigene Erfahrungen der SHK",
+      "cer": 0.07142857142857142
+    },
+    {
+      "index": 3119,
+      "writer": "unknown",
+      "gt": "- Dadurch entsteht das Problem des Overfittings",
+      "pred": "-Dadurch entsteht das Problem des Overfittings",
+      "cer": 0.02127659574468085
+    },
+    {
+      "index": 3981,
+      "writer": "unknown",
+      "gt": "Bsp.: 3 Gesellschafter",
+      "pred": "Bsp.: 3 Gesellschafter",
+      "cer": 0.0
+    },
+    {
+      "index": 265,
+      "writer": "unknown",
+      "gt": "- Bewirkter Sachverhalt (Wirkung)",
+      "pred": "- Bewirkter Sachverhalt (Wirkung)",
+      "cer": 0.0
+    },
+    {
+      "index": 4440,
+      "writer": "unknown",
+      "gt": "1. Privateigentum",
+      "pred": "1. Privateigentum",
+      "cer": 0.0
+    },
+    {
+      "index": 1919,
+      "writer": "unknown",
+      "gt": "Virtualisierung",
+      "pred": "Virtualisierung",
+      "cer": 0.0
+    },
+    {
+      "index": 3612,
+      "writer": "unknown",
+      "gt": "=> wachsende Armut, zunehmender Reichtum",
+      "pred": "$\\Rightarrow$ wachsende Armut, zunehmender Reichtum",
+      "cer": 0.325
+    },
+    {
+      "index": 6095,
+      "writer": "unknown",
+      "gt": "manchen Jahren fast gar nicht regnet (M2). Der Tschadsee nimmt",
+      "pred": "mancher Jahren fast garnicht regnet (12). Der Tschadsee nimmt",
+      "cer": 0.04838709677419355
+    },
+    {
+      "index": 2793,
+      "writer": "unknown",
+      "gt": "- Idee von Batch Normalisierung: Normalisiere die Werte in jeder Schicht das",
+      "pred": "Idee von Batch Normalisierung: Normalisiere die Werte in jeder Schicht aus",
+      "cer": 0.05263157894736842
+    },
+    {
+      "index": 5448,
+      "writer": "unknown",
+      "gt": "- Controller schickt ein Interrupt-Signal an CPU",
+      "pred": "- Controller sends an Interrupt-Signal to CPU",
+      "cer": 0.20833333333333334
+    },
+    {
+      "index": 6981,
+      "writer": "unknown",
+      "gt": "nach dem Tod ihres Mannes versprochen hatte,",
+      "pred": "nach dem Tod ihres Mannes verprobtben hatte,",
+      "cer": 0.09090909090909091
+    },
+    {
+      "index": 1018,
+      "writer": "unknown",
+      "gt": "PHP ist ein wichtiger Bestandteil des Webstacks.",
+      "pred": "PHP ist ein wichtiger Bestandteil des Webstacks.",
+      "cer": 0.0
+    },
+    {
+      "index": 1648,
+      "writer": "unknown",
+      "gt": "Selbstwahrnehmung",
+      "pred": "Selbstwahrnehmung",
+      "cer": 0.0
+    },
+    {
+      "index": 2397,
+      "writer": "unknown",
+      "gt": "Sequenzdiagramm",
+      "pred": "Sequenzdiagramm",
+      "cer": 0.0
+    },
+    {
+      "index": 3584,
+      "writer": "unknown",
+      "gt": "Operatoren für Arrays",
+      "pred": "Operatoren für Arrays",
+      "cer": 0.0
+    },
+    {
+      "index": 741,
+      "writer": "unknown",
+      "gt": "- Mittels kommunikativer Rückkopplung = effiziente",
+      "pred": "- M: Helft kommunikativer Rückkopplung = effiziente",
+      "cer": 0.1
+    },
+    {
+      "index": 9402,
+      "writer": "unknown",
+      "gt": "Haben jetzt 8 Stück in unserem Bau",
+      "pred": "Haben jetzt 8 Stück in meinem Bau,",
+      "cer": 0.17647058823529413
+    },
+    {
+      "index": 10390,
+      "writer": "unknown",
+      "gt": "Machtmittel der Machtausübung:",
+      "pred": "• Machtmittel der Macht ausübung;",
+      "cer": 0.13333333333333333
+    },
+    {
+      "index": 8752,
+      "writer": "unknown",
+      "gt": "die Ohren Wärme abgeben von der Kartoffel und sie so mehr",
+      "pred": "die Ohren Wärme abgeben von der Kartoffel und sie so mehr",
+      "cer": 0.0
+    },
+    {
+      "index": 9865,
+      "writer": "unknown",
+      "gt": "Befragungsdauer",
+      "pred": "Befragungsdauer",
+      "cer": 0.0
+    },
+    {
+      "index": 1212,
+      "writer": "unknown",
+      "gt": "Studenten nehmen an Campus-Touren teil.",
+      "pred": "Studenten nehmen an Campus-Tour teil.",
+      "cer": 0.05128205128205128
+    },
+    {
+      "index": 437,
+      "writer": "unknown",
+      "gt": "- Experiment",
+      "pred": "Experiment",
+      "cer": 0.16666666666666666
+    },
+    {
+      "index": 2038,
+      "writer": "unknown",
+      "gt": "Ein Traumfänger fängt Träume ein.",
+      "pred": "Ein Traumfänger fängt Träume ein.",
+      "cer": 0.0
+    },
+    {
+      "index": 10403,
+      "writer": "unknown",
+      "gt": "Bsp: Liegestühle auf einem Schiff",
+      "pred": "Bsp: Liegestühle auf einem Schiff",
+      "cer": 0.0
+    },
+    {
+      "index": 3088,
+      "writer": "unknown",
+      "gt": "Punkte sollen durch einen Rand voneinander getrennt sein.  Der Rand soll",
+      "pred": "Punkte sollen durch einen Rand voneinander getrennt sein. Der Rand soll",
+      "cer": 0.013888888888888888
+    },
+    {
+      "index": 9934,
+      "writer": "unknown",
+      "gt": "Offene Fragen:",
+      "pred": "o Offene Fragen:",
+      "cer": 0.14285714285714285
+    },
+    {
+      "index": 9436,
+      "writer": "unknown",
+      "gt": "Mögliche Probleme bei \"Frage verstehen\":",
+      "pred": "Mögliche Probleme bei \"Frage verstehen\"",
+      "cer": 0.025
+    },
+    {
+      "index": 1961,
+      "writer": "unknown",
+      "gt": "Veränderung",
+      "pred": "Veränderung",
+      "cer": 0.0
+    },
+    {
+      "index": 6409,
+      "writer": "unknown",
+      "gt": "=> Bühnenanweisung \"verwirrt\" den Leser:",
+      "pred": "=> Büchernanweisung „verwirrt“ den Leser:",
+      "cer": 0.125
+    },
+    {
+      "index": 1499,
+      "writer": "unknown",
+      "gt": "IT-Audit prüft Systeme auf Sicherheit.",
+      "pred": "IT-Audit prüft Systeme auf Sicherheit.",
+      "cer": 0.0
+    },
+    {
+      "index": 6064,
+      "writer": "unknown",
+      "gt": "immer mehr Wasser aus dem Tschad-See benutzt. Außerdem wird immer mehr",
+      "pred": "immer mehr Wasser aus dem Tschad-See benutzt, außerdem wird immer mehr",
+      "cer": 0.02857142857142857
+    },
+    {
+      "index": 1901,
+      "writer": "unknown",
+      "gt": "Jazz improvisiert und befreit die Seele.",
+      "pred": "Jazz improvisiert und befreit die Seele.",
+      "cer": 0.0
+    },
+    {
+      "index": 596,
+      "writer": "unknown",
+      "gt": "- Machterwerbsstreben Def. nach Weber:",
+      "pred": "• Machterwerbsstreben Def. nach Weber's",
+      "cer": 0.07894736842105263
+    },
+    {
+      "index": 9920,
+      "writer": "unknown",
+      "gt": "interessieren und man sich nicht sicher ist",
+      "pred": "interessieren und man sich nicht sicher ist",
+      "cer": 0.0
+    },
+    {
+      "index": 354,
+      "writer": "unknown",
+      "gt": "- Herkunft der Theorie irrelevant",
+      "pred": "- Herkunft der Theorie irrelevant",
+      "cer": 0.0
+    },
+    {
+      "index": 3188,
+      "writer": "unknown",
+      "gt": "- Löschen eines Datensatzes in unabhängiger Tabelle nur, falls nicht durch Fremdschlüssel",
+      "pred": "-Löschen eines Datensatzes in unabhängiger Tabelle nur, falls nicht durch Fremdschlüssel",
+      "cer": 0.011235955056179775
+    },
+    {
+      "index": 3030,
+      "writer": "unknown",
+      "gt": "-> Interative Lösungsverfahren lassen auf MSE (O) nicht gut anwenden",
+      "pred": "Iterative Lösungsverfahren lassen auf MSE (θ) nicht gut anwenden",
+      "cer": 0.07352941176470588
+    },
+    {
+      "index": 2029,
+      "writer": "unknown",
+      "gt": "Konferenzen ermöglichen den Austausch mit Experten.",
+      "pred": "Konferenzen ermöglichen den Austausch mit Experten.",
+      "cer": 0.0
+    },
+    {
+      "index": 7851,
+      "writer": "unknown",
+      "gt": "Probanden sollten anhand eines fiktiven",
+      "pred": "Probanden sollten anhand eines fiktiven",
+      "cer": 0.0
+    },
+    {
+      "index": 3450,
+      "writer": "unknown",
+      "gt": "- gleiche Wirkung wie der Flaschenhalseffekt",
+      "pred": "-gleiche Wirkung wie der Flaschenhalseeffekt",
+      "cer": 0.045454545454545456
+    },
+    {
+      "index": 1000,
+      "writer": "unknown",
+      "gt": "– unserer geliebten Wawi –",
+      "pred": "- museer geliebter Wawi -",
+      "cer": 0.23076923076923078
+    },
+    {
+      "index": 373,
+      "writer": "unknown",
+      "gt": "- Erklärungsziel: Zustandekommen von Politikinhalten (Policies) und",
+      "pred": "-Erklärungsziel: Zustandekommen von Politikinhalten (Policies) und",
+      "cer": 0.014925373134328358
+    },
+    {
+      "index": 8916,
+      "writer": "unknown",
+      "gt": "dargestellt.",
+      "pred": "dargestellt.",
+      "cer": 0.0
+    },
+    {
+      "index": 6973,
+      "writer": "unknown",
+      "gt": "nach dieser Äußerung der Mutter, besteht",
+      "pred": "nach dieser Äußerung der Mutter, beriefst",
+      "cer": 0.1
+    },
+    {
+      "index": 10167,
+      "writer": "unknown",
+      "gt": "Herstellung und Durchsetzung allgemein verbindlicher",
+      "pred": "Herstellung und Durchsetzung allgemein verbindlicher",
+      "cer": 0.0
+    },
+    {
+      "index": 1662,
+      "writer": "unknown",
+      "gt": "Studenten erkunden neue Hobbys und Interessen.",
+      "pred": "Studenten erkunden neue Hobbys und Interessen.",
+      "cer": 0.0
+    },
+    {
+      "index": 4258,
+      "writer": "unknown",
+      "gt": "- Chancengerechtigkeit: gleiche Chancen beim Zugang zu Gütern",
+      "pred": "Chancengerechtigkeit: gleiche Chancen beim Zugang zu Gütern",
+      "cer": 0.03278688524590164
+    },
+    {
+      "index": 1146,
+      "writer": "unknown",
+      "gt": "Studenten nehmen an Konferenzen und Symposien teil.",
+      "pred": "Studierende nehmen an Konferenzen und Symposien teil.",
+      "cer": 0.09803921568627451
+    },
+    {
+      "index": 3618,
+      "writer": "unknown",
+      "gt": "Verteilungsungleichheit:",
+      "pred": "Verteilungsungleichheit:",
+      "cer": 0.0
+    },
+    {
+      "index": 1179,
+      "writer": "unknown",
+      "gt": "Cloud-Computing bietet flexible Ressourcen.",
+      "pred": "Cloud-Computing bietet flexible Ressourcen.",
+      "cer": 0.0
+    },
+    {
+      "index": 10599,
+      "writer": "unknown",
+      "gt": "Die Schüler nehmen an Aktivitäten teil.",
+      "pred": "Die Schüler nehmen an Aktivitäten teil.",
+      "cer": 0.0
+    },
+    {
+      "index": 4932,
+      "writer": "unknown",
+      "gt": "- schrumpfende Bevölkerung    - Armut",
+      "pred": "-schrumpfende Bevölkerung - Armut",
+      "cer": 0.10810810810810811
+    },
+    {
+      "index": 5739,
+      "writer": "unknown",
+      "gt": "Konflikten mit der Bibel, da die Indianer vorher",
+      "pred": "Konflikten mit der Babel, da die Indikatorvoker",
+      "cer": 0.14583333333333334
+    },
+    {
+      "index": 7144,
+      "writer": "unknown",
+      "gt": "auf das Thema des Textes anspielt. Im Gegen -",
+      "pred": "auf das Thema des Textes anregt. Im Gegen-",
+      "cer": 0.1111111111111111
+    },
+    {
+      "index": 2954,
+      "writer": "unknown",
+      "gt": "Entscheidungen unterworfen zu werden",
+      "pred": "Entscheidungen unterworfen zu werden",
+      "cer": 0.0
+    },
+    {
+      "index": 8251,
+      "writer": "unknown",
+      "gt": "sich sehr auf die Abrüstung Deutschlands",
+      "pred": "sie sehr auf die Abrüstung Deutschlands",
+      "cer": 0.05
+    },
+    {
+      "index": 7653,
+      "writer": "unknown",
+      "gt": "Das Sonett besteht aus einem umarmenden",
+      "pred": "Das Sonett besteht aus einem unverwendeten",
+      "cer": 0.15384615384615385
+    },
+    {
+      "index": 645,
+      "writer": "unknown",
+      "gt": "Menschen und Institutionen nicht dazu bei sie Bereitzustellen",
+      "pred": "Menschen und Institutionen nicht dazu bei sie Bezeichnungen",
+      "cer": 0.14754098360655737
+    },
+    {
+      "index": 9772,
+      "writer": "unknown",
+      "gt": "Variablen",
+      "pred": "Variablen",
+      "cer": 0.0
+    },
+    {
+      "index": 1653,
+      "writer": "unknown",
+      "gt": "Ein Seidenkleid fließt sanft im Wind.",
+      "pred": "Ein Seidentkleid fließt sanft im Wind.",
+      "cer": 0.02702702702702703
+    },
+    {
+      "index": 3266,
+      "writer": "unknown",
+      "gt": "Strukturänderungen an Tabellen mit Daten",
+      "pred": "Strukturänderungen an Tabellen mit Daten",
+      "cer": 0.0
+    },
+    {
+      "index": 4262,
+      "writer": "unknown",
+      "gt": "- Vollbeschäftigungsgarantie",
+      "pred": "-Vollbeschäftigungsgarantie",
+      "cer": 0.03571428571428571
+    },
+    {
+      "index": 5874,
+      "writer": "unknown",
+      "gt": "- Beim zweiten Besuch hat er sein Auto im Vorort geparkt",
+      "pred": "-Beim zweiten Besuch hat er sein Auto im Vorort geparkt",
+      "cer": 0.017857142857142856
+    },
+    {
+      "index": 7704,
+      "writer": "unknown",
+      "gt": "Arbeit, Stand und Stellung sind alle Unterschiedlich",
+      "pred": "Arbeit, Spand und Stellung sind alle unterschiedlich",
+      "cer": 0.038461538461538464
+    },
+    {
+      "index": 9335,
+      "writer": "unknown",
+      "gt": "Gute Verkehrsinfrastruktur bei den Firmen",
+      "pred": "Gute Verkehrsinfrastruktur bei den Firmen",
+      "cer": 0.0
+    },
+    {
+      "index": 2775,
+      "writer": "unknown",
+      "gt": "Optimierungsverfahren",
+      "pred": "Optimierungsverfahren",
+      "cer": 0.0
+    },
+    {
+      "index": 3332,
+      "writer": "unknown",
+      "gt": "desc -> absteigend",
+      "pred": "desc -> absteigend",
+      "cer": 0.0
+    },
+    {
+      "index": 951,
+      "writer": "unknown",
+      "gt": "- Herrschaft (in Abgrenzung zur Macht):",
+      "pred": "Herrschaft (in Abgrenzung zur Macht):",
+      "cer": 0.05128205128205128
+    },
+    {
+      "index": 2592,
+      "writer": "unknown",
+      "gt": "- Gemeinsamkeit:",
+      "pred": "- Gemeinsamkeit:",
+      "cer": 0.0
+    },
+    {
+      "index": 2653,
+      "writer": "unknown",
+      "gt": "abstrakte Operation",
+      "pred": "abstrakte Operation",
+      "cer": 0.0
+    },
+    {
+      "index": 5608,
+      "writer": "unknown",
+      "gt": "Analphabetenrate: Anteil der Bevölkerung an der Gesamtbevölkerung",
+      "pred": "Analphabetenrate: Anteil der Bevölkerung an der Gesamtbevölkerung",
+      "cer": 0.0
+    },
+    {
+      "index": 8674,
+      "writer": "unknown",
+      "gt": "- nehmen Nährstoffe auf vom Wirt über",
+      "pred": "nehmen Nährstoffe auf vom Wirt über",
+      "cer": 0.05405405405405406
+    },
+    {
+      "index": 4107,
+      "writer": "unknown",
+      "gt": "findet während der Metaphase statt",
+      "pred": "findet während der Metaphase statt",
+      "cer": 0.0
+    },
+    {
+      "index": 1920,
+      "writer": "unknown",
+      "gt": "Musik ist die universelle Sprache der Menschheit.",
+      "pred": "Musik ist die universelle Sprache der Menschheit.",
+      "cer": 0.0
+    },
+    {
+      "index": 9777,
+      "writer": "unknown",
+      "gt": "Numerisches Relativ",
+      "pred": "Numerisches Relativ",
+      "cer": 0.0
+    },
+    {
+      "index": 7246,
+      "writer": "unknown",
+      "gt": "- Volksentscheid über die Einheit",
+      "pred": "- Vollmachtserheid über die Einheit",
+      "cer": 0.21212121212121213
+    },
+    {
+      "index": 2864,
+      "writer": "unknown",
+      "gt": "optimiert für die Zielplattform (MKL, cuDNN, ..)",
+      "pred": "optimiert für die Zielplattform (x86, CUDA, ...)",
+      "cer": 0.16666666666666666
+    },
+    {
+      "index": 216,
+      "writer": "unknown",
+      "gt": "Vorgehen: 1. Festlegung eines Quotenplans",
+      "pred": "Vorgehen: 1. Festlegung eines Quotenplans",
+      "cer": 0.0
+    }
+  ]
+}

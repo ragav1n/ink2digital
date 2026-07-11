@@ -1,0 +1,10 @@
+{
+  "model": "D:\\hf_cache\\hub\\models--juliozhao--DocLayout-YOLO-DocStructBench\\snapshots\\8c3299a30b8ff29a1503c4431b035b93220f7b11\\doclayout_yolo_docstructbench_imgsz1024.pt",
+  "imgsz": 1536,
+  "batch": 2,
+  "epochs": 100,
+  "save_dir": "runs\\jakob_detector_v3\\doclayout_v1",
+  "best_weights": "runs\\jakob_detector_v3\\doclayout_v1\\weights\\best.pt",
+  "mAP50": 0.43708120919049476,
+  "mAP50_95": 0.2272859541836211
+}

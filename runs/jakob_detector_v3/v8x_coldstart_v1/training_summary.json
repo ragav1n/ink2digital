@@ -1,0 +1,10 @@
+{
+  "model": "yolov8x.pt",
+  "imgsz": 1536,
+  "batch": 2,
+  "epochs": 100,
+  "save_dir": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\v8x_coldstart_v1",
+  "best_weights": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\v8x_coldstart_v1\\weights\\best.pt",
+  "mAP50": 0.15362755865530572,
+  "mAP50_95": 0.06061889938694924
+}

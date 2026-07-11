@@ -1,0 +1,10 @@
+{
+  "model": "runs/detect/runs/detect/jakob_finetune_v2_hires_w0/weights/best.pt",
+  "imgsz": 1536,
+  "batch": 2,
+  "epochs": 100,
+  "save_dir": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\v8x_lecturestrict_v1",
+  "best_weights": "E:\\Projects\\lecture-ocr-meta-learning\\runs\\detect\\runs\\jakob_detector_v3\\v8x_lecturestrict_v1\\weights\\best.pt",
+  "mAP50": 0.6708639704311381,
+  "mAP50_95": 0.42554574863602274
+}
