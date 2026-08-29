@@ -1,0 +1,77 @@
+This repository contains both software and research data. They are released
+under different licences, set out separately below.
+
+Accompanying article: "Typeset Replacement of Handwritten Text and Mathematics
+on Lecture Slides Using Vision-Language Models", IEEE Access.
+
+
+===============================================================================
+1. SOFTWARE - MIT Licence
+===============================================================================
+
+Applies to all source code, configuration and documentation in this repository,
+including infer.py, baseline/, configs/, evaluate/, models/ and the JSON result
+files under outputs/. It does not apply to the contents of data/ (section 2) or
+to third-party components (section 3).
+
+MIT License
+
+Copyright (c) 2026 N. Ragavenderan, Judith Jakob, Manonmani S.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+===============================================================================
+2. DATA - Creative Commons Attribution-NonCommercial 4.0 International
+===============================================================================
+
+Applies to everything under data/, that is the two evaluation sets released
+with the article:
+
+  data/jakob_math/       and  data/jakob_math_eval/   134 handwritten
+                                                      mathematical expressions
+  data/jakob_text_v2/                                 100 German handwritten
+                                                      text lines
+
+together with their ground-truth transcriptions.
+
+Licensed under CC BY-NC 4.0:  https://creativecommons.org/licenses/by-nc/4.0/
+
+You may share and adapt this material for non-commercial purposes, provided you
+give appropriate credit and indicate whether changes were made. Cite the article
+above when you use these sets.
+
+The crops are handwritten annotations made by Prof. Dr. Judith Jakob on her own
+lecture slides, released with her permission for research use. The
+non-commercial term reflects the scope of that permission. Enquiries about uses
+outside it should go to the authors.
+
+
+===============================================================================
+3. THIRD-PARTY COMPONENTS
+===============================================================================
+
+TAMER/ is a git submodule pointing at https://github.com/qingzhenduyu/TAMER and
+is not covered by either licence above. It remains under its own upstream terms.
+
+Model checkpoints obtained at runtime from third parties, among them
+Qwen/Qwen3-VL-8B-Instruct, microsoft/trocr-large-handwritten,
+PaddlePaddle/PaddleOCR-VL-1.5, ds4sd/SmolDocling-256M-preview and the
+Ultralytics YOLO weights, are each governed by their own licences. This
+repository redistributes none of them.
